@@ -1,0 +1,92 @@
+Script started on 2026-10-20 12:58:19+01:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="160" LINES="37"]
+]666;vte.shell.postexec=0\]7;file://paul-ubuntu-X550CC/home/paul-ubuntu\]0;paul-ubuntu@paul-ubuntu-X550CC:~\]666;vte.shell.precmd!\[?2004h]0;paul-ubuntu@paul-ubuntu-X550CC: ~[01;32mpaul-ubuntu@paul-ubuntu-X550CC[00m:[01;34m~[00m$ cd [K[K[Kshutdown nowystemctl reboot -i[5Pudo[C[C[C[C[C[C[C[C[C[C[5@ystemctl[C[C[C[C[C[C[C[C[C[C[7Phutdown now[Kshutdown nowystemctl reboot -i[5Pudo[C[C[C[C[C[C[C[C[C[C[Khutdown nowtraceroute google.com[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kip addr show
+[?2004l]133;C\]666;vte.shell.preexec!\1: [1;36mlo: [0m<LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback [1;33m00:00:00:00:00:00[0m brd [1;33m00:00:00:00:00:00[0m
+    inet [1;35m127.0.0.1[0m/8 scope host lo
+       valid_lft forever preferred_lft forever
+    inet6 [1;94m::1[0m/128 scope host noprefixroute 
+       valid_lft forever preferred_lft forever
+2: [1;36menp4s0f2: [0m<NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc fq_codel state [1;31mDOWN [0mgroup default qlen 1000
+    link/ether [1;33me0:3f:49:b7:8f:7c[0m brd [1;33mff:ff:ff:ff:ff:ff[0m
+    altname enxe03f49b78f7c
+3: [1;36mwlp3s0: [0m<BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state [1;32mUP [0mgroup default qlen 1000
+    link/ether [1;33m40:f0:2f:d0:33:eb[0m brd [1;33mff:ff:ff:ff:ff:ff[0m
+    altname wlx40f02fd033eb
+    inet [1;35m192.168.1.217[0m/24 brd [1;35m192.168.1.255 [0mscope global dynamic noprefixroute wlp3s0
+       valid_lft 85064sec preferred_lft 85064sec
+    inet6 [1;94m2a00:23c6:c9a7:ff01:26a5:82da:41c6:5f21[0m/64 scope global temporary dynamic 
+       valid_lft 299sec preferred_lft 119sec
+    inet6 [1;94m2a00:23c6:c9a7:ff01:6519:cf0c:3092:4320[0m/64 scope global dynamic mngtmpaddr noprefixroute 
+       valid_lft 299sec preferred_lft 119sec
+    inet6 [1;94mfd48:b3a1:c14f:d8ed:b86e:4b14:179c:33e1[0m/64 scope global temporary dynamic 
+       valid_lft 1799sec preferred_lft 1799sec
+    inet6 [1;94mfd48:b3a1:c14f:d8ed:10a:8512:ea95:bf5c[0m/64 scope global dynamic mngtmpaddr noprefixroute 
+       valid_lft 1799sec preferred_lft 1799sec
+    inet6 [1;94mfe80::6b11:3819:5110:da48[0m/64 scope link noprefixroute 
+       valid_lft forever preferred_lft forever
+]666;vte.shell.postexec=0\]7;file://paul-ubuntu-X550CC/home/paul-ubuntu\]0;paul-ubuntu@paul-ubuntu-X550CC:~\]666;vte.shell.precmd!\[?2004h]0;paul-ubuntu@paul-ubuntu-X550CC: ~[01;32mpaul-ubuntu@paul-ubuntu-X550CC[00m:[01;34m~[00m$ ip route show
+[?2004l]133;C\]666;vte.shell.preexec!\default via [1;35m192.168.1.254 [0mdev [1;36mwlp3s0 [0mproto dhcp src [1;35m192.168.1.217 [0mmetric 600 
+[1;35m192.168.1.0/24 [0mdev [1;36mwlp3s0 [0mproto kernel scope link src [1;35m192.168.1.217 [0mmetric 600 
+]666;vte.shell.postexec=0\]7;file://paul-ubuntu-X550CC/home/paul-ubuntu\]0;paul-ubuntu@paul-ubuntu-X550CC:~\]666;vte.shell.precmd!\[?2004h]0;paul-ubuntu@paul-ubuntu-X550CC: ~[01;32mpaul-ubuntu@paul-ubuntu-X550CC[00m:[01;34m~[00m$ traceroute 8.8/[K.8.8
+[?2004l]133;C\]666;vte.shell.preexec!\traceroute to 8.8.8.8 (8.8.8.8), 64 hops max
+  1   192.168.1.254  1.416ms  1.225ms  0.917ms 
+  2   *  *  * 
+  3   *  *  * 
+  4   62.172.102.236  13.896ms  14.824ms  * 
+  5   194.74.16.229  17.422ms  11.289ms  12.196ms 
+  6   109.159.253.189  11.815ms  14.705ms  17.920ms 
+  7   192.178.98.1  17.128ms  19.046ms  11.588ms 
+  8   8.8.8.8  12.532ms  11.731ms  14.975ms 
+]666;vte.shell.postexec=0\]7;file://paul-ubuntu-X550CC/home/paul-ubuntu\]0;paul-ubuntu@paul-ubuntu-X550CC:~\]666;vte.shell.precmd!\[?2004h]0;paul-ubuntu@paul-ubuntu-X550CC: ~[01;32mpaul-ubuntu@paul-ubuntu-X550CC[00m:[01;34m~[00m$ dig @8.8.8.8 github.com
+[?2004l]133;C\]666;vte.shell.preexec!\
+; <<>> DiG 9.20.24-1ubuntu0.4-Ubuntu <<>> @8.8.8.8 github.com
+; (1 server found)
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 36093
+;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 512
+;; QUESTION SECTION:
+;github.com.			IN	A
+
+;; ANSWER SECTION:
+github.com.		60	IN	A	20.26.156.215
+
+;; Query time: 23 msec
+;; SERVER: 8.8.8.8#53(8.8.8.8) (UDP)
+;; WHEN: Tue Oct 20 13:00:42 BST 2026
+;; MSG SIZE  rcvd: 55
+
+]666;vte.shell.postexec=0\]7;file://paul-ubuntu-X550CC/home/paul-ubuntu\]0;paul-ubuntu@paul-ubuntu-X550CC:~\]666;vte.shell.precmd!\[?2004h]0;paul-ubuntu@paul-ubuntu-X550CC: ~[01;32mpaul-ubuntu@paul-ubuntu-X550CC[00m:[01;34m~[00m$ ss -tuln
+[?2004l]133;C\]666;vte.shell.preexec!\Netid          State           Recv-Q          Send-Q                                        Local Address:Port                      Peer Address:Port          
+udp            UNCONN          212800          0                                                   0.0.0.0:5353                           0.0.0.0:*             
+udp            UNCONN          0               0                                                   0.0.0.0:5353                           0.0.0.0:*             
+udp            UNCONN          0               0                                                   0.0.0.0:56128                          0.0.0.0:*             
+udp            UNCONN          0               0                                                   0.0.0.0:56305                          0.0.0.0:*             
+udp            UNCONN          0               0                                             192.168.1.217:3702                           0.0.0.0:*             
+udp            UNCONN          0               0                                           239.255.255.250:3702                           0.0.0.0:*             
+udp            UNCONN          0               0                                                127.0.0.54:53                             0.0.0.0:*             
+udp            UNCONN          0               0                                             127.0.0.53%lo:53                             0.0.0.0:*             
+udp            UNCONN          0               0                                                 127.0.0.1:323                            0.0.0.0:*             
+udp            UNCONN          0               0                                                      [::]:5353                              [::]:*             
+udp            UNCONN          212672          0                                                         *:5353                                 *:*             
+udp            UNCONN          0               0                                                         *:1716                                 *:*             
+udp            UNCONN          0               0                                                         *:34847                                *:*             
+udp            UNCONN          0               0                                                         *:56171                                *:*             
+udp            UNCONN          0               0                        [fe80::6b11:3819:5110:da48]%wlp3s0:3702                              [::]:*             
+udp            UNCONN          0               0                                          [ff02::c]%wlp3s0:3702                              [::]:*             
+udp            UNCONN          0               0                                                     [::1]:323                               [::]:*             
+udp            UNCONN          0               0                        [fe80::6b11:3819:5110:da48]%wlp3s0:546                               [::]:*             
+tcp            LISTEN          0               4096                                             127.0.0.54:53                             0.0.0.0:*             
+tcp            LISTEN          0               4096                                          127.0.0.53%lo:53                             0.0.0.0:*             
+tcp            LISTEN          0               4096                                              127.0.0.1:631                            0.0.0.0:*             
+tcp            LISTEN          0               511                                                 0.0.0.0:80                             0.0.0.0:*             
+tcp            LISTEN          0               50                                                        *:1716                                 *:*             
+tcp            LISTEN          0               4096                                                  [::1]:631                               [::]:*             
+tcp            LISTEN          0               511                                                    [::]:80                                [::]:*             
+]666;vte.shell.postexec=0\]7;file://paul-ubuntu-X550CC/home/paul-ubuntu\]0;paul-ubuntu@paul-ubuntu-X550CC:~\]666;vte.shell.precmd!\[?2004h]0;paul-ubuntu@paul-ubuntu-X550CC: ~[01;32mpaul-ubuntu@paul-ubuntu-X550CC[00m:[01;34m~[00m$ exit
+[?2004l]133;C\]666;vte.shell.preexec!\exit
+
+Script done on 2026-10-20 13:01:18+01:00 [COMMAND_EXIT_CODE="0"]
