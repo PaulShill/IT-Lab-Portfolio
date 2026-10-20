@@ -1,0 +1,620 @@
+    1  sudo apt update
+    2  apt search libre
+    3  apt search libreoffice
+    4  sudo apt install -y libreoffice
+    5  libreofice
+    6  libreoffice
+    7  ls
+    8  cd /Documents
+    9  cd Documents
+   10  ls
+   11  cat test42.txt
+   12  less test42.txt
+   13  nano test42.txt
+   14  less test42.txt
+   15  grep file test42.txt
+   16  exit
+   17  ls /
+   18  ls --help
+   19  man ls
+   20  ls -l /
+   21  ls -la /
+   22  pwd
+   23  ls /
+   24  cd /home
+   25  cd /
+   26  cd/home
+   27  cd /home
+   28  cd /
+   29  cd /home
+   30  cd ~/desktop
+   31  cd /
+   32  cd ~/desktop
+   33  xdg -user-dirs-update --force
+   34  sudo xdg -user-dirs-update --force
+   35  sudo xdg-user-dirs-update --force
+   36  ls /
+   37  sudo apt update && sudo apt install xdg-user-dirs -y
+   38  xdg-user-dirs-update
+   39  xdg-user-dirs-update --force
+   40  ls ~
+   41  cd ~/desktop
+   42  cd ~/Desktop
+   43  mkdir ITSupport Docs
+   44  ls /
+   45  cd /
+   46  ls /
+   47  mkdir ITSupport_Docs
+   48  sudo ITSupport_Docs
+   49  sudo mkdir ITSupport_Docs
+   50  ls /
+   51  sudo rmdir ITSupport_Docs
+   52  ls /
+   53  sudo mkdir ITSupport \Docs
+   54  ls /
+   55  sudo rmdir ITSupport
+   56  sudo rmdir Docs
+   57  ls /
+   58  sudo mkdir 'IT Support Docs'
+   59  ls /
+   60  history
+   61  clear
+   62  history
+   63  touch test.txt
+   64  sudo touch test.txt
+   65  ls /
+   66  sudo mv test.txt test2.txt
+   67  ls /
+   68  cd /
+   69  sudo mv test2.txt ~/IT Support Docs
+   70  sudo mv test2.txt ~/'IT Support Docs'
+   71  cd /'IT Support Docs@
+   72  clear
+   73  cd /'IT Support Docs'
+   74  ls /
+   75  ls /'IT Support Docs'
+   76  ls /
+   77  ls
+   78  cd /
+   79  find ~ -iname "*test2*"
+   80  find ~ -iname "test2.txt*"
+   81  ls /
+   82  sudo find / -name "*test2*"
+   83  ls /
+   84  cd /home
+   85  ls
+   86  ls /
+   87  cd /
+   88  sudo mkdir /ITSupport
+   89  ls /
+   90  touch test3.txt
+   91  sudo touch test2.txt
+   92  ls /
+   93  sudo mv test2.txt ~/ITSupport
+   94  ls /ITSupport
+   95  ls /
+   96  cd /ITSupport
+   97  ls /
+   98  sudo touch test.txt
+   99  ls /
+  100  ls
+  101  sudo mv test.txt ~/media/
+  102  cd /
+  103  sudo mkdir Test
+  104  ls /
+  105  cd /ITSupport
+  106  ls /
+  107  ls
+  108  sudo mv test.txt ~/Test/
+  109  cd /
+  110  ls /
+  111  sudo touch test3.txt
+  112  ls /
+  113  sudo mv test2.txt #/Test/
+  114  sudo mv test3.txt ~/Test/
+  115  sudo mv test3.txt ~/ITSupport/
+  116  ls -ld ~/ITSupport
+  117  sudo mv test3.txt ~/Test/
+  118  touch Paul.txt
+  119  sudo touch Paul.txt
+  120  ls /
+  121  sudo mkdir GoogleIT
+  122  ls /
+  123  sudo mv Paul.txt GoogleIT
+  124  cd /GoogleIT
+  125  ls 
+  126  cd /
+  127  ls GoogleIT
+  128  ls
+  129  sudo rm test3.txt
+  130  ls
+  131  sudo rm ITSupport
+  132  sudo rm -r ITSupport
+  133  ls
+  134  sudo rm -r 'IT Support Docs'
+  135  ls
+  136  cd /GoogleIT
+  137  cat Paul.txt
+  138  exit
+  139  sudo shutdown -h now
+  140  sudo shutdown -h -i now
+  141  sudo poweroff
+  142  sudo systemctl poweroff -i
+  143  sudo touch dog.txt
+  144  ls
+  145  echo woof > dog.txt
+  146  sudo echo woof > dog.txt
+  147  touch cyrus.txt
+  148  ls
+  149  echo woof > cyrus.txt
+  150  cat cyrus.txt
+  151  echo woof >> cyrus.txt
+  152  cat cyrus.txt
+  153  sudo rm dog.txt
+  154  ls
+  155  sudo shutdown -h now
+  156  systemd-inhibit --list
+  157  pgrep -fl unattended-upgrade
+  158  sudo tail -f /var/log/unattended-upgrade
+  159  sudo tail 'f /var/log/unattended-upgrades.log
+  160  sudo tail -f /var/log/unattended-upgrades.log
+  161  sudo journalctl -u unattended-upgrades -n 20
+  162  sudo systemctl poweroff -i
+  163  gedit ~/.local/share/applications/Coursera.desktop
+  164  sudo apt install gedit
+  165  gedit ~/.local/share/applications/Coursera.desktop
+  166  chmod +x ~/.local/share/applications/coursera.desktop
+  167  chmod +x ~/.local/share/applications/Coursera.desktop
+  168  ls -l ~/.local/share/applications/Coursera.desktop
+  169  curl
+  170  sudo apt install curl
+  171  curl
+  172  curl -o ~/Pictures/coursera.png https://upload.wikimedia.org/wikipedia/commons/9/97/Coursera-Logo_600x600.png
+  173  gedit ~/.local/share/applications/Coursera.desktop
+  174  file ~Pictures/coursera.png
+  175  curl -L -A "Mozilla/5.0" -o ~/Pictures/coursera.png "https://upload.wikimedia.org/wikipedia/commons/9/97/Coursera-Logo_600x600.png
+  176  curl -L -A "Mozilla/5.0" -o ~/Pictures/coursera.png "https://upload.wikimedia.org/wikipedia/commons/9/97/Coursera-Logo_600x600.pngq
+  177  file ~/Pictures/coursera.png
+  178  sudo shutdown -now
+  179  sudo shutdown -n
+  180  sudo shutdown -h now
+  181  sudo apt update
+  182  sudo apt install curl ca-certificates pgp -y
+  183  curl -fsSL https://packages.microsoft.com/keys/microsoft.asc | sudo gpg --dearmor -o /usr/share/keyrings/microsoft-edge.gpg
+  184  ls -la /usr/share/keyrings/microsoft-edge.gpg
+  185  [200~echo "deb [arch=amd64,arm64,armhf signed-by=/usr/share/keyrings/microsoft-edge.gpg] https://packages.microsoft.com/repos/edge stable main" | sudo tee /etc/apt/sources.list.d/microsoft-edge.list~
+  186  sudo apt update && sudo apt install software-properties-common apt-transport-https curl gpg -y
+  187  curl -fsSL https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor | sudo tee /usr/share/keyrings/microsoft-edge.gpg > /dev/null
+  188  ls -la /usr/share/keyrings/microsoft-edge.gpg
+  189  [200~echo "deb [arch=amd64,arm64,armhf signed-by=/usr/share/keyrings/microsoft-edge.gpg] https://packages.microsoft.com/repos/edge stable main" | sudo tee /etc/apt/sources.list.d/microsoft-edge.list~
+  190  sudo bash -c 'echo "deb [arch=amd64,arm64,armhf signed-by=/usr/share/keyrings/microsoft-edge.gpg] https://packages.microsoft.com/repos/edge stable main" > /etc/apt/sources.list.d/microsoft-edge.list'
+  191  cat /etc/apt/sources.list.d/microsoft-edge.list
+  192  sudo apt update
+  193  sudo apt install microsoft-edge-stable -y
+  194  microsoft-edge --version
+  195  microsoft-edge
+  196  shutdown
+  197  shutdown now
+  198  sudo apt install onedrive -y
+  199  onedrive
+  200  ondrive
+  201  onedrive
+  202  sudo apt install onedriver -y
+  203  onedriver
+  204  ls
+  205  cd /documents
+  206  cd home/documents
+  207  cd Documents
+  208  nano colors.txt
+  209  less colors.txt
+  210  mkdir red blue green yellow magenta
+  211  ls
+  212  rmdir blue
+  213  ls
+  214  mkdir blue
+  215  touch empty_file
+  216  ls
+  217  cp yellow /ITSupport
+  218  cp yellow /ITSupport/yellow
+  219  ls
+  220  cp colors.txt /ITSupport/colors.txt
+  221  cp colors.txt /home/paul-ubuntu/ITSupport colors.txt
+  222  cp colors.txt ~/ITSupport
+  223  cp colors.txt ~/ITSupport/
+  224  sudo rm -rf ~/ITSupport
+  225  ls
+  226  cd /
+  227  ls
+  228  mkdir /ITSupport
+  229  cd home
+  230  mkdir /ITSupport
+  231  cd /
+  232  cd home
+  233  mkdir ITSupport
+  234  cd ~
+  235  mkdir ITSupport
+  236  ls
+  237  cd documents
+  238  cd Documents
+  239  cp colors.txt ~/ITSupport/
+  240  cd ITSupport
+  241  cd ~/ITSupport
+  242  ls
+  243  rm colors.txt
+  244  ls
+  245  cd ~/Colors
+  246  cd ~/colors
+  247  cd ~
+  248  ls
+  249  mkdir Colors
+  250  ls
+  251  cd ~/Colors
+  252  touch apple banana broccoli milk chocolate egg
+  253  ls
+  254  mv apple banana broccoli chocolate egg mike ~/ITSupport
+  255  mv apple banana broccoli chocolate egg milk  ~/ITSupport
+  256  mv apple banana broccoli chocolate egg milk  ~/ITSupport/
+  257  ls
+  258  cd ~/ITSupport/
+  259  ls
+  260  mkdir Europe\ Pictures
+  261  ls
+  262  move ~/Europe\ Pictures ~/Colors
+  263  mv ~/Europe\ Pictures ~/Colors
+  264  mv "Europe Pictures" ~/Colors
+  265  cd ~/Colors
+  266  ls
+  267  cd ~/ITSupport
+  268  ls
+  269  cd ~/Colors
+  270  mv ~/ITSupport/apple .
+  271  ls
+  272  rm apple
+  273  ls
+  274  cd ~
+  275  ls
+  276  rmdir IT\ Support\ Docs
+  277  rm IT\ Support\ Docs
+  278  ls
+  279  rmdir ITSupport
+  280  rmdir -r ITSupport
+  281  rm -r ITSupport
+  282  ls
+  283  mkdir Test
+  284  ls
+  285  rm -r Test
+  286  ls
+  287  cd Colors
+  288  ls
+  289  touch vacation.txt
+  290  ls
+  291  echo "I had a great vacation here" > vacation.txt
+  292  less vacation.txt
+  293  grep -rw ~/Colors -e "vacation"
+  294  nano vactation.txt
+  295  less vacation.txt
+  296  nano vacation.txt
+  297  less vacation.txt
+  298  shutdown now
+  299  exit
+  300  ls -l ~/Vacation
+  301  pwd
+  302  cd ~
+  303  ls
+  304  cd Documents
+  305  pwd
+  306  cd ~
+  307  mkdir -p ~/bash_lab/documents
+  308  ls
+  309  cd ~/bash_lab
+  310  touch system_report.txt
+  311  ls
+  312  cp system_report.txt system_report_bak.txt
+  313  ls
+  314  mv system_report_bak.txt documents/
+  315  ls
+  316  sudo useradd -m -s /bin/bash labuser
+  317  sudo passwd labuser
+  318  sudo usermod -aG sudo labuser
+  319  who
+  320  compgen -u
+  321  sudo userdel -r labuser
+  322  compgen -u
+  323  touch audit.log
+  324  ls
+  325  chmod 640 audit.log
+  326  ls
+  327  less audit.log
+  328  sudo chown root:sudo audit.log
+  329  sudo -p /srv/team_space
+  330  ls
+  331  sudo mkdir -p /srv/team_space
+  332  ls
+  333  ls -ld /srv/team_space
+  334  sudo chmod 1777 /srv/team_space
+  335  sudo chmod g+s /srv/team_space
+  336  ls -ld /srv/team_space
+  337  sudo cp /usr/bin/python3 /srv/team_space/python_suid
+  338  cd ~/srv/team_space
+  339  cd /srv/team_space
+  340  ls
+  341  sudo chmod u+s /srv/team_space/python
+  342  sudo chmod u+s /srv/team_space/python_suid
+  343  sudo apt update
+  344  sudo apt install p7zip-full -y
+  345  ls
+  346  touch system_report.txt
+  347  ls
+  348  7z a log_archive.7z system_report.txt
+  349  ls
+  350  7z x log_archive.7z -oextracted_files/
+  351  ls
+  352  apt download htop
+  353  ls
+  354  sudo dpkg -i htop_*.deb
+  355  lsblk
+  356  sudo umount /dev/sdb1
+  357  lsblk
+  358  sudo umount /dev/sdb1
+  359  sudo mkfs.exfat -n"My_USB" /dev/sdb1
+  360  lsblk
+  361  sudo parted /dev/sdb1 mklabel gpt
+  362  sudo parted /dev/sdb mklabel gpt
+  363  sudo parted /dev/sdb mkpart primary ext4 0% 100%
+  364  sudo mkfs.ext4 /dev/sdb1
+  365  sudo mkdir -p /mnt/usb_lab
+  366  ls
+  367  sudo mkdir -p mnt/usb_lab
+  368  ls
+  369  sudo mount /dev/sdb1 /mnt/usb_lab
+  370  sudo umount /mnt/usb_lab
+  371  sudo fsck -f /dev/sdb1
+  372  sleep 60 &
+  373  ls
+  374  sleep 300 &
+  375  ps aux | grep sleep
+  376  top
+  377  kill 18107
+  378  pgrep -l sleep
+  379  kill 17832
+  380  top
+  381  scp system_report.txt localhost:/tmp/remote_report.txt
+  382  tail -n 20 /var/log/syslog
+  383  shutdown now
+  384  sudo loginctl terminate-user Paul
+  385  sudo su-
+  386  sudo su -
+  387  cd 
+  388  cat /etc/passwd
+  389  sudo useradd Paul
+  390  su - Paul
+  391  sudo passwd Paul
+  392  su - Paul
+  393  shutdown now
+  394  sudo mkdir -p /home/lab/storage
+  395  sudo touch /home/lab/corrupted_file
+  396  sudo touch /home/lab/super_secret_file.txt
+  397  sudo chmod 000 /home/lab/super_secret_file.txt
+  398  ls -la /home/lab
+  399  fallocate -1 1g /home/lab/storage/ultra_mega_large.txt
+  400  fallocate -l 1g /home/lab/storage/ultra_mega_large.txt
+  401  sudo fallocate -l 1g /home/lab/storage/ultra_mega_large.txt
+  402  ls -la /home/lab
+  403  bash -c 'exec -a totally_not_malicious sleep 86400' &
+  404  ps aux | grep totally_not_malicious
+  405  logger "Qwiklab Error: Disk space is super low, fix it"
+  406  logger "Qwiklab Error: Corrupted file detected in /home/lab"
+  407  logger "Qwiklab Error: VLC media player package requires dependency fix!"
+  408  logger "Qwiklab Error: Unrecognized process running on system"
+  409  logger "Qwiklab Error: Incorrect permissions on super_secret_file.txt"
+  410  sudo cat /var/log/syslog
+  411  sudo du -a /home | sort -n -r | head -n 5
+  412  sudo rm /home/lab/ultra_mega_large.txt
+  413  sudo rm /home/lab/storage/ultra_mega_large.txt
+  414  sudo du -a /home | sort -n -r | head -n 5
+  415  find . -name "corrupted_file"
+  416  sudo find /home -name "corrupted_file"
+  417  cd /home/lab
+  418  ls
+  419  rm corrupted_file
+  420  ls
+  421  sudo rm corrupted_file
+  422  ls
+  423  ps aux
+  424  kill 5058
+  425  pgrep -l totally_not_malcious
+  426  pgrep -l totally_not_malicious
+  427  ls
+  428  ls -l super_secret_file.txt
+  429  chmod 777 super_secret_file.txt
+  430  sudo chmod 777 super_secret_file.txt
+  431  ls -l super_secret_file.txt
+  432  shutdown now
+  433  sudo userdel -r Paul
+  434  sudo user -r paul
+  435  sudo userdel -r paul
+  436  id
+  437  cat etc/passwd
+  438  cat /etc/passwd
+  439  exit
+  440  sudo apt update
+  441  sudo apt install ondrive
+  442  sudo apt install onedrive
+  443  onedrive
+  444  onedrive --synchronize
+  445  ls
+  446  cd OneDrive
+  447  ls
+  448  exit
+  449  ls
+  450  cd OneDrive
+  451  ls
+  452  cd 'Google IT Support Cert'
+  453  ls
+  454  onedrive --display-sync-status
+  455  ps aux | grep onedrive
+  456  exit
+  457  ls
+  458  cd OneDrive
+  459  ls
+  460  cd 'Google IT Support Cert'
+  461  ls
+  462  exit
+  463  systemctl --user enable --now onedrive
+  464  exit
+  465  shutdown now
+  466  ip route get 1.1.1.1 
+  467  ip route get 1.1.1.1 | awk '{print $7; exit}'
+  468  curl -s https://api.ipify.org
+  469  ipcalc 192.168.1.217
+  470  sudo apt install ipcalc
+  471  ipcalc 192.168.1.217
+  472  ip neighbor show
+  473  shutdown now
+  474  ip route show default
+  475  ping -c 4 192.168.1.254
+  476  ss tuln
+  477  ss -tuln
+  478  shutdown now
+  479  sudo ufw reset
+  480  sudo ufw default deny incoming
+  481  sudo ufw default allow outgoing
+  482  sudo ufw allow ssh
+  483  sudo ufw enable
+  484  sudo ufw status verbose
+  485  sudo ufw app list
+  486  sudo ufw app info "Nginx Full"
+  487  sudo apt install nginx -y
+  488  sudo ufw app list
+  489  sudo ufw allow "Nginx Full"
+  490  sudo ufw status
+  491  sudo ufw allow from 192.168.1.100 to any port 22 proto tcp
+  492  sudo ufw status numbered
+  493  sudo ufw status
+  494  sudo ufw delete 3
+  495  sudo ufw status numbered
+  496  sudo ufw limit ssh/tcp
+  497  sudo ufw status
+  498  sudo ufw status numbered
+  499  sudo ufw status verbose
+  500  sudo ufw logging medium
+  501  sudo journalctl -k -g UFW:
+  502  sudo ufw status verbose
+  503  shutdown now
+  504  curl -s ipinfo.io
+  505  shutdown now
+  506  sudo apt update
+  507  sudo apt install git -y
+  508  git --version
+  509  git config --global user.name "Paul Shill"
+  510  git config --global user.email "paul.shill@gmail.com"
+  511  mkdir IT-Lab-Portfolio
+  512  cd IT-Lab-Portfolio
+  513  git init
+  514  ls -a
+  515  mkdir -p 01-scripting-and-automation/powershell 01-scripting-and-automation/bash 02-identity-and-access-management 03-directory-services 04-networking-and-connectivity 05-security-operations-and-hardening
+  516  ls
+  517  echo -e ".DS_Store\nThumbs.db\n*.log\n.vscode/" > .gitignore
+  518  ls -a
+  519  echo "# IT Lab Portfolio" >README.md
+  520  ls -a
+  521  git add .
+  522  commit -m "Initial commit: Set up functional domain-driven repository structure"
+  523  git commit -m "Initial commit: Set up functional domain-driven repository structure"
+  524  git branch -M main
+  525  git remote add origin https://github.com/Paul Shill/IT-Lab-Portfolio.git
+  526  git remote add origin https://github.com/PaulShill/IT-Lab-Portfolio.git
+  527  git push -u origin main
+  528  sudo apt install wireshark tshark -y
+  529  sudo usermod -aG wireshark $USER
+  530  newgrp wireshark
+  531  sudo apt install util-linux-extra
+  532  newgrp wireshark
+  533  ip link show
+  534  wireshark &
+  535  dig www.google.com
+  536  curl -I http://www.google.com
+  537  dig www.google.com
+  538  dig -4 www.google.com A
+  539  curl -I http://www.google.com
+  540  mkdir -p ~/IT-Lab-Portfolio/04-networking-and-connectivity/wireshark-tcp-dns-analysis
+  541  cd /04-networking-and-connectivity/wireshark-tcp-dns-analysis/
+  542  cd 04-networking-and-connectivity/wireshark-tcp-dns-analysis/
+  543  nano README.md
+  544  ls
+  545  cat README.md
+  546  [200~cd ~/IT-Lab-Portfolio
+  547  git add .
+  548  git commit -m "Add Lab 1: Wireshark IPv6 link-local custom lab report and capture"
+  549  cd /IT-Lab-Portfolio
+  550  cd ~ /IT-Lab-Portfolio
+  551  cd ~/IT-Lab-Portfolio
+  552  git add .
+  553  git commit -m "Add Lab 1: Wireshark IPv6 link-local custom lab report and capture"
+  554  git push
+  555  git add .
+  556  git commit -m "Add Wireshark .pcapng capture artifact for Lab 1"
+  557  git push
+  558  cd ~IT-Lab-Portfolio/04-networking-and-connectivity/wireshark-tcp-dns-analysis/
+  559  cd ~/IT-Lab-Portfolio/04-networking-and-connectivity/wireshark-tcp-dns-analysis/
+  560  rm lab1_tcp_dns_analysis.pca.png.pcapng
+  561  ls -la
+  562  rm lab1_tcp_dns_analysis.pcapng 
+  563  cd ~/IT-Lab-Portfolio
+  564  git add .
+  565  git commit -m "Clean up duplicate capture artifact"
+  566  git push
+  567  sudo apt install kdeconnect
+  568  kdeconnect-indicator &
+  569  sudo ufw allow 1714:1764/udp
+  570  sudo ufw allow 1714:1764/tcp
+  571  sudo ufw reload
+  572  mkdir -p ~/.config/autostart
+  573  nano ~/.config/autostart/kdeconnect.desktop
+  574  shutdown now
+  575  sudo apt install clamav clamav-daemon
+  576  cd /
+  577  sudo clamscan -r -i /
+  578  sudo apt install lm-sensors
+  579  sudo sensors-detect --auto
+  580  sensors
+  581  timedatectl
+  582  sudo apt install gnome-system-monitor
+  583  gnome system monitor
+  584  gnome-system-monitor
+  585  arp -a
+  586  sudo apt install net-tools
+  587  arp -a
+  588  sudo apt install nmap
+  589  sudo nmap -sL 192.168.1.86
+  590  sudo nmap -A 192.168.1.86
+  591  ipconfig /all
+  592  ifconfig /all
+  593  ip a
+  594  ping 8.8.8.8
+  595  dig 8.8.8.8
+  596  dig google.com
+  597  dig google.com AAAA
+  598  tracecert 8.8.8.8
+  599  traceroute google.com
+  600  sudo apt install inetutils-traceroute
+  601  traceroute google.com
+  602  shutdown now
+  603  sudo reboot
+  604  sudo reboot -i
+  605  systemctl reboot -i
+  606  shutdown now
+  607  ip addr show
+  608  ip route show
+  609  traceroute 8.8.8.8
+  610  dig @8.8.8.8 github.com
+  611  ss -tuln
+  612  cd ~/IT-Lab-Portfolio
+  613  ls
+  614  cd 04-networking-and-connectivity
+  615  ls
+  616  mkdir network-diagnostics-routing
+  617  ls
+  618  cd network-diagnostics-routing
+  619  nano README.md
+  620  history > commands.txt
