@@ -1,0 +1,87 @@
+Script started on 2026-10-20 13:56:53+01:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="160" LINES="37"]
+]666;vte.shell.postexec=0\]7;file://paul-ubuntu-X550CC/home/paul-ubuntu/IT-Lab-Portfolio\]0;paul-ubuntu@paul-ubuntu-X550CC:~/IT-Lab-Portfolio\]666;vte.shell.precmd!\[?2004h]0;paul-ubuntu@paul-ubuntu-X550CC: ~/IT-Lab-Portfolio[01;32mpaul-ubuntu@paul-ubuntu-X550CC[00m:[01;34m~/IT-Lab-Portfolio[00m$ ip neigh show
+[?2004l]133;C\]666;vte.shell.preexec!\[1;35m192.168.1.254 [0mdev [1;36mwlp3s0 [0mlladdr [1;33mac:b6:87:60:e4:f8 [0mREACHABLE 
+[1;35m192.168.1.86 [0mdev [1;36mwlp3s0 [0mlladdr [1;33m38:8d:3d:1b:05:7e [0mSTALE 
+[1;35m192.168.1.64 [0mdev [1;36mwlp3s0 [0mlladdr [1;33mc8:6c:3d:e2:26:db [0mSTALE 
+[1;35m192.168.1.69 [0mdev [1;36mwlp3s0 [0mlladdr [1;33m40:a2:db:06:30:26 [0mSTALE 
+[1;94mfe80::aeb6:87ff:fe60:e4f8 [0mdev [1;36mwlp3s0 [0mlladdr [1;33mac:b6:87:60:e4:f8 [0mrouter REACHABLE 
+]666;vte.shell.postexec=0\]7;file://paul-ubuntu-X550CC/home/paul-ubuntu/IT-Lab-Portfolio\]0;paul-ubuntu@paul-ubuntu-X550CC:~/IT-Lab-Portfolio\]666;vte.shell.precmd!\[?2004h]0;paul-ubuntu@paul-ubuntu-X550CC: ~/IT-Lab-Portfolio[01;32mpaul-ubuntu@paul-ubuntu-X550CC[00m:[01;34m~/IT-Lab-Portfolio[00m$ sudo ip neigh flush dev wk[Klp3x)[K0
+[?2004l]133;C\]666;vte.shell.preexec!\[sudo: authenticate] Password: ********        
+Cannot find device "wlp3x0"
+]666;vte.shell.postexec=1\]7;file://paul-ubuntu-X550CC/home/paul-ubuntu/IT-Lab-Portfolio\]0;paul-ubuntu@paul-ubuntu-X550CC:~/IT-Lab-Portfolio\]666;vte.shell.precmd!\[?2004h]0;paul-ubuntu@paul-ubuntu-X550CC: ~/IT-Lab-Portfolio[01;32mpaul-ubuntu@paul-ubuntu-X550CC[00m:[01;34m~/IT-Lab-Portfolio[00m$ sudo ip night[K[K[K[K[Kneigh flush dev wlp3x[Kx[Ks0
+[?2004l]133;C\]666;vte.shell.preexec!\]666;vte.shell.postexec=0\]7;file://paul-ubuntu-X550CC/home/paul-ubuntu/IT-Lab-Portfolio\]0;paul-ubuntu@paul-ubuntu-X550CC:~/IT-Lab-Portfolio\]666;vte.shell.precmd!\[?2004h]0;paul-ubuntu@paul-ubuntu-X550CC: ~/IT-Lab-Portfolio[01;32mpaul-ubuntu@paul-ubuntu-X550CC[00m:[01;34m~/IT-Lab-Portfolio[00m$ ip neigh show
+[?2004l]133;C\]666;vte.shell.preexec!\[1;94mfe80::aeb6:87ff:fe60:e4f8 [0mdev [1;36mwlp3s0 [0mlladdr [1;33mac:b6:87:60:e4:f8 [0mDELAY 
+]666;vte.shell.postexec=0\]7;file://paul-ubuntu-X550CC/home/paul-ubuntu/IT-Lab-Portfolio\]0;paul-ubuntu@paul-ubuntu-X550CC:~/IT-Lab-Portfolio\]666;vte.shell.precmd!\[?2004h]0;paul-ubuntu@paul-ubuntu-X550CC: ~/IT-Lab-Portfolio[01;32mpaul-ubuntu@paul-ubuntu-X550CC[00m:[01;34m~/IT-Lab-Portfolio[00m$ get-N[K[K[K[K[KGet NetRoute
+[?2004l]133;C\]666;vte.shell.preexec!\Command 'Get' not found, did you mean:
+  command 'eet' from deb libeet-bin (1.28.1-1.1build2)
+  command 'net' from deb samba-common-bin (2:4.23.6+dfsg-1ubuntu2.1)
+  command 'fet' from deb fet (7.0.8-3build1)
+Try: sudo apt install <deb name>
+]666;vte.shell.postexec=127\]7;file://paul-ubuntu-X550CC/home/paul-ubuntu/IT-Lab-Portfolio\]0;paul-ubuntu@paul-ubuntu-X550CC:~/IT-Lab-Portfolio\]666;vte.shell.precmd!\[?2004h]0;paul-ubuntu@paul-ubuntu-X550CC: ~/IT-Lab-Portfolio[01;32mpaul-ubuntu@paul-ubuntu-X550CC[00m:[01;34m~/IT-Lab-Portfolio[00m$ Get-NetRoute
+[?2004l]133;C\]666;vte.shell.preexec!\Get-NetRoute: command not found
+]666;vte.shell.postexec=127\]7;file://paul-ubuntu-X550CC/home/paul-ubuntu/IT-Lab-Portfolio\]0;paul-ubuntu@paul-ubuntu-X550CC:~/IT-Lab-Portfolio\]666;vte.shell.precmd!\[?2004h]0;paul-ubuntu@paul-ubuntu-X550CC: ~/IT-Lab-Portfolio[01;32mpaul-ubuntu@paul-ubuntu-X550CC[00m:[01;34m~/IT-Lab-Portfolio[00m$ ip route show
+[?2004l]133;C\]666;vte.shell.preexec!\default via [1;35m192.168.1.254 [0mdev [1;36mwlp3s0 [0mproto dhcp src [1;35m192.168.1.217 [0mmetric 600 
+[1;35m192.168.1.0/24 [0mdev [1;36mwlp3s0 [0mproto kernel scope link src [1;35m192.168.1.217 [0mmetric 600 
+]666;vte.shell.postexec=0\]7;file://paul-ubuntu-X550CC/home/paul-ubuntu/IT-Lab-Portfolio\]0;paul-ubuntu@paul-ubuntu-X550CC:~/IT-Lab-Portfolio\]666;vte.shell.precmd!\[?2004h]0;paul-ubuntu@paul-ubuntu-X550CC: ~/IT-Lab-Portfolio[01;32mpaul-ubuntu@paul-ubuntu-X550CC[00m:[01;34m~/IT-Lab-Portfolio[00m$ ping 192.168.1.254
+[?2004l]133;C\]666;vte.shell.preexec!\PING 192.168.1.254 (192.168.1.254) 56(84) bytes of data.
+64 bytes from 192.168.1.254: icmp_seq=1 ttl=64 time=9.06 ms
+64 bytes from 192.168.1.254: icmp_seq=2 ttl=64 time=1.40 ms
+64 bytes from 192.168.1.254: icmp_seq=3 ttl=64 time=1.90 ms
+64 bytes from 192.168.1.254: icmp_seq=4 ttl=64 time=1.52 ms
+64 bytes from 192.168.1.254: icmp_seq=5 ttl=64 time=13.5 ms
+64 bytes from 192.168.1.254: icmp_seq=6 ttl=64 time=10.4 ms
+64 bytes from 192.168.1.254: icmp_seq=7 ttl=64 time=1.38 ms
+64 bytes from 192.168.1.254: icmp_seq=8 ttl=64 time=8.75 ms
+64 bytes from 192.168.1.254: icmp_seq=9 ttl=64 time=57.1 ms
+64 bytes from 192.168.1.254: icmp_seq=10 ttl=64 time=6.43 ms
+64 bytes from 192.168.1.254: icmp_seq=11 ttl=64 time=12.1 ms
+64 bytes from 192.168.1.254: icmp_seq=12 ttl=64 time=1.44 ms
+64 bytes from 192.168.1.254: icmp_seq=13 ttl=64 time=1.48 ms
+64 bytes from 192.168.1.254: icmp_seq=14 ttl=64 time=18.6 ms
+64 bytes from 192.168.1.254: icmp_seq=15 ttl=64 time=4.09 ms
+64 bytes from 192.168.1.254: icmp_seq=16 ttl=64 time=1.52 ms
+64 bytes from 192.168.1.254: icmp_seq=17 ttl=64 time=4.10 ms
+64 bytes from 192.168.1.254: icmp_seq=18 ttl=64 time=7.29 ms
+64 bytes from 192.168.1.254: icmp_seq=19 ttl=64 time=1.52 ms
+64 bytes from 192.168.1.254: icmp_seq=20 ttl=64 time=8.39 ms
+64 bytes from 192.168.1.254: icmp_seq=21 ttl=64 time=9.33 ms
+64 bytes from 192.168.1.254: icmp_seq=22 ttl=64 time=1.38 ms
+64 bytes from 192.168.1.254: icmp_seq=23 ttl=64 time=1.54 ms
+64 bytes from 192.168.1.254: icmp_seq=24 ttl=64 time=1.31 ms
+^C
+--- 192.168.1.254 ping statistics ---
+24 packets transmitted, 24 received, 0% packet loss, time 23036ms
+rtt min/avg/max/mdev = 1.312/7.727/57.074/11.318 ms
+]666;vte.shell.postexec=0\]7;file://paul-ubuntu-X550CC/home/paul-ubuntu/IT-Lab-Portfolio\]0;paul-ubuntu@paul-ubuntu-X550CC:~/IT-Lab-Portfolio\]666;vte.shell.precmd!\[?2004h]0;paul-ubuntu@paul-ubuntu-X550CC: ~/IT-Lab-Portfolio[01;32mpaul-ubuntu@paul-ubuntu-X550CC[00m:[01;34m~/IT-Lab-Portfolio[00m$ ping -c 1 192.168.1.254
+[?2004l]133;C\]666;vte.shell.preexec!\PING 192.168.1.254 (192.168.1.254) 56(84) bytes of data.
+64 bytes from 192.168.1.254: icmp_seq=1 ttl=64 time=1.34 ms
+
+--- 192.168.1.254 ping statistics ---
+1 packets transmitted, 1 received, 0% packet loss, time 0ms
+rtt min/avg/max/mdev = 1.340/1.340/1.340/0.000 ms
+]666;vte.shell.postexec=0\]7;file://paul-ubuntu-X550CC/home/paul-ubuntu/IT-Lab-Portfolio\]0;paul-ubuntu@paul-ubuntu-X550CC:~/IT-Lab-Portfolio\]666;vte.shell.precmd!\[?2004h]0;paul-ubuntu@paul-ubuntu-X550CC: ~/IT-Lab-Portfolio[01;32mpaul-ubuntu@paul-ubuntu-X550CC[00m:[01;34m~/IT-Lab-Portfolio[00m$ ip neih[Kgh show
+[?2004l]133;C\]666;vte.shell.preexec!\[1;35m192.168.1.254 [0mdev [1;36mwlp3s0 [0mlladdr [1;33mac:b6:87:60:e4:f8 [0mSTALE 
+[1;94mfe80::aeb6:87ff:fe60:e4f8 [0mdev [1;36mwlp3s0 [0mlladdr [1;33mac:b6:87:60:e4:f8 [0mrouter REACHABLE 
+]666;vte.shell.postexec=0\]7;file://paul-ubuntu-X550CC/home/paul-ubuntu/IT-Lab-Portfolio\]0;paul-ubuntu@paul-ubuntu-X550CC:~/IT-Lab-Portfolio\]666;vte.shell.precmd!\[?2004h]0;paul-ubuntu@paul-ubuntu-X550CC: ~/IT-Lab-Portfolio[01;32mpaul-ubuntu@paul-ubuntu-X550CC[00m:[01;34m~/IT-Lab-Portfolio[00m$ ip neigh show
+[?2004l]133;C\]666;vte.shell.preexec!\[1;35m192.168.1.254 [0mdev [1;36mwlp3s0 [0mlladdr [1;33mac:b6:87:60:e4:f8 [0mSTALE 
+[1;94mfe80::aeb6:87ff:fe60:e4f8 [0mdev [1;36mwlp3s0 [0mlladdr [1;33mac:b6:87:60:e4:f8 [0mrouter REACHABLE 
+]666;vte.shell.postexec=0\]7;file://paul-ubuntu-X550CC/home/paul-ubuntu/IT-Lab-Portfolio\]0;paul-ubuntu@paul-ubuntu-X550CC:~/IT-Lab-Portfolio\]666;vte.shell.precmd!\[?2004h]0;paul-ubuntu@paul-ubuntu-X550CC: ~/IT-Lab-Portfolio[01;32mpaul-ubuntu@paul-ubuntu-X550CC[00m:[01;34m~/IT-Lab-Portfolio[00m$ ping 192.168.1.254
+[?2004l]133;C\]666;vte.shell.preexec!\PING 192.168.1.254 (192.168.1.254) 56(84) bytes of data.
+64 bytes from 192.168.1.254: icmp_seq=1 ttl=64 time=4.26 ms
+64 bytes from 192.168.1.254: icmp_seq=2 ttl=64 time=4.71 ms
+64 bytes from 192.168.1.254: icmp_seq=3 ttl=64 time=2.96 ms
+64 bytes from 192.168.1.254: icmp_seq=4 ttl=64 time=1.39 ms
+64 bytes from 192.168.1.254: icmp_seq=5 ttl=64 time=1.54 ms
+64 bytes from 192.168.1.254: icmp_seq=6 ttl=64 time=1.46 ms
+64 bytes from 192.168.1.254: icmp_seq=7 ttl=64 time=8.94 ms
+^C
+--- 192.168.1.254 ping statistics ---
+7 packets transmitted, 7 received, 0% packet loss, time 6009ms
+rtt min/avg/max/mdev = 1.394/3.609/8.935/2.513 ms
+]666;vte.shell.postexec=0\]7;file://paul-ubuntu-X550CC/home/paul-ubuntu/IT-Lab-Portfolio\]0;paul-ubuntu@paul-ubuntu-X550CC:~/IT-Lab-Portfolio\]666;vte.shell.precmd!\[?2004h]0;paul-ubuntu@paul-ubuntu-X550CC: ~/IT-Lab-Portfolio[01;32mpaul-ubuntu@paul-ubuntu-X550CC[00m:[01;34m~/IT-Lab-Portfolio[00m$ ip neigh show
+[?2004l]133;C\]666;vte.shell.preexec!\[1;35m192.168.1.254 [0mdev [1;36mwlp3s0 [0mlladdr [1;33mac:b6:87:60:e4:f8 [0mREACHABLE 
+[1;94mfe80::aeb6:87ff:fe60:e4f8 [0mdev [1;36mwlp3s0 [0mlladdr [1;33mac:b6:87:60:e4:f8 [0mrouter REACHABLE 
+]666;vte.shell.postexec=0\]7;file://paul-ubuntu-X550CC/home/paul-ubuntu/IT-Lab-Portfolio\]0;paul-ubuntu@paul-ubuntu-X550CC:~/IT-Lab-Portfolio\]666;vte.shell.precmd!\[?2004h]0;paul-ubuntu@paul-ubuntu-X550CC: ~/IT-Lab-Portfolio[01;32mpaul-ubuntu@paul-ubuntu-X550CC[00m:[01;34m~/IT-Lab-Portfolio[00m$ exit
+[?2004l]133;C\]666;vte.shell.preexec!\exit
+
+Script done on 2026-10-20 14:03:09+01:00 [COMMAND_EXIT_CODE="0"]
