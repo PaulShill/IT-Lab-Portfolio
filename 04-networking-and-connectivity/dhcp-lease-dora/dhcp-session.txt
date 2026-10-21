@@ -1,0 +1,218 @@
+Script started on 2026-10-21 14:18:04+01:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="160" LINES="37"]
+]666;vte.shell.postexec=0\]7;file://paul-ubuntu-X550CC/home/paul-ubuntu/IT-Lab-Portfolio/04-networking-and-connectivity/dhcp-lease-dora\]0;paul-ubuntu@paul-ubuntu-X550CC:~/IT-Lab-Portfolio/04-networking-and-connectivity/dhcp-lease-dora\]666;vte.shell.precmd!\[?2004h]0;paul-ubuntu@paul-ubuntu-X550CC: ~/IT-Lab-Portfolio/04-networking-and-connectivity/dhcp-lease-dora[01;32mpaul-ubuntu@paul-ubuntu-X550CC[00m:[01;34m~/IT-Lab-Portfolio/04-networking-and-connectivity/dhcp-lease-dora[00m$ ip link
+[?2004l]133;C\]666;vte.shell.preexec!\1: [1;36mlo: [0m<LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN mode DEFAULT group default qlen 1000
+    link/loopback [1;33m00:00:00:00:00:00[0m brd [1;33m00:00:00:00:00:00[0m
+2: [1;36menp4s0f2: [0m<NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc fq_codel state [1;31mDOWN [0mmode DEFAULT group default qlen 1000
+    link/ether [1;33me0:3f:49:b7:8f:7c[0m brd [1;33mff:ff:ff:ff:ff:ff[0m
+    altname enxe03f49b78f7c
+3: [1;36mwlp3s0: [0m<BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state [1;32mUP [0mmode DORMANT group default qlen 1000
+    link/ether [1;33m40:f0:2f:d0:33:eb[0m brd [1;33mff:ff:ff:ff:ff:ff[0m
+    altname wlx40f02fd033eb
+]666;vte.shell.postexec=0\]7;file://paul-ubuntu-X550CC/home/paul-ubuntu/IT-Lab-Portfolio/04-networking-and-connectivity/dhcp-lease-dora\]0;paul-ubuntu@paul-ubuntu-X550CC:~/IT-Lab-Portfolio/04-networking-and-connectivity/dhcp-lease-dora\]666;vte.shell.precmd!\[?2004h]0;paul-ubuntu@paul-ubuntu-X550CC: ~/IT-Lab-Portfolio/04-networking-and-connectivity/dhcp-lease-dora[01;32mpaul-ubuntu@paul-ubuntu-X550CC[00m:[01;34m~/IT-Lab-Portfolio/04-networking-and-connectivity/dhcp-lease-dora[00m$ ip addr show
+[?2004l]133;C\]666;vte.shell.preexec!\1: [1;36mlo: [0m<LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback [1;33m00:00:00:00:00:00[0m brd [1;33m00:00:00:00:00:00[0m
+    inet [1;35m127.0.0.1[0m/8 scope host lo
+       valid_lft forever preferred_lft forever
+    inet6 [1;94m::1[0m/128 scope host noprefixroute 
+       valid_lft forever preferred_lft forever
+2: [1;36menp4s0f2: [0m<NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc fq_codel state [1;31mDOWN [0mgroup default qlen 1000
+    link/ether [1;33me0:3f:49:b7:8f:7c[0m brd [1;33mff:ff:ff:ff:ff:ff[0m
+    altname enxe03f49b78f7c
+3: [1;36mwlp3s0: [0m<BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state [1;32mUP [0mgroup default qlen 1000
+    link/ether [1;33m40:f0:2f:d0:33:eb[0m brd [1;33mff:ff:ff:ff:ff:ff[0m
+    altname wlx40f02fd033eb
+    inet [1;35m192.168.1.217[0m/24 brd [1;35m192.168.1.255 [0mscope global dynamic noprefixroute wlp3s0
+       valid_lft 82885sec preferred_lft 82885sec
+    inet6 [1;94m2a00:23c6:c9a7:ff01:757a:3d86:adc2:6943[0m/64 scope global temporary dynamic 
+       valid_lft 265sec preferred_lft 85sec
+    inet6 [1;94m2a00:23c6:c9a7:ff01:6519:cf0c:3092:4320[0m/64 scope global dynamic mngtmpaddr noprefixroute 
+       valid_lft 265sec preferred_lft 85sec
+    inet6 [1;94mfd48:b3a1:c14f:d8ed:9405:5896:d68f:ed6e[0m/64 scope global temporary dynamic 
+       valid_lft 1745sec preferred_lft 1745sec
+    inet6 [1;94mfd48:b3a1:c14f:d8ed:10a:8512:ea95:bf5c[0m/64 scope global dynamic mngtmpaddr noprefixroute 
+       valid_lft 1745sec preferred_lft 1745sec
+    inet6 [1;94mfe80::6b11:3819:5110:da48[0m/64 scope link noprefixroute 
+       valid_lft forever preferred_lft forever
+]666;vte.shell.postexec=0\]7;file://paul-ubuntu-X550CC/home/paul-ubuntu/IT-Lab-Portfolio/04-networking-and-connectivity/dhcp-lease-dora\]0;paul-ubuntu@paul-ubuntu-X550CC:~/IT-Lab-Portfolio/04-networking-and-connectivity/dhcp-lease-dora\]666;vte.shell.precmd!\[?2004h]0;paul-ubuntu@paul-ubuntu-X550CC: ~/IT-Lab-Portfolio/04-networking-and-connectivity/dhcp-lease-dora[01;32mpaul-ubuntu@paul-ubuntu-X550CC[00m:[01;34m~/IT-Lab-Portfolio/04-networking-and-connectivity/dhcp-lease-dora[00m$ sudo dhclient -r wlp3x[Ks)[K0
+[?2004l]133;C\]666;vte.shell.preexec!\[sudo: authenticate] Password: ********        
+sudo: 'dhclient': command not found
+]666;vte.shell.postexec=1\]7;file://paul-ubuntu-X550CC/home/paul-ubuntu/IT-Lab-Portfolio/04-networking-and-connectivity/dhcp-lease-dora\]0;paul-ubuntu@paul-ubuntu-X550CC:~/IT-Lab-Portfolio/04-networking-and-connectivity/dhcp-lease-dora\]666;vte.shell.precmd!\[?2004h]0;paul-ubuntu@paul-ubuntu-X550CC: ~/IT-Lab-Portfolio/04-networking-and-connectivity/dhcp-lease-dora[01;32mpaul-ubuntu@paul-ubuntu-X550CC[00m:[01;34m~/IT-Lab-Portfolio/04-networking-and-connectivity/dhcp-lease-dora[00m$ sudo apt install isc-dhcp-client -y
+[?2004l]133;C\]666;vte.shell.preexec!\Reading package lists... 0%Reading package lists... 0%Reading package lists... 0%Reading package lists... 0%Reading package lists... 0%Reading package lists... 4%Reading package lists... 4%Reading package lists... 6%Reading package lists... 6%Reading package lists... 8%Reading package lists... 8%Reading package lists... 9%Reading package lists... 9%Reading package lists... 9%Reading package lists... 9%Reading package lists... 9%Reading package lists... 9%Reading package lists... 32%Reading package lists... 47%Reading package lists... 47%Reading package lists... 66%Reading package lists... 66%Reading package lists... 83%Reading package lists... 83%Reading package lists... 83%Reading package lists... 83%Reading package lists... 84%Reading package lists... 84%Reading package lists... 84%Reading package lists... 84%Reading package lists... 85%Reading package lists... 86%Reading package lists... 86%Reading package lists... 87%Reading package lists... 87%Reading package lists... 88%Reading package lists... 88%Reading package lists... 89%Reading package lists... 89%Reading package lists... 89%Reading package lists... 89%Reading package lists... 90%Reading package lists... 90%Reading package lists... 91%Reading package lists... 91%Reading package lists... 91%Reading package lists... 91%Reading package lists... 92%Reading package lists... 92%Reading package lists... 92%Reading package lists... 92%Reading package lists... 92%Reading package lists... 92%Reading package lists... 92%Reading package lists... 92%Reading package lists... 92%Reading package lists... 92%Reading package lists... 92%Reading package lists... 92%Reading package lists... 92%Reading package lists... 92%Reading package lists... 93%Reading package lists... 93%Reading package lists... 94%Reading package lists... 94%Reading package lists... 95%Reading package lists... 95%Reading package lists... 96%Reading package lists... 96%Reading package lists... 96%Reading package lists... 96%Reading package lists... 97%Reading package lists... 97%Reading package lists... 98%Reading package lists... 98%Reading package lists... 98%Reading package lists... 98%Reading package lists... 98%Reading package lists... 98%Reading package lists... 98%Reading package lists... 98%Reading package lists... 98%Reading package lists... 98%Reading package lists... 98%Reading package lists... 98%                             Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 50%Building dependency tree... 50%                                Reading state information... 0%Reading state information... 0%                                Solving dependencies... 0%Solving dependencies... 10%                            Installing:
+[32m  isc-dhcp-client
+[0m
+Installing dependencies:
+[32m  isc-dhcp-common
+[0m
+Suggested packages:
+  avahi-autoipd  isc-dhcp-client-ddns
+
+Summary:
+  Upgrading: 0, Installing: 2, Removing: 0, Not Upgrading: 61
+  Download size: 375 kB
+  Space needed: 1,011 kB / 93.9 GB available
+
+[33m0% [Working][0m            Get:1 http://gb.archive.ubuntu.com/ubuntu resolute/universe amd64 isc-dhcp-client amd64 4.4.3-P1-4ubuntu2 [329 kB]
+[33m0% [1 isc-dhcp-client 1,128 B/329 kB 0%][0m[33m                                        80% [Working][0m             Get:2 http://gb.archive.ubuntu.com/ubuntu resolute/universe amd64 isc-dhcp-common amd64 4.4.3-P1-4ubuntu2 [45.8 kB]
+[33m80% [2 isc-dhcp-common 1,130 B/45.8 kB 2%][0m[33m                                          100% [Working][0m              Fetched 375 kB in 0s (1,740 kB/s)
+
+7[0;36r8[1ASelecting previously unselected package isc-dhcp-client.
+(Reading database… (Reading database… 5%(Reading database… 10%(Reading database… 15%(Reading database… 20%(Reading database… 25%(Reading database… 30%(Reading database… 35%(Reading database… 40%(Reading database… 45%(Reading database… 50%(Reading database… 55%(Reading database… 60%(Reading database… 65%(Reading database… 70%(Reading database… 75%(Reading database… 80%(Reading database… 85%(Reading database… 90%(Reading database… 95%(Reading database… 100%(Reading database… 239949 files and directories currently installed.)
+Preparing to unpack …/isc-dhcp-client_4.4.3-P1-4ubuntu2_amd64.deb…
+7[37;0f[42m[30mProgress: [  0%][49m[39m [                                                                                                                                          ] 87[37;0f[42m[30mProgress: [ 11%][49m[39m [███████████████▎                                                                                                                          ] 8Unpacking isc-dhcp-client (4.4.3-P1-4ubuntu2)…
+7[37;0f[42m[30mProgress: [ 22%][49m[39m [██████████████████████████████▋                                                                                                           ] 8Selecting previously unselected package isc-dhcp-common.
+Preparing to unpack …/isc-dhcp-common_4.4.3-P1-4ubuntu2_amd64.deb…
+7[37;0f[42m[30mProgress: [ 33%][49m[39m [█████████████████████████████████████████████▉                                                                                            ] 8Unpacking isc-dhcp-common (4.4.3-P1-4ubuntu2)…
+7[37;0f[42m[30mProgress: [ 44%][49m[39m [█████████████████████████████████████████████████████████████▎                                                                            ] 8Setting up isc-dhcp-client (4.4.3-P1-4ubuntu2)…
+7[37;0f[42m[30mProgress: [ 56%][49m[39m [████████████████████████████████████████████████████████████████████████████▋                                                             ] 87[37;0f[42m[30mProgress: [ 67%][49m[39m [███████████████████████████████████████████████████████████████████████████████████████████▉                                              ] 8Setting up isc-dhcp-common (4.4.3-P1-4ubuntu2)…
+7[37;0f[42m[30mProgress: [ 78%][49m[39m [███████████████████████████████████████████████████████████████████████████████████████████████████████████▎                              ] 87[37;0f[42m[30mProgress: [ 89%][49m[39m [██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▋               ] 8Processing triggers for man-db (2.13.1-1build1)…
+
+7[0;37r8[1A[J]666;vte.shell.postexec=0\]7;file://paul-ubuntu-X550CC/home/paul-ubuntu/IT-Lab-Portfolio/04-networking-and-connectivity/dhcp-lease-dora\]0;paul-ubuntu@paul-ubuntu-X550CC:~/IT-Lab-Portfolio/04-networking-and-connectivity/dhcp-lease-dora\]666;vte.shell.precmd!\[?2004h]0;paul-ubuntu@paul-ubuntu-X550CC: ~/IT-Lab-Portfolio/04-networking-and-connectivity/dhcp-lease-dora[01;32mpaul-ubuntu@paul-ubuntu-X550CC[00m:[01;34m~/IT-Lab-Portfolio/04-networking-and-connectivity/dhcp-lease-dora[00m$ sudo dhclient -r wlp2[K3s0
+[?2004l]133;C\]666;vte.shell.preexec!\]666;vte.shell.postexec=0\]7;file://paul-ubuntu-X550CC/home/paul-ubuntu/IT-Lab-Portfolio/04-networking-and-connectivity/dhcp-lease-dora\]0;paul-ubuntu@paul-ubuntu-X550CC:~/IT-Lab-Portfolio/04-networking-and-connectivity/dhcp-lease-dora\]666;vte.shell.precmd!\[?2004h]0;paul-ubuntu@paul-ubuntu-X550CC: ~/IT-Lab-Portfolio/04-networking-and-connectivity/dhcp-lease-dora[01;32mpaul-ubuntu@paul-ubuntu-X550CC[00m:[01;34m~/IT-Lab-Portfolio/04-networking-and-connectivity/dhcp-lease-dora[00m$ ip addr show wlp3s0
+[?2004l]133;C\]666;vte.shell.preexec!\3: [1;36mwlp3s0: [0m<BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state [1;32mUP [0mgroup default qlen 1000
+    link/ether [1;33m40:f0:2f:d0:33:eb[0m brd [1;33mff:ff:ff:ff:ff:ff[0m
+    altname wlx40f02fd033eb
+    inet [1;35m192.168.1.217[0m/24 brd [1;35m192.168.1.255 [0mscope global dynamic noprefixroute wlp3s0
+       valid_lft 82515sec preferred_lft 82515sec
+    inet6 [1;94m2a00:23c6:c9a7:ff01:757a:3d86:adc2:6943[0m/64 scope global temporary dynamic 
+       valid_lft 260sec preferred_lft 80sec
+    inet6 [1;94m2a00:23c6:c9a7:ff01:6519:cf0c:3092:4320[0m/64 scope global dynamic mngtmpaddr noprefixroute 
+       valid_lft 260sec preferred_lft 80sec
+    inet6 [1;94mfd48:b3a1:c14f:d8ed:9405:5896:d68f:ed6e[0m/64 scope global temporary dynamic 
+       valid_lft 1758sec preferred_lft 1758sec
+    inet6 [1;94mfd48:b3a1:c14f:d8ed:10a:8512:ea95:bf5c[0m/64 scope global dynamic mngtmpaddr noprefixroute 
+       valid_lft 1758sec preferred_lft 1758sec
+    inet6 [1;94mfe80::6b11:3819:5110:da48[0m/64 scope link noprefixroute 
+       valid_lft forever preferred_lft forever
+]666;vte.shell.postexec=0\]7;file://paul-ubuntu-X550CC/home/paul-ubuntu/IT-Lab-Portfolio/04-networking-and-connectivity/dhcp-lease-dora\]0;paul-ubuntu@paul-ubuntu-X550CC:~/IT-Lab-Portfolio/04-networking-and-connectivity/dhcp-lease-dora\]666;vte.shell.precmd!\[?2004h]0;paul-ubuntu@paul-ubuntu-X550CC: ~/IT-Lab-Portfolio/04-networking-and-connectivity/dhcp-lease-dora[01;32mpaul-ubuntu@paul-ubuntu-X550CC[00m:[01;34m~/IT-Lab-Portfolio/04-networking-and-connectivity/dhcp-lease-dora[00m$ sudo sncl[K[K[K[Knmcli device disconnect w;[Klp3s0
+[?2004l]133;C\]666;vte.shell.preexec!\Device 'wlp3s0' successfully disconnected.
+]666;vte.shell.postexec=0\]7;file://paul-ubuntu-X550CC/home/paul-ubuntu/IT-Lab-Portfolio/04-networking-and-connectivity/dhcp-lease-dora\]0;paul-ubuntu@paul-ubuntu-X550CC:~/IT-Lab-Portfolio/04-networking-and-connectivity/dhcp-lease-dora\]666;vte.shell.precmd!\[?2004h]0;paul-ubuntu@paul-ubuntu-X550CC: ~/IT-Lab-Portfolio/04-networking-and-connectivity/dhcp-lease-dora[01;32mpaul-ubuntu@paul-ubuntu-X550CC[00m:[01;34m~/IT-Lab-Portfolio/04-networking-and-connectivity/dhcp-lease-dora[00m$ ip addr show s[Kwlo[Kp3s0
+[?2004l]133;C\]666;vte.shell.preexec!\3: [1;36mwlp3s0: [0m<NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc noqueue state [1;31mDOWN [0mgroup default qlen 1000
+    link/ether [1;33m40:f0:2f:d0:33:eb[0m brd [1;33mff:ff:ff:ff:ff:ff[0m
+    altname wlx40f02fd033eb
+]666;vte.shell.postexec=0\]7;file://paul-ubuntu-X550CC/home/paul-ubuntu/IT-Lab-Portfolio/04-networking-and-connectivity/dhcp-lease-dora\]0;paul-ubuntu@paul-ubuntu-X550CC:~/IT-Lab-Portfolio/04-networking-and-connectivity/dhcp-lease-dora\]666;vte.shell.precmd!\[?2004h]0;paul-ubuntu@paul-ubuntu-X550CC: ~/IT-Lab-Portfolio/04-networking-and-connectivity/dhcp-lease-dora[01;32mpaul-ubuntu@paul-ubuntu-X550CC[00m:[01;34m~/IT-Lab-Portfolio/04-networking-and-connectivity/dhcp-lease-dora[00m$ sudo smcli device connect wlp3s0
+[?2004l]133;C\]666;vte.shell.preexec!\sudo: 'smcli': command not found
+]666;vte.shell.postexec=1\]7;file://paul-ubuntu-X550CC/home/paul-ubuntu/IT-Lab-Portfolio/04-networking-and-connectivity/dhcp-lease-dora\]0;paul-ubuntu@paul-ubuntu-X550CC:~/IT-Lab-Portfolio/04-networking-and-connectivity/dhcp-lease-dora\]666;vte.shell.precmd!\[?2004h]0;paul-ubuntu@paul-ubuntu-X550CC: ~/IT-Lab-Portfolio/04-networking-and-connectivity/dhcp-lease-dora[01;32mpaul-ubuntu@paul-ubuntu-X550CC[00m:[01;34m~/IT-Lab-Portfolio/04-networking-and-connectivity/dhcp-lease-dora[00m$ su[K[Ksudo smcli device connect wlp3s0[1P[1@n
+[?2004l]133;C\]666;vte.shell.preexec!\[2KDevice 'wlp3s0' successfully activated with '819550a1-96bb-4bf9-9ea9-e4bf6ea26fba'.
+]666;vte.shell.postexec=0\]7;file://paul-ubuntu-X550CC/home/paul-ubuntu/IT-Lab-Portfolio/04-networking-and-connectivity/dhcp-lease-dora\]0;paul-ubuntu@paul-ubuntu-X550CC:~/IT-Lab-Portfolio/04-networking-and-connectivity/dhcp-lease-dora\]666;vte.shell.precmd!\[?2004h]0;paul-ubuntu@paul-ubuntu-X550CC: ~/IT-Lab-Portfolio/04-networking-and-connectivity/dhcp-lease-dora[01;32mpaul-ubuntu@paul-ubuntu-X550CC[00m:[01;34m~/IT-Lab-Portfolio/04-networking-and-connectivity/dhcp-lease-dora[00m$ ip addr show wlp3s0
+[?2004l]133;C\]666;vte.shell.preexec!\3: [1;36mwlp3s0: [0m<BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state [1;32mUP [0mgroup default qlen 1000
+    link/ether [1;33m40:f0:2f:d0:33:eb[0m brd [1;33mff:ff:ff:ff:ff:ff[0m
+    altname wlx40f02fd033eb
+    inet [1;35m192.168.1.217[0m/24 brd [1;35m192.168.1.255 [0mscope global dynamic noprefixroute wlp3s0
+       valid_lft 86388sec preferred_lft 86388sec
+    inet6 [1;94m2a00:23c6:c9a7:ff01:77d7:b1f3:b396:ec2c[0m/64 scope global temporary dynamic 
+       valid_lft 290sec preferred_lft 110sec
+    inet6 [1;94m2a00:23c6:c9a7:ff01:6519:cf0c:3092:4320[0m/64 scope global dynamic mngtmpaddr noprefixroute 
+       valid_lft 290sec preferred_lft 110sec
+    inet6 [1;94mfd48:b3a1:c14f:d8ed:204:1f70:c2b0:5e42[0m/64 scope global temporary dynamic 
+       valid_lft 1790sec preferred_lft 1790sec
+    inet6 [1;94mfd48:b3a1:c14f:d8ed:10a:8512:ea95:bf5c[0m/64 scope global dynamic mngtmpaddr noprefixroute 
+       valid_lft 1790sec preferred_lft 1790sec
+    inet6 [1;94mfe80::6b11:3819:5110:da48[0m/64 scope link noprefixroute 
+       valid_lft forever preferred_lft forever
+]666;vte.shell.postexec=0\]7;file://paul-ubuntu-X550CC/home/paul-ubuntu/IT-Lab-Portfolio/04-networking-and-connectivity/dhcp-lease-dora\]0;paul-ubuntu@paul-ubuntu-X550CC:~/IT-Lab-Portfolio/04-networking-and-connectivity/dhcp-lease-dora\]666;vte.shell.precmd!\[?2004h]0;paul-ubuntu@paul-ubuntu-X550CC: ~/IT-Lab-Portfolio/04-networking-and-connectivity/dhcp-lease-dora[01;32mpaul-ubuntu@paul-ubuntu-X550CC[00m:[01;34m~/IT-Lab-Portfolio/04-networking-and-connectivity/dhcp-lease-dora[00m$ sudo dhclient -r wlp3s0
+[?2004l]133;C\]666;vte.shell.preexec!\]666;vte.shell.postexec=0\]7;file://paul-ubuntu-X550CC/home/paul-ubuntu/IT-Lab-Portfolio/04-networking-and-connectivity/dhcp-lease-dora\]0;paul-ubuntu@paul-ubuntu-X550CC:~/IT-Lab-Portfolio/04-networking-and-connectivity/dhcp-lease-dora\]666;vte.shell.precmd!\[?2004h]0;paul-ubuntu@paul-ubuntu-X550CC: ~/IT-Lab-Portfolio/04-networking-and-connectivity/dhcp-lease-dora[01;32mpaul-ubuntu@paul-ubuntu-X550CC[00m:[01;34m~/IT-Lab-Portfolio/04-networking-and-connectivity/dhcp-lease-dora[00m$ sudo dhclient -v wlp3s0
+[?2004l]133;C\]666;vte.shell.preexec!\Internet Systems Consortium DHCP Client 4.4.3-P1
+Copyright 2004-2022 Internet Systems Consortium.
+All rights reserved.
+For info, please visit https://www.isc.org/software/dhcp/
+
+Listening on LPF/wlp3s0/40:f0:2f:d0:33:eb
+Sending on   LPF/wlp3s0/40:f0:2f:d0:33:eb
+Sending on   Socket/fallback
+xid: warning: no netdev with useable HWADDR found for seed's uniqueness enforcement
+xid: rand init seed (0x6aa7bfbc) built using gethostid
+DHCPDISCOVER on wlp3s0 to 255.255.255.255 port 67 interval 3 (xid=0x3cac4a28)
+DHCPOFFER of 192.168.1.217 from 192.168.1.254
+DHCPREQUEST for 192.168.1.217 on wlp3s0 to 255.255.255.255 port 67 (xid=0x284aac3c)
+DHCPACK of 192.168.1.217 from 192.168.1.254 (xid=0x3cac4a28)
+Error: ipv4: Address already assigned.
+Setting LLMNR support level "yes" for "3", but the global support level is "no".
+bound to 192.168.1.217 -- renewal in 39095 seconds.
+]666;vte.shell.postexec=0\]7;file://paul-ubuntu-X550CC/home/paul-ubuntu/IT-Lab-Portfolio/04-networking-and-connectivity/dhcp-lease-dora\]0;paul-ubuntu@paul-ubuntu-X550CC:~/IT-Lab-Portfolio/04-networking-and-connectivity/dhcp-lease-dora\]666;vte.shell.precmd!\[?2004h]0;paul-ubuntu@paul-ubuntu-X550CC: ~/IT-Lab-Portfolio/04-networking-and-connectivity/dhcp-lease-dora[01;32mpaul-ubuntu@paul-ubuntu-X550CC[00m:[01;34m~/IT-Lab-Portfolio/04-networking-and-connectivity/dhcp-lease-dora[00m$ sudo nmcli device disconnect
+[?2004l]133;C\]666;vte.shell.preexec!\Error: No interface specified.
+]666;vte.shell.postexec=2\]7;file://paul-ubuntu-X550CC/home/paul-ubuntu/IT-Lab-Portfolio/04-networking-and-connectivity/dhcp-lease-dora\]0;paul-ubuntu@paul-ubuntu-X550CC:~/IT-Lab-Portfolio/04-networking-and-connectivity/dhcp-lease-dora\]666;vte.shell.precmd!\[?2004h]0;paul-ubuntu@paul-ubuntu-X550CC: ~/IT-Lab-Portfolio/04-networking-and-connectivity/dhcp-lease-dora[01;32mpaul-ubuntu@paul-ubuntu-X550CC[00m:[01;34m~/IT-Lab-Portfolio/04-networking-and-connectivity/dhcp-lease-dora[00m$ sudo [K[K[K[K[Ksudo nmcli device disconnect wlp3s0
+[?2004l]133;C\]666;vte.shell.preexec!\Device 'wlp3s0' successfully disconnected.
+]666;vte.shell.postexec=0\]7;file://paul-ubuntu-X550CC/home/paul-ubuntu/IT-Lab-Portfolio/04-networking-and-connectivity/dhcp-lease-dora\]0;paul-ubuntu@paul-ubuntu-X550CC:~/IT-Lab-Portfolio/04-networking-and-connectivity/dhcp-lease-dora\]666;vte.shell.precmd!\[?2004h]0;paul-ubuntu@paul-ubuntu-X550CC: ~/IT-Lab-Portfolio/04-networking-and-connectivity/dhcp-lease-dora[01;32mpaul-ubuntu@paul-ubuntu-X550CC[00m:[01;34m~/IT-Lab-Portfolio/04-networking-and-connectivity/dhcp-lease-dora[00m$ ip addr show wlp3s0
+[?2004l]133;C\]666;vte.shell.preexec!\3: [1;36mwlp3s0: [0m<NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc noqueue state [1;31mDOWN [0mgroup default qlen 1000
+    link/ether [1;33m40:f0:2f:d0:33:eb[0m brd [1;33mff:ff:ff:ff:ff:ff[0m
+    altname wlx40f02fd033eb
+]666;vte.shell.postexec=0\]7;file://paul-ubuntu-X550CC/home/paul-ubuntu/IT-Lab-Portfolio/04-networking-and-connectivity/dhcp-lease-dora\]0;paul-ubuntu@paul-ubuntu-X550CC:~/IT-Lab-Portfolio/04-networking-and-connectivity/dhcp-lease-dora\]666;vte.shell.precmd!\[?2004h]0;paul-ubuntu@paul-ubuntu-X550CC: ~/IT-Lab-Portfolio/04-networking-and-connectivity/dhcp-lease-dora[01;32mpaul-ubuntu@paul-ubuntu-X550CC[00m:[01;34m~/IT-Lab-Portfolio/04-networking-and-connectivity/dhcp-lease-dora[00m$ sudo dhclient -v wlp3s0
+[?2004l]133;C\]666;vte.shell.preexec!\Internet Systems Consortium DHCP Client 4.4.3-P1
+Copyright 2004-2022 Internet Systems Consortium.
+All rights reserved.
+For info, please visit https://www.isc.org/software/dhcp/
+
+Listening on LPF/wlp3s0/40:f0:2f:d0:33:eb
+Sending on   LPF/wlp3s0/40:f0:2f:d0:33:eb
+Sending on   Socket/fallback
+xid: warning: no netdev with useable HWADDR found for seed's uniqueness enforcement
+xid: rand init seed (0x6aa7be31) built using gethostid
+DHCPREQUEST for 192.168.1.217 on wlp3s0 to 255.255.255.255 port 67 (xid=0x212a858c)
+DHCPREQUEST for 192.168.1.217 on wlp3s0 to 255.255.255.255 port 67 (xid=0x212a858c)
+DHCPREQUEST for 192.168.1.217 on wlp3s0 to 255.255.255.255 port 67 (xid=0x212a858c)
+DHCPDISCOVER on wlp3s0 to 255.255.255.255 port 67 interval 3 (xid=0x98aaee20)
+DHCPDISCOVER on wlp3s0 to 255.255.255.255 port 67 interval 6 (xid=0x98aaee20)
+DHCPDISCOVER on wlp3s0 to 255.255.255.255 port 67 interval 11 (xid=0x98aaee20)
+DHCPDISCOVER on wlp3s0 to 255.255.255.255 port 67 interval 7 (xid=0x98aaee20)
+DHCPDISCOVER on wlp3s0 to 255.255.255.255 port 67 interval 9 (xid=0x98aaee20)
+DHCPDISCOVER on wlp3s0 to 255.255.255.255 port 67 interval 21 (xid=0x98aaee20)
+DHCPDISCOVER on wlp3s0 to 255.255.255.255 port 67 interval 20 (xid=0x98aaee20)
+DHCPDISCOVER on wlp3s0 to 255.255.255.255 port 67 interval 18 (xid=0x98aaee20)
+^C
+]666;vte.shell.postexec=130\]7;file://paul-ubuntu-X550CC/home/paul-ubuntu/IT-Lab-Portfolio/04-networking-and-connectivity/dhcp-lease-dora\]0;paul-ubuntu@paul-ubuntu-X550CC:~/IT-Lab-Portfolio/04-networking-and-connectivity/dhcp-lease-dora\]666;vte.shell.precmd!\[?2004h]0;paul-ubuntu@paul-ubuntu-X550CC: ~/IT-Lab-Portfolio/04-networking-and-connectivity/dhcp-lease-dora[01;32mpaul-ubuntu@paul-ubuntu-X550CC[00m:[01;34m~/IT-Lab-Portfolio/04-networking-and-connectivity/dhcp-lease-dora[00m$ sudo sncli device connect wlp3s0
+[?2004l]133;C\]666;vte.shell.preexec!\sudo: 'sncli': command not found
+]666;vte.shell.postexec=1\]7;file://paul-ubuntu-X550CC/home/paul-ubuntu/IT-Lab-Portfolio/04-networking-and-connectivity/dhcp-lease-dora\]0;paul-ubuntu@paul-ubuntu-X550CC:~/IT-Lab-Portfolio/04-networking-and-connectivity/dhcp-lease-dora\]666;vte.shell.precmd!\[?2004h]0;paul-ubuntu@paul-ubuntu-X550CC: ~/IT-Lab-Portfolio/04-networking-and-connectivity/dhcp-lease-dora[01;32mpaul-ubuntu@paul-ubuntu-X550CC[00m:[01;34m~/IT-Lab-Portfolio/04-networking-and-connectivity/dhcp-lease-dora[00m$ sudo sncli device connect wlp3s0[1P[1P[1@n[1@m
+[?2004l]133;C\]666;vte.shell.preexec!\[2KDevice 'wlp3s0' successfully activated with '819550a1-96bb-4bf9-9ea9-e4bf6ea26fba'.
+]666;vte.shell.postexec=0\]7;file://paul-ubuntu-X550CC/home/paul-ubuntu/IT-Lab-Portfolio/04-networking-and-connectivity/dhcp-lease-dora\]0;paul-ubuntu@paul-ubuntu-X550CC:~/IT-Lab-Portfolio/04-networking-and-connectivity/dhcp-lease-dora\]666;vte.shell.precmd!\[?2004h]0;paul-ubuntu@paul-ubuntu-X550CC: ~/IT-Lab-Portfolio/04-networking-and-connectivity/dhcp-lease-dora[01;32mpaul-ubuntu@paul-ubuntu-X550CC[00m:[01;34m~/IT-Lab-Portfolio/04-networking-and-connectivity/dhcp-lease-dora[00m$ sudo dhclient - [Kv wlp3s0
+[?2004l]133;C\]666;vte.shell.preexec!\Internet Systems Consortium DHCP Client 4.4.3-P1
+Copyright 2004-2022 Internet Systems Consortium.
+All rights reserved.
+For info, please visit https://www.isc.org/software/dhcp/
+
+Listening on LPF/wlp3s0/40:f0:2f:d0:33:eb
+Sending on   LPF/wlp3s0/40:f0:2f:d0:33:eb
+Sending on   Socket/fallback
+xid: warning: no netdev with useable HWADDR found for seed's uniqueness enforcement
+xid: rand init seed (0x6aa7bed7) built using gethostid
+DHCPREQUEST for 192.168.1.217 on wlp3s0 to 255.255.255.255 port 67 (xid=0x5f641647)
+DHCPACK of 192.168.1.217 from 192.168.1.254 (xid=0x4716645f)
+Error: ipv4: Address already assigned.
+bound to 192.168.1.217 -- renewal in 32726 seconds.
+]666;vte.shell.postexec=0\]7;file://paul-ubuntu-X550CC/home/paul-ubuntu/IT-Lab-Portfolio/04-networking-and-connectivity/dhcp-lease-dora\]0;paul-ubuntu@paul-ubuntu-X550CC:~/IT-Lab-Portfolio/04-networking-and-connectivity/dhcp-lease-dora\]666;vte.shell.precmd!\[?2004h]0;paul-ubuntu@paul-ubuntu-X550CC: ~/IT-Lab-Portfolio/04-networking-and-connectivity/dhcp-lease-dora[01;32mpaul-ubuntu@paul-ubuntu-X550CC[00m:[01;34m~/IT-Lab-Portfolio/04-networking-and-connectivity/dhcp-lease-dora[00m$ sudo rm /var/lib/dhcp/s[Kdhclient*.leases
+[?2004l]133;C\]666;vte.shell.preexec!\]666;vte.shell.postexec=0\]7;file://paul-ubuntu-X550CC/home/paul-ubuntu/IT-Lab-Portfolio/04-networking-and-connectivity/dhcp-lease-dora\]0;paul-ubuntu@paul-ubuntu-X550CC:~/IT-Lab-Portfolio/04-networking-and-connectivity/dhcp-lease-dora\]666;vte.shell.precmd!\[?2004h]0;paul-ubuntu@paul-ubuntu-X550CC: ~/IT-Lab-Portfolio/04-networking-and-connectivity/dhcp-lease-dora[01;32mpaul-ubuntu@paul-ubuntu-X550CC[00m:[01;34m~/IT-Lab-Portfolio/04-networking-and-connectivity/dhcp-lease-dora[00m$ sudo dhclient -v slp[K[K[Kwlp3s0
+[?2004l]133;C\]666;vte.shell.preexec!\Internet Systems Consortium DHCP Client 4.4.3-P1
+Copyright 2004-2022 Internet Systems Consortium.
+All rights reserved.
+For info, please visit https://www.isc.org/software/dhcp/
+
+Listening on LPF/wlp3s0/40:f0:2f:d0:33:eb
+Sending on   LPF/wlp3s0/40:f0:2f:d0:33:eb
+Sending on   Socket/fallback
+xid: warning: no netdev with useable HWADDR found for seed's uniqueness enforcement
+xid: rand init seed (0x6aa7c14d) built using gethostid
+DHCPDISCOVER on wlp3s0 to 255.255.255.255 port 67 interval 3 (xid=0x455a0b03)
+DHCPOFFER of 192.168.1.217 from 192.168.1.254
+DHCPREQUEST for 192.168.1.217 on wlp3s0 to 255.255.255.255 port 67 (xid=0x30b5a45)
+DHCPACK of 192.168.1.217 from 192.168.1.254 (xid=0x455a0b03)
+Error: ipv4: Address already assigned.
+bound to 192.168.1.217 -- renewal in 37955 seconds.
+]666;vte.shell.postexec=0\]7;file://paul-ubuntu-X550CC/home/paul-ubuntu/IT-Lab-Portfolio/04-networking-and-connectivity/dhcp-lease-dora\]0;paul-ubuntu@paul-ubuntu-X550CC:~/IT-Lab-Portfolio/04-networking-and-connectivity/dhcp-lease-dora\]666;vte.shell.precmd!\[?2004h]0;paul-ubuntu@paul-ubuntu-X550CC: ~/IT-Lab-Portfolio/04-networking-and-connectivity/dhcp-lease-dora[01;32mpaul-ubuntu@paul-ubuntu-X550CC[00m:[01;34m~/IT-Lab-Portfolio/04-networking-and-connectivity/dhcp-lease-dora[00m$ ip addr show wlp3s0
+[?2004l]133;C\]666;vte.shell.preexec!\3: [1;36mwlp3s0: [0m<BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state [1;32mUP [0mgroup default qlen 1000
+    link/ether [1;33m40:f0:2f:d0:33:eb[0m brd [1;33mff:ff:ff:ff:ff:ff[0m
+    altname wlx40f02fd033eb
+    inet [1;35m192.168.1.217[0m/24 brd [1;35m192.168.1.255 [0mscope global dynamic noprefixroute wlp3s0
+       valid_lft 86171sec preferred_lft 86171sec
+    inet6 [1;94m2a00:23c6:c9a7:ff01:8c38:69f:4f4d:92c6[0m/64 scope global temporary dynamic 
+       valid_lft 275sec preferred_lft 95sec
+    inet6 [1;94m2a00:23c6:c9a7:ff01:6519:cf0c:3092:4320[0m/64 scope global dynamic mngtmpaddr noprefixroute 
+       valid_lft 275sec preferred_lft 95sec
+    inet6 [1;94mfd48:b3a1:c14f:d8ed:a1d9:85bc:1d75:564e[0m/64 scope global temporary dynamic 
+       valid_lft 1751sec preferred_lft 1751sec
+    inet6 [1;94mfd48:b3a1:c14f:d8ed:10a:8512:ea95:bf5c[0m/64 scope global dynamic mngtmpaddr noprefixroute 
+       valid_lft 1751sec preferred_lft 1751sec
+    inet6 [1;94mfe80::6b11:3819:5110:da48[0m/64 scope link noprefixroute 
+       valid_lft forever preferred_lft forever
+]666;vte.shell.postexec=0\]7;file://paul-ubuntu-X550CC/home/paul-ubuntu/IT-Lab-Portfolio/04-networking-and-connectivity/dhcp-lease-dora\]0;paul-ubuntu@paul-ubuntu-X550CC:~/IT-Lab-Portfolio/04-networking-and-connectivity/dhcp-lease-dora\]666;vte.shell.precmd!\[?2004h]0;paul-ubuntu@paul-ubuntu-X550CC: ~/IT-Lab-Portfolio/04-networking-and-connectivity/dhcp-lease-dora[01;32mpaul-ubuntu@paul-ubuntu-X550CC[00m:[01;34m~/IT-Lab-Portfolio/04-networking-and-connectivity/dhcp-lease-dora[00m$ exit
+[?2004l]133;C\]666;vte.shell.preexec!\exit
+
+Script done on 2026-10-21 14:39:52+01:00 [COMMAND_EXIT_CODE="0"]
