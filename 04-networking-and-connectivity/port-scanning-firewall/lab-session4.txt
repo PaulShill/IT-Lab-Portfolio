@@ -1,0 +1,271 @@
+Script started on 2026-10-21 13:31:03+01:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="160" LINES="37"]
+]666;vte.shell.postexec=0\]7;file://paul-ubuntu-X550CC/home/paul-ubuntu/IT-Lab-Portfolio/04-networking-and-connectivity/port-scanning-firewall\]0;paul-ubuntu@paul-ubuntu-X550CC:~/IT-Lab-Portfolio/04-networking-and-connectivity/port-scanning-firewall\]666;vte.shell.precmd!\[?2004h]0;paul-ubuntu@paul-ubuntu-X550CC: ~/IT-Lab-Portfolio/04-networking-and-connectivity/port-scanning-firewall[01;32mpaul-ubuntu@paul-ubuntu-X550CC[00m:[01;34m~/IT-Lab-Portfolio/04-networking-and-connectivity/port-scanning-firewall[00m$ sudo apt p[Kupdate &&s[K sudo apt install nmap -y
+[?2004l]133;C\]666;vte.shell.preexec!\[sudo: authenticate] Password: ********        
+[33m0% [Working][0m            Hit:1 http://gb.archive.ubuntu.com/ubuntu resolute InRelease
+[33m0% [Connected to packages.microsoft.com (2620:1ec:bdf::64)] [Waiting for headers] [Connecting to security.ubuntu.com (2a06:bc80:0:1000::18)][0m                                                                                                                                            Get:2 http://gb.archive.ubuntu.com/ubuntu resolute-updates InRelease [137 kB]
+[33m                                                                                                                                            0% [Connected to packages.microsoft.com (2620:1ec:bdf::64)] [2 InRelease 15.3 kB/137 kB 11%] [Waiting for headers][0m[33m                                                                                                                  0% [Waiting for headers] [2 InRelease 49.4 kB/137 kB 36%] [Waiting for headers][0m                                                                               Get:3 http://security.ubuntu.com/ubuntu resolute-security InRelease [137 kB]
+[33m0% [Waiting for headers] [2 InRelease 69.3 kB/137 kB 50%] [3 InRelease 13.9 kB/137 kB 10%][0m[33m                                                                                          0% [Waiting for headers] [3 InRelease 13.9 kB/137 kB 10%][0m                                                         Hit:4 https://packages.microsoft.com/repos/edge-stable stable InRelease
+[33m0% [Waiting for headers] [3 InRelease 13.9 kB/137 kB 10%][0m[33m0% [Waiting for headers] [3 InRelease 22.4 kB/137 kB 16%][0m                                                         Hit:5 http://gb.archive.ubuntu.com/ubuntu resolute-backports InRelease
+[33m                                                         0% [3 InRelease 22.4 kB/137 kB 16%][0m[33m0% [Waiting for headers] [3 InRelease 33.8 kB/137 kB 25%][0m                                                         Get:6 http://gb.archive.ubuntu.com/ubuntu resolute-updates/main amd64 Packages [743 kB]
+[33m0% [6 Packages 18.2 kB/743 kB 2%] [3 InRelease 42.3 kB/137 kB 31%][0m[33m0% [6 Packages 87.8 kB/743 kB 12%] [3 InRelease 42.3 kB/137 kB 31%][0m[33m                                                                   0% [6 Packages 528 kB/743 kB 71%][0m[33m42% [6 Packages 693 kB/743 kB 93%][0m                                  Get:7 http://gb.archive.ubuntu.com/ubuntu resolute-updates/main i386 Packages [336 kB]
+[33m46% [7 Packages 116 kB/336 kB 35%] [Waiting for headers][0m[33m46% [6 Packages store 0 B] [7 Packages 116 kB/336 kB 35%] [Waiting for headers][0m[33m                                                                               52% [6 Packages store 0 B] [Waiting for headers][0m                                                Get:8 http://gb.archive.ubuntu.com/ubuntu resolute-updates/main Translation-en [176 kB]
+[33m52% [6 Packages store 0 B] [8 Translation-en 15.6 kB/176 kB 9%] [Waiting for headers][0m                                                                                     Get:9 http://security.ubuntu.com/ubuntu resolute-security/main amd64 Packages [606 kB]
+[33m53% [6 Packages store 0 B] [8 Translation-en 55.5 kB/176 kB 32%] [9 Packages 4,021 B/606 kB 1%][0m[33m                                                                                               58% [6 Packages store 0 B] [Waiting for headers] [9 Packages 99.2 kB/606 kB 16%][0m                                                                                Get:10 http://gb.archive.ubuntu.com/ubuntu resolute-updates/universe i386 Packages [176 kB]
+[33m59% [6 Packages store 0 B] [10 Packages 8,485 B/176 kB 5%] [9 Packages 99.2 kB/606 kB 16%][0m[33m                                                                                          60% [10 Packages 56.8 kB/176 kB 32%] [9 Packages 99.2 kB/606 kB 16%][0m[33m60% [7 Packages store 0 B] [10 Packages 56.8 kB/176 kB 32%] [9 Packages 99.2 kB/606 kB 16%][0m[33m                                                                                           66% [10 Packages 167 kB/176 kB 95%] [9 Packages 231 kB/606 kB 38%][0m[33m66% [8 Translation-en store 0 B] [10 Packages 167 kB/176 kB 95%] [9 Packages 231 kB/606 kB 38%][0m[33m                                                                                               66% [8 Translation-en store 0 B] [9 Packages 231 kB/606 kB 38%][0m                                                               Get:11 http://gb.archive.ubuntu.com/ubuntu resolute-updates/universe amd64 Packages [334 kB]
+[33m66% [8 Translation-en store 0 B] [11 Packages 8,192 B/334 kB 2%] [9 Packages 231 kB/606 kB 38%][0m[33m                                                                                               69% [11 Packages 142 kB/334 kB 43%] [9 Packages 231 kB/606 kB 38%][0m[33m69% [10 Packages store 0 B] [11 Packages 142 kB/334 kB 43%] [9 Packages 231 kB/606 kB 38%][0m[33m                                                                                          73% [11 Packages 240 kB/334 kB 72%] [9 Packages 265 kB/606 kB 44%][0m[33m                                                                  77% [Waiting for headers] [9 Packages 345 kB/606 kB 57%][0m                                                        Get:12 http://gb.archive.ubuntu.com/ubuntu resolute-updates/universe Translation-en [110 kB]
+[33m77% [12 Translation-en 2,433 B/110 kB 2%] [9 Packages 345 kB/606 kB 57%][0m[33m77% [11 Packages store 0 B] [12 Translation-en 2,433 B/110 kB 2%] [9 Packages 345 kB/606 kB 57%][0m[33m                                                                                                81% [11 Packages store 0 B] [9 Packages 395 kB/606 kB 65%][0m[33m                                                          81% [9 Packages 395 kB/606 kB 65%][0m[33m81% [12 Translation-en store 0 B] [9 Packages 395 kB/606 kB 65%][0m[33m                                                                81% [9 Packages 397 kB/606 kB 66%][0m[33m                                  86% [Working][0m[33m86% [9 Packages store 0 B][0m                          Get:13 http://security.ubuntu.com/ubuntu resolute-security/main i386 Packages [237 kB]
+[33m86% [9 Packages store 0 B] [13 Packages 1,181 B/237 kB 0%][0m[33m                                                          91% [13 Packages 196 kB/237 kB 83%][0m[33m                                   92% [Waiting for headers][0m                         Get:14 http://security.ubuntu.com/ubuntu resolute-security/universe amd64 Packages [205 kB]
+[33m92% [14 Packages 4,138 B/205 kB 2%][0m[33m92% [13 Packages store 0 B] [14 Packages 4,138 B/205 kB 2%][0m[33m                                                           96% [14 Packages 155 kB/205 kB 75%][0m[33m                                   97% [Waiting for headers][0m                         Get:15 http://security.ubuntu.com/ubuntu resolute-security/universe i386 Packages [118 kB]
+[33m97% [15 Packages 1,809 B/118 kB 2%][0m[33m97% [14 Packages store 0 B] [15 Packages 1,809 B/118 kB 2%][0m[33m                                                           99% [15 Packages 64.0 kB/118 kB 54%][0m[33m                                    100% [Working][0m[33m100% [15 Packages store 0 B][0m[33m                            100% [Working][0m              Fetched 3,316 kB in 1s (3,222 kB/s)
+Reading package lists... 0%Reading package lists... 0%Reading package lists... 0%Reading package lists... 0%Reading package lists... 0%Reading package lists... 4%Reading package lists... 4%Reading package lists... 6%Reading package lists... 6%Reading package lists... 8%Reading package lists... 8%Reading package lists... 9%Reading package lists... 9%Reading package lists... 9%Reading package lists... 9%Reading package lists... 9%Reading package lists... 9%Reading package lists... 32%Reading package lists... 47%Reading package lists... 47%Reading package lists... 66%Reading package lists... 66%Reading package lists... 73%Reading package lists... 83%Reading package lists... 83%Reading package lists... 83%Reading package lists... 83%Reading package lists... 84%Reading package lists... 84%Reading package lists... 84%Reading package lists... 84%Reading package lists... 86%Reading package lists... 86%Reading package lists... 87%Reading package lists... 87%Reading package lists... 88%Reading package lists... 88%Reading package lists... 89%Reading package lists... 89%Reading package lists... 89%Reading package lists... 89%Reading package lists... 90%Reading package lists... 90%Reading package lists... 91%Reading package lists... 91%Reading package lists... 91%Reading package lists... 91%Reading package lists... 92%Reading package lists... 92%Reading package lists... 92%Reading package lists... 92%Reading package lists... 92%Reading package lists... 92%Reading package lists... 92%Reading package lists... 92%Reading package lists... 92%Reading package lists... 92%Reading package lists... 92%Reading package lists... 92%Reading package lists... 92%Reading package lists... 92%Reading package lists... 94%Reading package lists... 94%Reading package lists... 94%Reading package lists... 94%Reading package lists... 95%Reading package lists... 95%Reading package lists... 96%Reading package lists... 96%Reading package lists... 96%Reading package lists... 96%Reading package lists... 97%Reading package lists... 97%Reading package lists... 98%Reading package lists... 98%Reading package lists... 98%Reading package lists... 98%Reading package lists... 98%Reading package lists... 98%Reading package lists... 98%Reading package lists... 98%Reading package lists... 98%Reading package lists... 98%Reading package lists... 98%Reading package lists... 98%                             Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 50%Building dependency tree... 50%                                Reading state information... 0%Reading state information... 0%                                [1m61 packages can be upgraded. Run 'apt list --upgradable' to see them.
+[0mReading package lists... 0%Reading package lists... 100%                              Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 50%Building dependency tree... 50%                                Reading state information... 0%Reading state information... 0%                                nmap is already the newest version (7.98+dfsg-1).
+Solving dependencies... 0%Solving dependencies... 10%                            Summary:
+  Upgrading: 0, Installing: 0, Removing: 0, Not Upgrading: 61
+]666;vte.shell.postexec=0\]7;file://paul-ubuntu-X550CC/home/paul-ubuntu/IT-Lab-Portfolio/04-networking-and-connectivity/port-scanning-firewall\]0;paul-ubuntu@paul-ubuntu-X550CC:~/IT-Lab-Portfolio/04-networking-and-connectivity/port-scanning-firewall\]666;vte.shell.precmd!\[?2004h]0;paul-ubuntu@paul-ubuntu-X550CC: ~/IT-Lab-Portfolio/04-networking-and-connectivity/port-scanning-firewall[01;32mpaul-ubuntu@paul-ubuntu-X550CC[00m:[01;34m~/IT-Lab-Portfolio/04-networking-and-connectivity/port-scanning-firewall[00m$ sudo ss -tuln
+[?2004l]133;C\]666;vte.shell.preexec!\Netid          State           Recv-Q          Send-Q                                        Local Address:Port                      Peer Address:Port          
+udp            UNCONN          0               0                                                127.0.0.54:53                             0.0.0.0:*             
+udp            UNCONN          0               0                                             127.0.0.53%lo:53                             0.0.0.0:*             
+udp            UNCONN          0               0                                                 127.0.0.1:323                            0.0.0.0:*             
+udp            UNCONN          0               0                                                   0.0.0.0:53705                          0.0.0.0:*             
+udp            UNCONN          0               0                                               224.0.0.251:5353                           0.0.0.0:*             
+udp            UNCONN          212288          0                                                   0.0.0.0:5353                           0.0.0.0:*             
+udp            UNCONN          0               0                                                   0.0.0.0:5353                           0.0.0.0:*             
+udp            UNCONN          0               0                                                     [::1]:323                               [::]:*             
+udp            UNCONN          0               0                                                         *:41485                                *:*             
+udp            UNCONN          0               0                        [fe80::6b11:3819:5110:da48]%wlp3s0:546                               [::]:*             
+udp            UNCONN          0               0                                                      [::]:5353                              [::]:*             
+udp            UNCONN          212992          0                                                         *:5353                                 *:*             
+udp            UNCONN          0               0                                                         *:1716                                 *:*             
+tcp            LISTEN          0               4096                                             127.0.0.54:53                             0.0.0.0:*             
+tcp            LISTEN          0               4096                                              127.0.0.1:631                            0.0.0.0:*             
+tcp            LISTEN          0               511                                                 0.0.0.0:80                             0.0.0.0:*             
+tcp            LISTEN          0               4096                                          127.0.0.53%lo:53                             0.0.0.0:*             
+tcp            LISTEN          0               4096                                                  [::1]:631                               [::]:*             
+tcp            LISTEN          0               50                                                        *:1716                                 *:*             
+tcp            LISTEN          0               511                                                    [::]:80                                [::]:*             
+]666;vte.shell.postexec=0\]7;file://paul-ubuntu-X550CC/home/paul-ubuntu/IT-Lab-Portfolio/04-networking-and-connectivity/port-scanning-firewall\]0;paul-ubuntu@paul-ubuntu-X550CC:~/IT-Lab-Portfolio/04-networking-and-connectivity/port-scanning-firewall\]666;vte.shell.precmd!\[?2004h]0;paul-ubuntu@paul-ubuntu-X550CC: ~/IT-Lab-Portfolio/04-networking-and-connectivity/port-scanning-firewall[01;32mpaul-ubuntu@paul-ubuntu-X550CC[00m:[01;34m~/IT-Lab-Portfolio/04-networking-and-connectivity/port-scanning-firewall[00m$ nmap -sT 127.0.0.1
+[?2004l]133;C\]666;vte.shell.preexec!\Starting Nmap 7.98 ( https://nmap.org ) at 2026-10-21 13:37 +0100
+Nmap scan report for localhost (127.0.0.1)
+Host is up (0.00031s latency).
+Not shown: 998 closed tcp ports (conn-refused)
+PORT    STATE SERVICE
+80/tcp  open  http
+631/tcp open  ipp
+
+Nmap done: 1 IP address (1 host up) scanned in 0.09 seconds
+]666;vte.shell.postexec=0\]7;file://paul-ubuntu-X550CC/home/paul-ubuntu/IT-Lab-Portfolio/04-networking-and-connectivity/port-scanning-firewall\]0;paul-ubuntu@paul-ubuntu-X550CC:~/IT-Lab-Portfolio/04-networking-and-connectivity/port-scanning-firewall\]666;vte.shell.precmd!\[?2004h]0;paul-ubuntu@paul-ubuntu-X550CC: ~/IT-Lab-Portfolio/04-networking-and-connectivity/port-scanning-firewall[01;32mpaul-ubuntu@paul-ubuntu-X550CC[00m:[01;34m~/IT-Lab-Portfolio/04-networking-and-connectivity/port-scanning-firewall[00m$ curl -I http://127.0.0.1
+[?2004l]133;C\]666;vte.shell.preexec!\HTTP/1.1 200 OK
+[1mServer[0m: nginx/1.28.3 (Ubuntu)
+[1mDate[0m: Wed, 21 Oct 2026 12:40:28 GMT
+[1mContent-Type[0m: text/html
+[1mContent-Length[0m: 615
+[1mLast-Modified[0m: Tue, 13 Oct 2026 08:36:37 GMT
+[1mConnection[0m: keep-alive
+[1mETag[0m: "6acded95-267"
+[1mAccept-Ranges[0m: bytes
+
+]666;vte.shell.postexec=0\]7;file://paul-ubuntu-X550CC/home/paul-ubuntu/IT-Lab-Portfolio/04-networking-and-connectivity/port-scanning-firewall\]0;paul-ubuntu@paul-ubuntu-X550CC:~/IT-Lab-Portfolio/04-networking-and-connectivity/port-scanning-firewall\]666;vte.shell.precmd!\[?2004h]0;paul-ubuntu@paul-ubuntu-X550CC: ~/IT-Lab-Portfolio/04-networking-and-connectivity/port-scanning-firewall[01;32mpaul-ubuntu@paul-ubuntu-X550CC[00m:[01;34m~/IT-Lab-Portfolio/04-networking-and-connectivity/port-scanning-firewall[00m$ sudo ss -ltnp
+[?2004l]133;C\]666;vte.shell.preexec!\State                Recv-Q               Send-Q                               Local Address:Port                               Peer Address:Port               Process                                                                                                                                                         
+LISTEN               0                    4096                                    127.0.0.54:53                                      0.0.0.0:*                   users:(("systemd-resolve",pid=979,fd=19))                                                                                                                      
+LISTEN               0                    4096                                     127.0.0.1:631                                     0.0.0.0:*                   users:(("cupsd",pid=13622,fd=7))                                                                                                                               
+LISTEN               0                    511                                        0.0.0.0:80                                      0.0.0.0:*                   users:(("nginx",pid=2566,fd=5),("nginx",pid=2565,fd=5),("nginx",pid=2564,fd=5),("nginx",pid=2563,fd=5),("nginx",pid=2562,fd=5))                                
+LISTEN               0                    4096                                 127.0.0.53%lo:53                                      0.0.0.0:*                   users:(("systemd-resolve",pid=979,fd=17))                                                                                                                      
+LISTEN               0                    4096                                         [::1]:631                                        [::]:*                   users:(("cupsd",pid=13622,fd=6))                                                                                                                               
+LISTEN               0                    50                                               *:1716                                          *:*                   users:(("kdeconnectd",pid=4351,fd=25))                                                                                                                         
+LISTEN               0                    511                                           [::]:80                                         [::]:*                   users:(("nginx",pid=2566,fd=6),("nginx",pid=2565,fd=6),("nginx",pid=2564,fd=6),("nginx",pid=2563,fd=6),("nginx",pid=2562,fd=6))                                
+]666;vte.shell.postexec=0\]7;file://paul-ubuntu-X550CC/home/paul-ubuntu/IT-Lab-Portfolio/04-networking-and-connectivity/port-scanning-firewall\]0;paul-ubuntu@paul-ubuntu-X550CC:~/IT-Lab-Portfolio/04-networking-and-connectivity/port-scanning-firewall\]666;vte.shell.precmd!\[?2004h]0;paul-ubuntu@paul-ubuntu-X550CC: ~/IT-Lab-Portfolio/04-networking-and-connectivity/port-scanning-firewall[01;32mpaul-ubuntu@paul-ubuntu-X550CC[00m:[01;34m~/IT-Lab-Portfolio/04-networking-and-connectivity/port-scanning-firewall[00m$ nmap -sV ip 80,631 127.0.0.1
+[?2004l]133;C\]666;vte.shell.preexec!\Starting Nmap 7.98 ( https://nmap.org ) at 2026-10-21 13:42 +0100
+Failed to resolve "ip".
+Failed to resolve "80,631".
+Nmap scan report for localhost (127.0.0.1)
+Host is up (0.00020s latency).
+Not shown: 998 closed tcp ports (conn-refused)
+PORT    STATE SERVICE VERSION
+80/tcp  open  http    nginx 1.28.3 (Ubuntu)
+631/tcp open  ipp     CUPS 2.4
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 13.05 seconds
+]666;vte.shell.postexec=0\]7;file://paul-ubuntu-X550CC/home/paul-ubuntu/IT-Lab-Portfolio/04-networking-and-connectivity/port-scanning-firewall\]0;paul-ubuntu@paul-ubuntu-X550CC:~/IT-Lab-Portfolio/04-networking-and-connectivity/port-scanning-firewall\]666;vte.shell.precmd!\[?2004h]0;paul-ubuntu@paul-ubuntu-X550CC: ~/IT-Lab-Portfolio/04-networking-and-connectivity/port-scanning-firewall[01;32mpaul-ubuntu@paul-ubuntu-X550CC[00m:[01;34m~/IT-Lab-Portfolio/04-networking-and-connectivity/port-scanning-firewall[00m$ nmp[Kap -sV -p ip 80,631 127.0.0.1[1P[1@=[1P[1@+[1P[1@-
+[?2004l]133;C\]666;vte.shell.preexec!\Starting Nmap 7.98 ( https://nmap.org ) at 2026-10-21 13:43 +0100
+Nmap scan report for localhost (127.0.0.1)
+Host is up (0.000049s latency).
+
+PORT    STATE SERVICE VERSION
+80/tcp  open  http    nginx 1.28.3 (Ubuntu)
+631/tcp open  ipp     CUPS 2.4
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 6.39 seconds
+]666;vte.shell.postexec=0\]7;file://paul-ubuntu-X550CC/home/paul-ubuntu/IT-Lab-Portfolio/04-networking-and-connectivity/port-scanning-firewall\]0;paul-ubuntu@paul-ubuntu-X550CC:~/IT-Lab-Portfolio/04-networking-and-connectivity/port-scanning-firewall\]666;vte.shell.precmd!\[?2004h]0;paul-ubuntu@paul-ubuntu-X550CC: ~/IT-Lab-Portfolio/04-networking-and-connectivity/port-scanning-firewall[01;32mpaul-ubuntu@paul-ubuntu-X550CC[00m:[01;34m~/IT-Lab-Portfolio/04-networking-and-connectivity/port-scanning-firewall[00m$ sudo ufw status verbose
+[?2004l]133;C\]666;vte.shell.preexec!\Status: active
+Logging: on (medium)
+Default: deny (incoming), allow (outgoing), disabled (routed)
+New profiles: skip
+
+To                         Action      From
+--                         ------      ----
+22/tcp                     LIMIT IN    Anywhere                  
+80,443/tcp (Nginx Full)    ALLOW IN    Anywhere                  
+1714:1764/udp              ALLOW IN    Anywhere                  
+1714:1764/tcp              ALLOW IN    Anywhere                  
+22/tcp (v6)                LIMIT IN    Anywhere (v6)             
+80,443/tcp (Nginx Full (v6)) ALLOW IN    Anywhere (v6)             
+1714:1764/udp (v6)         ALLOW IN    Anywhere (v6)             
+1714:1764/tcp (v6)         ALLOW IN    Anywhere (v6)             
+
+]666;vte.shell.postexec=0\]7;file://paul-ubuntu-X550CC/home/paul-ubuntu/IT-Lab-Portfolio/04-networking-and-connectivity/port-scanning-firewall\]0;paul-ubuntu@paul-ubuntu-X550CC:~/IT-Lab-Portfolio/04-networking-and-connectivity/port-scanning-firewall\]666;vte.shell.precmd!\[?2004h]0;paul-ubuntu@paul-ubuntu-X550CC: ~/IT-Lab-Portfolio/04-networking-and-connectivity/port-scanning-firewall[01;32mpaul-ubuntu@paul-ubuntu-X550CC[00m:[01;34m~/IT-Lab-Portfolio/04-networking-and-connectivity/port-scanning-firewall[00m$ sudo ufw default deny incoming
+[?2004l]133;C\]666;vte.shell.preexec!\Default incoming policy changed to 'deny'
+(be sure to update your rules accordingly)
+]666;vte.shell.postexec=0\]7;file://paul-ubuntu-X550CC/home/paul-ubuntu/IT-Lab-Portfolio/04-networking-and-connectivity/port-scanning-firewall\]0;paul-ubuntu@paul-ubuntu-X550CC:~/IT-Lab-Portfolio/04-networking-and-connectivity/port-scanning-firewall\]666;vte.shell.precmd!\[?2004h]0;paul-ubuntu@paul-ubuntu-X550CC: ~/IT-Lab-Portfolio/04-networking-and-connectivity/port-scanning-firewall[01;32mpaul-ubuntu@paul-ubuntu-X550CC[00m:[01;34m~/IT-Lab-Portfolio/04-networking-and-connectivity/port-scanning-firewall[00m$ du[K[Ksudo ufw default allow outgoing
+[?2004l]133;C\]666;vte.shell.preexec!\Default outgoing policy changed to 'allow'
+(be sure to update your rules accordingly)
+]666;vte.shell.postexec=0\]7;file://paul-ubuntu-X550CC/home/paul-ubuntu/IT-Lab-Portfolio/04-networking-and-connectivity/port-scanning-firewall\]0;paul-ubuntu@paul-ubuntu-X550CC:~/IT-Lab-Portfolio/04-networking-and-connectivity/port-scanning-firewall\]666;vte.shell.precmd!\[?2004h]0;paul-ubuntu@paul-ubuntu-X550CC: ~/IT-Lab-Portfolio/04-networking-and-connectivity/port-scanning-firewall[01;32mpaul-ubuntu@paul-ubuntu-X550CC[00m:[01;34m~/IT-Lab-Portfolio/04-networking-and-connectivity/port-scanning-firewall[00m$ sudo ufw default allow outgoing[1Pdeny incom[C[C[C[7Pstatus verbose
+[?2004l]133;C\]666;vte.shell.preexec!\Status: active
+Logging: on (medium)
+Default: deny (incoming), allow (outgoing), disabled (routed)
+New profiles: skip
+
+To                         Action      From
+--                         ------      ----
+22/tcp                     LIMIT IN    Anywhere                  
+80,443/tcp (Nginx Full)    ALLOW IN    Anywhere                  
+1714:1764/udp              ALLOW IN    Anywhere                  
+1714:1764/tcp              ALLOW IN    Anywhere                  
+22/tcp (v6)                LIMIT IN    Anywhere (v6)             
+80,443/tcp (Nginx Full (v6)) ALLOW IN    Anywhere (v6)             
+1714:1764/udp (v6)         ALLOW IN    Anywhere (v6)             
+1714:1764/tcp (v6)         ALLOW IN    Anywhere (v6)             
+
+]666;vte.shell.postexec=0\]7;file://paul-ubuntu-X550CC/home/paul-ubuntu/IT-Lab-Portfolio/04-networking-and-connectivity/port-scanning-firewall\]0;paul-ubuntu@paul-ubuntu-X550CC:~/IT-Lab-Portfolio/04-networking-and-connectivity/port-scanning-firewall\]666;vte.shell.precmd!\[?2004h]0;paul-ubuntu@paul-ubuntu-X550CC: ~/IT-Lab-Portfolio/04-networking-and-connectivity/port-scanning-firewall[01;32mpaul-ubuntu@paul-ubuntu-X550CC[00m:[01;34m~/IT-Lab-Portfolio/04-networking-and-connectivity/port-scanning-firewall[00m$ sudo ufw allow 22/tcp
+[?2004l]133;C\]666;vte.shell.preexec!\Rule updated
+Rule updated (v6)
+]666;vte.shell.postexec=0\]7;file://paul-ubuntu-X550CC/home/paul-ubuntu/IT-Lab-Portfolio/04-networking-and-connectivity/port-scanning-firewall\]0;paul-ubuntu@paul-ubuntu-X550CC:~/IT-Lab-Portfolio/04-networking-and-connectivity/port-scanning-firewall\]666;vte.shell.precmd!\[?2004h]0;paul-ubuntu@paul-ubuntu-X550CC: ~/IT-Lab-Portfolio/04-networking-and-connectivity/port-scanning-firewall[01;32mpaul-ubuntu@paul-ubuntu-X550CC[00m:[01;34m~/IT-Lab-Portfolio/04-networking-and-connectivity/port-scanning-firewall[00m$ sudo ufw allow 22/tcpstatus verbosedefault allow outgoing[8Pstatus verbose
+[?2004l]133;C\]666;vte.shell.preexec!\Status: active
+Logging: on (medium)
+Default: deny (incoming), allow (outgoing), disabled (routed)
+New profiles: skip
+
+To                         Action      From
+--                         ------      ----
+22/tcp                     ALLOW IN    Anywhere                  
+80,443/tcp (Nginx Full)    ALLOW IN    Anywhere                  
+1714:1764/udp              ALLOW IN    Anywhere                  
+1714:1764/tcp              ALLOW IN    Anywhere                  
+22/tcp (v6)                ALLOW IN    Anywhere (v6)             
+80,443/tcp (Nginx Full (v6)) ALLOW IN    Anywhere (v6)             
+1714:1764/udp (v6)         ALLOW IN    Anywhere (v6)             
+1714:1764/tcp (v6)         ALLOW IN    Anywhere (v6)             
+
+]666;vte.shell.postexec=0\]7;file://paul-ubuntu-X550CC/home/paul-ubuntu/IT-Lab-Portfolio/04-networking-and-connectivity/port-scanning-firewall\]0;paul-ubuntu@paul-ubuntu-X550CC:~/IT-Lab-Portfolio/04-networking-and-connectivity/port-scanning-firewall\]666;vte.shell.precmd!\[?2004h]0;paul-ubuntu@paul-ubuntu-X550CC: ~/IT-Lab-Portfolio/04-networking-and-connectivity/port-scanning-firewall[01;32mpaul-ubuntu@paul-ubuntu-X550CC[00m:[01;34m~/IT-Lab-Portfolio/04-networking-and-connectivity/port-scanning-firewall[00m$ sudo wfw e[K[K[K[K[Ku[Kyv[Kfw enable
+[?2004l]133;C\]666;vte.shell.preexec!\sudo: 'yfw': command not found
+]666;vte.shell.postexec=1\]7;file://paul-ubuntu-X550CC/home/paul-ubuntu/IT-Lab-Portfolio/04-networking-and-connectivity/port-scanning-firewall\]0;paul-ubuntu@paul-ubuntu-X550CC:~/IT-Lab-Portfolio/04-networking-and-connectivity/port-scanning-firewall\]666;vte.shell.precmd!\[?2004h]0;paul-ubuntu@paul-ubuntu-X550CC: ~/IT-Lab-Portfolio/04-networking-and-connectivity/port-scanning-firewall[01;32mpaul-ubuntu@paul-ubuntu-X550CC[00m:[01;34m~/IT-Lab-Portfolio/04-networking-and-connectivity/port-scanning-firewall[00m$ sudo ufw u[Kenable
+[?2004l]133;C\]666;vte.shell.preexec!\Firewall is active and enabled on system startup
+]666;vte.shell.postexec=0\]7;file://paul-ubuntu-X550CC/home/paul-ubuntu/IT-Lab-Portfolio/04-networking-and-connectivity/port-scanning-firewall\]0;paul-ubuntu@paul-ubuntu-X550CC:~/IT-Lab-Portfolio/04-networking-and-connectivity/port-scanning-firewall\]666;vte.shell.precmd!\[?2004h]0;paul-ubuntu@paul-ubuntu-X550CC: ~/IT-Lab-Portfolio/04-networking-and-connectivity/port-scanning-firewall[01;32mpaul-ubuntu@paul-ubuntu-X550CC[00m:[01;34m~/IT-Lab-Portfolio/04-networking-and-connectivity/port-scanning-firewall[00m$ nmap -sT 127.0.0.1
+[?2004l]133;C\]666;vte.shell.preexec!\Starting Nmap 7.98 ( https://nmap.org ) at 2026-10-21 13:50 +0100
+Nmap scan report for localhost (127.0.0.1)
+Host is up (0.00020s latency).
+Not shown: 998 closed tcp ports (conn-refused)
+PORT    STATE SERVICE
+80/tcp  open  http
+631/tcp open  ipp
+
+Nmap done: 1 IP address (1 host up) scanned in 0.08 seconds
+]666;vte.shell.postexec=0\]7;file://paul-ubuntu-X550CC/home/paul-ubuntu/IT-Lab-Portfolio/04-networking-and-connectivity/port-scanning-firewall\]0;paul-ubuntu@paul-ubuntu-X550CC:~/IT-Lab-Portfolio/04-networking-and-connectivity/port-scanning-firewall\]666;vte.shell.precmd!\[?2004h]0;paul-ubuntu@paul-ubuntu-X550CC: ~/IT-Lab-Portfolio/04-networking-and-connectivity/port-scanning-firewall[01;32mpaul-ubuntu@paul-ubuntu-X550CC[00m:[01;34m~/IT-Lab-Portfolio/04-networking-and-connectivity/port-scanning-firewall[00m$ sdo [K[K[Kudo apt install opensh[Ksh-server -y
+[?2004l]133;C\]666;vte.shell.preexec!\Reading package lists... 0%Reading package lists... 100%                              Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 50%Building dependency tree... 50%                                Reading state information... 0%Reading state information... 0%                                Solving dependencies... 0%Solving dependencies... 10%                            Installing:
+[32m  openssh-server
+[0m
+Installing dependencies:
+[32m  ncurses-term  openssh-sftp-server  ssh-import-id
+[0m
+Suggested packages:
+  molly-guard  monkeysphere  ssh-askpass
+
+Summary:
+  Upgrading: 0, Installing: 4, Removing: 0, Not Upgrading: 61
+  Download size: 950 kB
+  Space needed: 7,585 kB / 93.9 GB available
+
+[33m0% [Working][0m            Get:1 http://gb.archive.ubuntu.com/ubuntu resolute/main amd64 ncurses-term all 6.6+20251231-1 [280 kB]
+[33m0% [1 ncurses-term 2,548 B/280 kB 1%][0m[33m                                     29% [Working][0m             Get:2 http://gb.archive.ubuntu.com/ubuntu resolute-updates/main amd64 openssh-sftp-server amd64 1:10.2p1-2ubuntu3.8 [37.4 kB]
+[33m29% [2 openssh-sftp-server 8,192 B/37.4 kB 22%][0m                                               Get:3 http://gb.archive.ubuntu.com/ubuntu resolute-updates/main amd64 openssh-server amd64 1:10.2p1-2ubuntu3.8 [622 kB]
+[33m                                               37% [3 openssh-server 314 B/622 kB 0%][0m[33m                                      94% [Waiting for headers][0m                         Get:4 http://gb.archive.ubuntu.com/ubuntu resolute/main amd64 ssh-import-id all 5.11-0ubuntu4 [10.2 kB]
+[33m95% [4 ssh-import-id 10.2 kB/10.2 kB 100%][0m[33m                                          100% [Working][0m              Fetched 950 kB in 0s (2,507 kB/s)
+Preconfiguring packages ...
+
+7[0;36r8[1ASelecting previously unselected package ncurses-term.
+(Reading database… (Reading database… 5%(Reading database… 10%(Reading database… 15%(Reading database… 20%(Reading database… 25%(Reading database… 30%(Reading database… 35%(Reading database… 40%(Reading database… 45%(Reading database… 50%(Reading database… 55%(Reading database… 60%(Reading database… 65%(Reading database… 70%(Reading database… 75%(Reading database… 80%(Reading database… 85%(Reading database… 90%(Reading database… 95%(Reading database… 100%(Reading database… 237005 files and directories currently installed.)
+Preparing to unpack …/ncurses-term_6.6+20251231-1_all.deb…
+7[37;0f[42m[30mProgress: [  0%][49m[39m [                                                                                                                                          ] 87[37;0f[42m[30mProgress: [  6%][49m[39m [████████                                                                                                                                  ] 8Unpacking ncurses-term (6.6+20251231-1)…
+7[37;0f[42m[30mProgress: [ 12%][49m[39m [████████████████▏                                                                                                                         ] 8Selecting previously unselected package openssh-sftp-server.
+Preparing to unpack …/openssh-sftp-server_1%3a10.2p1-2ubuntu3.8_amd64.deb…
+7[37;0f[42m[30mProgress: [ 18%][49m[39m [████████████████████████▎                                                                                                                 ] 8Unpacking openssh-sftp-server (1:10.2p1-2ubuntu3.8)…
+7[37;0f[42m[30mProgress: [ 24%][49m[39m [████████████████████████████████▍                                                                                                         ] 8Selecting previously unselected package openssh-server.
+Preparing to unpack …/openssh-server_1%3a10.2p1-2ubuntu3.8_amd64.deb…
+7[37;0f[42m[30mProgress: [ 29%][49m[39m [████████████████████████████████████████▌                                                                                                 ] 8Unpacking openssh-server (1:10.2p1-2ubuntu3.8)…
+7[37;0f[42m[30mProgress: [ 35%][49m[39m [████████████████████████████████████████████████▋                                                                                         ] 8Selecting previously unselected package ssh-import-id.
+Preparing to unpack …/ssh-import-id_5.11-0ubuntu4_all.deb…
+7[37;0f[42m[30mProgress: [ 41%][49m[39m [████████████████████████████████████████████████████████▊                                                                                 ] 8Unpacking ssh-import-id (5.11-0ubuntu4)…
+7[37;0f[42m[30mProgress: [ 47%][49m[39m [████████████████████████████████████████████████████████████████▉                                                                         ] 8Setting up openssh-sftp-server (1:10.2p1-2ubuntu3.8)…
+7[37;0f[42m[30mProgress: [ 53%][49m[39m [█████████████████████████████████████████████████████████████████████████                                                                 ] 87[37;0f[42m[30mProgress: [ 59%][49m[39m [█████████████████████████████████████████████████████████████████████████████████▏                                                        ] 8Setting up openssh-server (1:10.2p1-2ubuntu3.8)…
+7[37;0f[42m[30mProgress: [ 65%][49m[39m [█████████████████████████████████████████████████████████████████████████████████████████▎                                                ] 8Creating config file /etc/ssh/sshd_config with new version
+Creating user 'sshd' (sshd user) with UID 973 and GID 65534.
+Created symlink '/etc/systemd/system/sockets.target.wants/ssh.socket' → '/usr/lib/systemd/system/ssh.socket'.
+Created symlink '/etc/systemd/system/ssh.service.requires/ssh.socket' → '/usr/lib/systemd/system/ssh.socket'.
+Created symlink '/etc/systemd/system/ssh.service.wants/sshd-keygen.service' → '/usr/lib/systemd/system/sshd-keygen.service'.
+Created symlink '/etc/systemd/system/sshd.service.wants/sshd-keygen.service' → '/usr/lib/systemd/system/sshd-keygen.service'.
+Created symlink '/etc/systemd/system/sshd@.service.wants/sshd-keygen.service' → '/usr/lib/systemd/system/sshd-keygen.service'.
+Created symlink '/etc/systemd/system/ssh.socket.wants/sshd-keygen.service' → '/usr/lib/systemd/system/sshd-keygen.service'.
+7[37;0f[42m[30mProgress: [ 71%][49m[39m [█████████████████████████████████████████████████████████████████████████████████████████████████▍                                        ] 8Setting up ssh-import-id (5.11-0ubuntu4)…
+7[37;0f[42m[30mProgress: [ 76%][49m[39m [█████████████████████████████████████████████████████████████████████████████████████████████████████████▌                                ] 87[37;0f[42m[30mProgress: [ 82%][49m[39m [█████████████████████████████████████████████████████████████████████████████████████████████████████████████████▋                        ] 8Setting up ncurses-term (6.6+20251231-1)…
+7[37;0f[42m[30mProgress: [ 88%][49m[39m [█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▊                ] 87[37;0f[42m[30mProgress: [ 94%][49m[39m [█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▉        ] 8Processing triggers for man-db (2.13.1-1build1)…
+Processing triggers for ufw (0.36.2-9build1)…
+Rules updated for profile 'Nginx Full'
+Firewall reloaded
+
+7[0;37r8[1A[J]666;vte.shell.postexec=0\]7;file://paul-ubuntu-X550CC/home/paul-ubuntu/IT-Lab-Portfolio/04-networking-and-connectivity/port-scanning-firewall\]0;paul-ubuntu@paul-ubuntu-X550CC:~/IT-Lab-Portfolio/04-networking-and-connectivity/port-scanning-firewall\]666;vte.shell.precmd!\[?2004h]0;paul-ubuntu@paul-ubuntu-X550CC: ~/IT-Lab-Portfolio/04-networking-and-connectivity/port-scanning-firewall[01;32mpaul-ubuntu@paul-ubuntu-X550CC[00m:[01;34m~/IT-Lab-Portfolio/04-networking-and-connectivity/port-scanning-firewall[00m$ systemctl enable --now ssh
+[?2004l]133;C\]666;vte.shell.preexec!\Synchronizing state of ssh.service with SysV service script with /usr/lib/systemd/systemd-sysv-install.
+Executing: /usr/lib/systemd/systemd-sysv-install enable ssh
+Created symlink '/etc/systemd/system/sshd.service' → '/usr/lib/systemd/system/ssh.service'.
+Created symlink '/etc/systemd/system/multi-user.target.wants/ssh.service' → '/usr/lib/systemd/system/ssh.service'.
+]666;vte.shell.postexec=0\]7;file://paul-ubuntu-X550CC/home/paul-ubuntu/IT-Lab-Portfolio/04-networking-and-connectivity/port-scanning-firewall\]0;paul-ubuntu@paul-ubuntu-X550CC:~/IT-Lab-Portfolio/04-networking-and-connectivity/port-scanning-firewall\]666;vte.shell.precmd!\[?2004h]0;paul-ubuntu@paul-ubuntu-X550CC: ~/IT-Lab-Portfolio/04-networking-and-connectivity/port-scanning-firewall[01;32mpaul-ubuntu@paul-ubuntu-X550CC[00m:[01;34m~/IT-Lab-Portfolio/04-networking-and-connectivity/port-scanning-firewall[00m$ ss -tuln
+[?2004l]133;C\]666;vte.shell.preexec!\Netid          State           Recv-Q          Send-Q                                        Local Address:Port                      Peer Address:Port          
+udp            UNCONN          0               0                                                127.0.0.54:53                             0.0.0.0:*             
+udp            UNCONN          0               0                                             127.0.0.53%lo:53                             0.0.0.0:*             
+udp            UNCONN          0               0                                                 127.0.0.1:323                            0.0.0.0:*             
+udp            UNCONN          0               0                                                   0.0.0.0:53705                          0.0.0.0:*             
+udp            UNCONN          0               0                                               224.0.0.251:5353                           0.0.0.0:*             
+udp            UNCONN          212288          0                                                   0.0.0.0:5353                           0.0.0.0:*             
+udp            UNCONN          0               0                                                   0.0.0.0:5353                           0.0.0.0:*             
+udp            UNCONN          0               0                                                     [::1]:323                               [::]:*             
+udp            UNCONN          0               0                                                         *:41485                                *:*             
+udp            UNCONN          0               0                        [fe80::6b11:3819:5110:da48]%wlp3s0:546                               [::]:*             
+udp            UNCONN          0               0                                                      [::]:5353                              [::]:*             
+udp            UNCONN          212992          0                                                         *:5353                                 *:*             
+udp            UNCONN          0               0                                                         *:1716                                 *:*             
+tcp            LISTEN          0               4096                                             127.0.0.54:53                             0.0.0.0:*             
+tcp            LISTEN          0               4096                                              127.0.0.1:631                            0.0.0.0:*             
+tcp            LISTEN          0               4096                                                0.0.0.0:22                             0.0.0.0:*             
+tcp            LISTEN          0               511                                                 0.0.0.0:80                             0.0.0.0:*             
+tcp            LISTEN          0               4096                                          127.0.0.53%lo:53                             0.0.0.0:*             
+tcp            LISTEN          0               4096                                                  [::1]:631                               [::]:*             
+tcp            LISTEN          0               50                                                        *:1716                                 *:*             
+tcp            LISTEN          0               4096                                                   [::]:22                                [::]:*             
+tcp            LISTEN          0               511                                                    [::]:80                                [::]:*             
+]666;vte.shell.postexec=0\]7;file://paul-ubuntu-X550CC/home/paul-ubuntu/IT-Lab-Portfolio/04-networking-and-connectivity/port-scanning-firewall\]0;paul-ubuntu@paul-ubuntu-X550CC:~/IT-Lab-Portfolio/04-networking-and-connectivity/port-scanning-firewall\]666;vte.shell.precmd!\[?2004h]0;paul-ubuntu@paul-ubuntu-X550CC: ~/IT-Lab-Portfolio/04-networking-and-connectivity/port-scanning-firewall[01;32mpaul-ubuntu@paul-ubuntu-X550CC[00m:[01;34m~/IT-Lab-Portfolio/04-networking-and-connectivity/port-scanning-firewall[00m$ ss -tulnystemctl enable --now sshudo apt install openssh-server -y[16Pnmap -sT 127.0.0.1
+[?2004l]133;C\]666;vte.shell.preexec!\Starting Nmap 7.98 ( https://nmap.org ) at 2026-10-21 13:54 +0100
+Nmap scan report for localhost (127.0.0.1)
+Host is up (0.00018s latency).
+Not shown: 997 closed tcp ports (conn-refused)
+PORT    STATE SERVICE
+22/tcp  open  ssh
+80/tcp  open  http
+631/tcp open  ipp
+
+Nmap done: 1 IP address (1 host up) scanned in 0.09 seconds
+]666;vte.shell.postexec=0\]7;file://paul-ubuntu-X550CC/home/paul-ubuntu/IT-Lab-Portfolio/04-networking-and-connectivity/port-scanning-firewall\]0;paul-ubuntu@paul-ubuntu-X550CC:~/IT-Lab-Portfolio/04-networking-and-connectivity/port-scanning-firewall\]666;vte.shell.precmd!\[?2004h]0;paul-ubuntu@paul-ubuntu-X550CC: ~/IT-Lab-Portfolio/04-networking-and-connectivity/port-scanning-firewall[01;32mpaul-ubuntu@paul-ubuntu-X550CC[00m:[01;34m~/IT-Lab-Portfolio/04-networking-and-connectivity/port-scanning-firewall[00m$ exit
+[?2004l]133;C\]666;vte.shell.preexec!\exit
+
+Script done on 2026-10-21 13:55:23+01:00 [COMMAND_EXIT_CODE="0"]
