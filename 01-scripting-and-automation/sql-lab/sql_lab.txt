@@ -1,0 +1,680 @@
+Script started on 2026-10-30 09:09:39+00:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="160" LINES="37"]
+]666;vte.shell.postexec=0\]7;file://paul-ubuntu-X550CC/home/paul-ubuntu/IT-Lab-Portfolio/01-scripting-and-automation/sql-lab\]0;paul-ubuntu@paul-ubuntu-X550CC:~/IT-Lab-Portfolio/01-scripting-and-automation/sql-lab\]666;vte.shell.precmd!\[?2004h]0;paul-ubuntu@paul-ubuntu-X550CC: ~/IT-Lab-Portfolio/01-scripting-and-automation/sql-lab[01;32mpaul-ubuntu@paul-ubuntu-X550CC[00m:[01;34m~/IT-Lab-Portfolio/01-scripting-and-automation/sql-lab[00m$ nano cosmere_books.csv
+[?2004l]133;C\]666;vte.shell.preexec!\[?2004h[?1049h[22;0;0t[1;37r(B[m[4l[?7h[39;49m[?1h=[?1h=[?25l[39;49m(B[m[H[2J[35;75H(B[0;7m[ New File ](B[m[H(B[0;7m  GNU nano 8.7.1                                                           cosmere_books.csv                                                                    [1;159H(B[m[36d(B[0;7m^G(B[m Help[36;17H(B[0;7m^O(B[m Write Out    (B[0;7m^F(B[m Where Is     (B[0;7m^K(B[m Cut[36;65H(B[0;7m^T(B[m Execute[81G(B[0;7m^C(B[m Location     (B[0;7mM-U(B[m Undo[36;113H(B[0;7mM-A(B[m Set Mark    (B[0;7mM-](B[m To Bracket  (B[0;7mM-B(B[m Previous[37d(B[0;7m^X(B[m Exit[37;17H(B[0;7m^R(B[m Read File    (B[0;7m^\(B[m Replace[49G(B[0;7m^U(B[m Paste[37;65H(B[0;7m^J(B[m Justify[81G(B[0;7m^/(B[m Go To Line   (B[0;7mM-E(B[m Redo[37;113H(B[0;7mM-6(B[m Copy[37;129H(B[0;7m^B(B[m Where Was    (B[0;7mM-F(B[m Next[2d[?12l[?25h[?25l[1;94H(B[0;7m*[35d(B[m[K[1;159H[2dbook_title,author,release_year,page_count,series[3dElantris,Brandon Sanderson,2005,638,Elantris[4dMistborn: The Final Empire,Brandon Sanderson,2006,541,Mistborn Era 1[5dThe Well of Ascension,Brandon Sanderson,2007,590,Mistborn Era 1[6dThe Hero of Ages,Brandon Sanderson,2008,572,Mistborn Era 1[7dWarbreaker,Brandon Sanderson,2009,592,Warbreaker[8dThe Way of Kings,Brandon Sanderson,2010,1007,The Stormlight Archive[9dThe Alloy of Law,Brandon Sanderson,2011,332,Mistborn Era 2[10dThe Emperor's Soul,Brandon Sanderson,2012,175,Elantris[11dWords of Radiance,Brandon Sanderson,2014,1087,The Stormlight Archive[12dShadows of Self,Brandon Sanderson,2015,384,Mistborn Era 2[13dThe Bands of Mourning,Brandon Sanderson,2016,448,Mistborn Era 2[14dMistborn: Secret History,Brandon Sanderson,2016,150,Mistborn Era 2[15dEdgedancer,Brandon Sanderson,2016,272,The Stormlight Archive[16dOathbringer,Brandon Sanderson,2017,1248,The Stormlight Archive[17dDawnshard,Brandon Sanderson,2020,260,The Stormlight Archive[18dRhythm of War,Brandon Sanderson,2020,1232,The Stormlight Archive[19dThe Lost Metal,Brandon Sanderson,2022,512,Mistborn Era 2[20dTress of the Emerald Sea,Brandon Sanderson,2023,480,Secret Projects[21dYumi and the Nightmare Painter,Brandon Sanderson,2023,480,Secret Projects[22dThe Sunlit Man,Brandon Sanderson,2023,400,Secret Projects[23dWind and Truth,Brandon Sanderson,2024,1248,The Stormlight Archive[?12l[?25h[?25l[36;17H[16X[36;33H(B[0;7mM-D(B[m DOS Format        [36;65H(B[0;7mM-A(B[m Append[81G           [99G(B[0;7mB(B[m Backup File[17X[36;129H(B[0;7m^T(B[m Browse[K[37;2H(B[0;7mC(B[m Cancel[17G[16X[37;33H(B[0;7mM-M(B[m Mac Format          [37;65H(B[0;7mM-P(B[m Prepend[21X[37;97H(B[0;7m^Q(B[m Discard buffer[K[36;138H[A(B[0;7mWrite to File: cosmere_books.csv                                                                                                                                [35;33H(B[m[?12l[?25h[?25l[35;73H[1K (B[0;7m[ Writing... ](B[m[K[1;94H(B[0;7m [159G(B[m[35;72H(B[0;7m[ Wrote 22 lines ](B[m[36;17H(B[0;7m^O(B[m Write Out    (B[0;7m^F(B[m Where Is     (B[0;7m^K(B[m Cut[36;65H(B[0;7m^T(B[m Execute[81G(B[0;7m^C(B[m Location[99G(B[0;7mU(B[m Undo        (B[0;7mM-A(B[m Set Mark    (B[0;7mM-](B[m To Bracket  (B[0;7mM-B(B[m Previous[37;2H(B[0;7mX(B[m Exit  [17G(B[0;7m^R(B[m Read File    (B[0;7m^\(B[m Replace      (B[0;7m^U(B[m Paste[37;65H(B[0;7m^J(B[m Justify      (B[0;7m^/(B[m Go To Line   (B[0;7mM-E(B[m Redo        (B[0;7mM-6(B[m Copy[37;129H(B[0;7m^B(B[m Where Was    (B[0;7mM-F(B[m Next[?12l[?25h[23;66H[?25l[35d[J[37d[?12l[?25h[37;1H[?1049l[23;0;0t[?1l>[?2004l]666;vte.shell.postexec=0\]7;file://paul-ubuntu-X550CC/home/paul-ubuntu/IT-Lab-Portfolio/01-scripting-and-automation/sql-lab\]0;paul-ubuntu@paul-ubuntu-X550CC:~/IT-Lab-Portfolio/01-scripting-and-automation/sql-lab\]666;vte.shell.precmd!\[?2004h]0;paul-ubuntu@paul-ubuntu-X550CC: ~/IT-Lab-Portfolio/01-scripting-and-automation/sql-lab[01;32mpaul-ubuntu@paul-ubuntu-X550CC[00m:[01;34m~/IT-Lab-Portfolio/01-scripting-and-automation/sql-lab[00m$ cat cosmer_books.csv
+[?2004l]133;C\]666;vte.shell.preexec!\cat: cosmer_books.csv: No such file or directory
+]666;vte.shell.postexec=1\]7;file://paul-ubuntu-X550CC/home/paul-ubuntu/IT-Lab-Portfolio/01-scripting-and-automation/sql-lab\]0;paul-ubuntu@paul-ubuntu-X550CC:~/IT-Lab-Portfolio/01-scripting-and-automation/sql-lab\]666;vte.shell.precmd!\[?2004h]0;paul-ubuntu@paul-ubuntu-X550CC: ~/IT-Lab-Portfolio/01-scripting-and-automation/sql-lab[01;32mpaul-ubuntu@paul-ubuntu-X550CC[00m:[01;34m~/IT-Lab-Portfolio/01-scripting-and-automation/sql-lab[00m$ cat s[Kcosmere_books.s[Kcsv
+[?2004l]133;C\]666;vte.shell.preexec!\book_title,author,release_year,page_count,series
+Elantris,Brandon Sanderson,2005,638,Elantris
+Mistborn: The Final Empire,Brandon Sanderson,2006,541,Mistborn Era 1
+The Well of Ascension,Brandon Sanderson,2007,590,Mistborn Era 1
+The Hero of Ages,Brandon Sanderson,2008,572,Mistborn Era 1
+Warbreaker,Brandon Sanderson,2009,592,Warbreaker
+The Way of Kings,Brandon Sanderson,2010,1007,The Stormlight Archive
+The Alloy of Law,Brandon Sanderson,2011,332,Mistborn Era 2
+The Emperor's Soul,Brandon Sanderson,2012,175,Elantris
+Words of Radiance,Brandon Sanderson,2014,1087,The Stormlight Archive
+Shadows of Self,Brandon Sanderson,2015,384,Mistborn Era 2
+The Bands of Mourning,Brandon Sanderson,2016,448,Mistborn Era 2
+Mistborn: Secret History,Brandon Sanderson,2016,150,Mistborn Era 2
+Edgedancer,Brandon Sanderson,2016,272,The Stormlight Archive
+Oathbringer,Brandon Sanderson,2017,1248,The Stormlight Archive
+Dawnshard,Brandon Sanderson,2020,260,The Stormlight Archive
+Rhythm of War,Brandon Sanderson,2020,1232,The Stormlight Archive
+The Lost Metal,Brandon Sanderson,2022,512,Mistborn Era 2
+Tress of the Emerald Sea,Brandon Sanderson,2023,480,Secret Projects
+Yumi and the Nightmare Painter,Brandon Sanderson,2023,480,Secret Projects
+The Sunlit Man,Brandon Sanderson,2023,400,Secret Projects
+Wind and Truth,Brandon Sanderson,2024,1248,The Stormlight Archive
+]666;vte.shell.postexec=0\]7;file://paul-ubuntu-X550CC/home/paul-ubuntu/IT-Lab-Portfolio/01-scripting-and-automation/sql-lab\]0;paul-ubuntu@paul-ubuntu-X550CC:~/IT-Lab-Portfolio/01-scripting-and-automation/sql-lab\]666;vte.shell.precmd!\[?2004h]0;paul-ubuntu@paul-ubuntu-X550CC: ~/IT-Lab-Portfolio/01-scripting-and-automation/sql-lab[01;32mpaul-ubuntu@paul-ubuntu-X550CC[00m:[01;34m~/IT-Lab-Portfolio/01-scripting-and-automation/sql-lab[00m$ nano cosmer_[Ke_series.csv
+[?2004l]133;C\]666;vte.shell.preexec!\[?2004h[?1049h[22;0;0t[1;37r(B[m[4l[?7h[39;49m[?1h=[?1h=[?25l[39;49m(B[m[H[2J[35;75H(B[0;7m[ New File ](B[m[H(B[0;7m  GNU nano 8.7.1                                                          cosmere_series.csv                                                                    [1;159H(B[m[36d(B[0;7m^G(B[m Help[36;17H(B[0;7m^O(B[m Write Out    (B[0;7m^F(B[m Where Is     (B[0;7m^K(B[m Cut[36;65H(B[0;7m^T(B[m Execute[81G(B[0;7m^C(B[m Location     (B[0;7mM-U(B[m Undo[36;113H(B[0;7mM-A(B[m Set Mark    (B[0;7mM-](B[m To Bracket  (B[0;7mM-B(B[m Previous[37d(B[0;7m^X(B[m Exit[37;17H(B[0;7m^R(B[m Read File    (B[0;7m^\(B[m Replace[49G(B[0;7m^U(B[m Paste[37;65H(B[0;7m^J(B[m Justify[81G(B[0;7m^/(B[m Go To Line   (B[0;7mM-E(B[m Redo[37;113H(B[0;7mM-6(B[m Copy[37;129H(B[0;7m^B(B[m Where Was    (B[0;7mM-F(B[m Next[2d[?12l[?25h[?25l[1;94H(B[0;7m*[35d(B[m[K[1;159H[2dseries_id,series_name,world_name[3d1,Elantris,Sel[4d2,Mistborn Era 1,Scadrial[5d3,Warbreaker,Nalthis[6d4,The Stormlight Archive,Roshar[7d5,Mistborn Era 2,Scadrial[8d6,Secret Projects,Multiple[?12l[?25h[?25l[35d(B[0;7mSave modified buffer?                                                                                                                                           [36;1H Y(B[m Yes[K[37d(B[0;7m N(B[m No  [37;18H(B[0;7mC(B[m Cancel[K[35;23H[?12l[?25h[?25l[36d(B[0;7m^G(B[m Help[36;33H(B[0;7mM-D(B[m DOS Format[36;65H(B[0;7mM-A(B[m Append[36;97H(B[0;7mM-B(B[m Backup File[36;129H(B[0;7m^T(B[m Browse[37d(B[0;7m^C(B[m Cancel[17G         [33G(B[0;7mM-M(B[m Mac Format[37;65H(B[0;7mM-P(B[m Prepend[37;97H(B[0;7m^Q(B[m Discard buffer[36;138H[A(B[0;7mWrite to File: cosmere_series.csv(B[m[?12l[?25h[?25l[35;73H[1K (B[0;7m[ Writing... ](B[m[K[1;94H(B[0;7m [159G(B[m[35;72H(B[0;7m[ Wrote 7 lines ](B[m[J[37d[?12l[?25h[37;1H[?1049l[23;0;0t[?1l>[?2004l]666;vte.shell.postexec=0\]7;file://paul-ubuntu-X550CC/home/paul-ubuntu/IT-Lab-Portfolio/01-scripting-and-automation/sql-lab\]0;paul-ubuntu@paul-ubuntu-X550CC:~/IT-Lab-Portfolio/01-scripting-and-automation/sql-lab\]666;vte.shell.precmd!\[?2004h]0;paul-ubuntu@paul-ubuntu-X550CC: ~/IT-Lab-Portfolio/01-scripting-and-automation/sql-lab[01;32mpaul-ubuntu@paul-ubuntu-X550CC[00m:[01;34m~/IT-Lab-Portfolio/01-scripting-and-automation/sql-lab[00m$ ls
+[?2004l]133;C\]666;vte.shell.preexec!\cosmere_books.csv  cosmere_series.csv  sql_lab.txt
+]666;vte.shell.postexec=0\]7;file://paul-ubuntu-X550CC/home/paul-ubuntu/IT-Lab-Portfolio/01-scripting-and-automation/sql-lab\]0;paul-ubuntu@paul-ubuntu-X550CC:~/IT-Lab-Portfolio/01-scripting-and-automation/sql-lab\]666;vte.shell.precmd!\[?2004h]0;paul-ubuntu@paul-ubuntu-X550CC: ~/IT-Lab-Portfolio/01-scripting-and-automation/sql-lab[01;32mpaul-ubuntu@paul-ubuntu-X550CC[00m:[01;34m~/IT-Lab-Portfolio/01-scripting-and-automation/sql-lab[00m$ sqlite cosmere.db
+[?2004l]133;C\]666;vte.shell.preexec!\Command 'sqlite' not found, did you mean:
+  command 'sqlitr' from snap sqlitr (0.1.23)
+  command 'sqlite3' from deb sqlite3 (3.46.1-9ubuntu0.1)
+  command 'dqlite' from deb go-dqlite (3.0.3-1)
+See 'snap info <snapname>' for additional versions.
+]666;vte.shell.postexec=127\]7;file://paul-ubuntu-X550CC/home/paul-ubuntu/IT-Lab-Portfolio/01-scripting-and-automation/sql-lab\]0;paul-ubuntu@paul-ubuntu-X550CC:~/IT-Lab-Portfolio/01-scripting-and-automation/sql-lab\]666;vte.shell.precmd!\[?2004h]0;paul-ubuntu@paul-ubuntu-X550CC: ~/IT-Lab-Portfolio/01-scripting-and-automation/sql-lab[01;32mpaul-ubuntu@paul-ubuntu-X550CC[00m:[01;34m~/IT-Lab-Portfolio/01-scripting-and-automation/sql-lab[00m$ squ.[K[Klite3 cons[K[Ksn[Kmere.db
+[?2004l]133;C\]666;vte.shell.preexec!\Command 'sqlite3' not found, but can be installed with:
+sudo apt install sqlite3
+]666;vte.shell.postexec=127\]7;file://paul-ubuntu-X550CC/home/paul-ubuntu/IT-Lab-Portfolio/01-scripting-and-automation/sql-lab\]0;paul-ubuntu@paul-ubuntu-X550CC:~/IT-Lab-Portfolio/01-scripting-and-automation/sql-lab\]666;vte.shell.precmd!\[?2004h]0;paul-ubuntu@paul-ubuntu-X550CC: ~/IT-Lab-Portfolio/01-scripting-and-automation/sql-lab[01;32mpaul-ubuntu@paul-ubuntu-X550CC[00m:[01;34m~/IT-Lab-Portfolio/01-scripting-and-automation/sql-lab[00m$ sudo apt install sqlite3
+[?2004l]133;C\]666;vte.shell.preexec!\[sudo: authenticate] Password: ********        
+Reading package lists... 0%Reading package lists... 100%                              Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 50%Building dependency tree... 50%                                Reading state information... 0%Reading state information... 0%                                Solving dependencies... 0%Solving dependencies... 10%                            Installing:
+[32m  sqlite3
+[0m
+Suggested packages:
+  sqlite3-doc
+
+Summary:
+  Upgrading: 0, Installing: 1, Removing: 0, Not Upgrading: 78
+  Download size: 149 kB
+  Space needed: 599 kB / 93.5 GB available
+
+[33m0% [Working][0m            Get:1 http://gb.archive.ubuntu.com/ubuntu resolute-updates/main amd64 sqlite3 amd64 3.46.1-9ubuntu0.3 [149 kB]
+[33m1% [1 sqlite3 2,548 B/149 kB 2%][0m[33m                                100% [Working][0m              Fetched 149 kB in 0s (1,021 kB/s)
+
+7[0;36r8[1ASelecting previously unselected package sqlite3.
+(Reading database… (Reading database… 5%(Reading database… 10%(Reading database… 15%(Reading database… 20%(Reading database… 25%(Reading database… 30%(Reading database… 35%(Reading database… 40%(Reading database… 45%(Reading database… 50%(Reading database… 55%(Reading database… 60%(Reading database… 65%(Reading database… 70%(Reading database… 75%(Reading database… 80%(Reading database… 85%(Reading database… 90%(Reading database… 95%(Reading database… 100%(Reading database… 240699 files and directories currently installed.)
+Preparing to unpack …/sqlite3_3.46.1-9ubuntu0.3_amd64.deb…
+7[37;0f[42m[30mProgress: [  0%][49m[39m [                                                                                                                                          ] 87[37;0f[42m[30mProgress: [ 20%][49m[39m [███████████████████████████▌                                                                                                              ] 8Unpacking sqlite3 (3.46.1-9ubuntu0.3)…
+7[37;0f[42m[30mProgress: [ 40%][49m[39m [███████████████████████████████████████████████████████▏                                                                                  ] 8Setting up sqlite3 (3.46.1-9ubuntu0.3)…
+7[37;0f[42m[30mProgress: [ 60%][49m[39m [██████████████████████████████████████████████████████████████████████████████████▊                                                       ] 87[37;0f[42m[30mProgress: [ 80%][49m[39m [██████████████████████████████████████████████████████████████████████████████████████████████████████████████▍                           ] 8Processing triggers for man-db (2.13.1-1build1)…
+
+7[0;37r8[1A[J]666;vte.shell.postexec=0\]7;file://paul-ubuntu-X550CC/home/paul-ubuntu/IT-Lab-Portfolio/01-scripting-and-automation/sql-lab\]0;paul-ubuntu@paul-ubuntu-X550CC:~/IT-Lab-Portfolio/01-scripting-and-automation/sql-lab\]666;vte.shell.precmd!\[?2004h]0;paul-ubuntu@paul-ubuntu-X550CC: ~/IT-Lab-Portfolio/01-scripting-and-automation/sql-lab[01;32mpaul-ubuntu@paul-ubuntu-X550CC[00m:[01;34m~/IT-Lab-Portfolio/01-scripting-and-automation/sql-lab[00m$ sqlite3 cons[K[Ksmere.db
+[?2004l]133;C\]666;vte.shell.preexec!\SQLite version 3.46.1 2024-08-13 09:16:08
+Enter ".help" for usage hints.
+[?2004hsqlite> .mode csv
+[?2004l[?2004hsqlite> .import cosmere_series.csv series
+[?2004l[?2004hsqlite> .import cosmere_books.csv books
+[?2004l[?2004hsqlite> .schema
+[?2004lCREATE TABLE IF NOT EXISTS "series"(
+"series_id" TEXT, "series_name" TEXT, "world_name" TEXT);
+CREATE TABLE IF NOT EXISTS "books"(
+"book_title" TEXT, "author" TEXT, "release_year" TEXT, "page_count" TEXT,
+ "series" TEXT);
+[?2004hsqlite> .mode column
+[?2004l[?2004hsqlite> .mod[K[K[Kheaders on
+[?2004l[?2004hsqlite> SELECT book_title, release_year
+[?2004l[?2004h   ...> FROM books;
+[?2004lbook_title                      release_year
+------------------------------  ------------
+Elantris                        2005        
+Mistborn: The Final Empire      2006        
+The Well of Ascension           2007        
+The Hero of Ages                2008        
+Warbreaker                      2009        
+The Way of Kings                2010        
+The Alloy of Law                2011        
+The Emperor's Soul              2012        
+Words of Radiance               2014        
+Shadows of Self                 2015        
+The Bands of Mourning           2016        
+Mistborn: Secret History        2016        
+Edgedancer                      2016        
+Oathbringer                     2017        
+Dawnshard                       2020        
+Rhythm of War                   2020        
+The Lost Metal                  2022        
+Tress of the Emerald Sea        2023        
+Yumi and the Nightmare Painter  2023        
+The Sunlit Man                  2023        
+Wind and Truth                  2024        
+[?2004hsqlite> SELECT book_title, rela[Kease_year, page_count
+[?2004l[?2004h   ...> FROM books;
+[?2004lbook_title                      release_year  page_count
+------------------------------  ------------  ----------
+Elantris                        2005          638       
+Mistborn: The Final Empire      2006          541       
+The Well of Ascension           2007          590       
+The Hero of Ages                2008          572       
+Warbreaker                      2009          592       
+The Way of Kings                2010          1007      
+The Alloy of Law                2011          332       
+The Emperor's Soul              2012          175       
+Words of Radiance               2014          1087      
+Shadows of Self                 2015          384       
+The Bands of Mourning           2016          448       
+Mistborn: Secret History        2016          150       
+Edgedancer                      2016          272       
+Oathbringer                     2017          1248      
+Dawnshard                       2020          260       
+Rhythm of War                   2020          1232      
+The Lost Metal                  2022          512       
+Tress of the Emerald Sea        2023          480       
+Yumi and the Nightmare Painter  2023          480       
+The Sunlit Man                  2023          400       
+Wind and Truth                  2024          1248      
+[?2004hsqlite> SELECT book_title, page_count
+[?2004l[?2004h   ...> FROM books
+[?2004l[?2004h   ...> ORDER BY page_count DESC;
+[?2004lbook_title                      page_count
+------------------------------  ----------
+Elantris                        638       
+Warbreaker                      592       
+The Well of Ascension           590       
+The Hero of Ages                572       
+Mistborn: The Final Empire      541       
+The Lost Metal                  512       
+Tress of the Emerald Sea        480       
+Yumi and the Nightmare Painter  480       
+The Bands of Mourning           448       
+The Sunlit Man                  400       
+Shadows of Self                 384       
+The Alloy of Law                332       
+Edgedancer                      272       
+Dawnshard                       260       
+The Emperor's Soul              175       
+Mistborn: Secret History        150       
+Oathbringer                     1248      
+Wind and Truth                  1248      
+Rhythm of War                   1232      
+Words of Radiance               1087      
+The Way of Kings                1007      
+[?2004hsqlite> [7mCREATE TABLE books_fixed AS[27m
+[7mSELECT[27m
+[7mbook_title,[27m
+[7mauthor,[27m
+[7mCAST(release_year AS INTEGER) AS release_year,[27m
+[7mCAST(page_count AS INTEGER) AS page_count,[27m
+[7mCAST(series_id AS INTEGER) AS series_id[27m
+[7mFROM books;[27m[A[A[A[A[A[A[ACREATE TABLE books_fixed AS
+SELECT
+book_title,
+author,
+CAST(release_year AS INTEGER) AS release_year,
+CAST(page_count AS INTEGER) AS page_count,
+CAST(series_id AS INTEGER) AS series_id
+FROM books;
+[?2004lParse error: no such column: series_id
+  , CAST(page_count AS INTEGER) AS page_count, CAST(series_id AS INTEGER) AS ser
+                                      error here ---^
+[?2004hsqlite> [7mCREATE TABLE books_fixed AS[27m
+[7mSELECT[27m
+[7mbook_title,[27m
+[7mauthor,[27m
+[7mCAST(release_year AS INTEGER) AS release_year,[27m
+[7mCAST(page_count AS INTEGER) AS page_count,[27m
+[7mCAST(series AS INTEGER) AS series[27m
+[7mFROM books;[27m[A[A[A[A[A[A[ACREATE TABLE books_fixed AS
+SELECT
+book_title,
+author,
+CAST(release_year AS INTEGER) AS release_year,
+CAST(page_count AS INTEGER) AS page_count,
+CAST(series AS INTEGER) AS series
+FROM books;
+[?2004l[?2004hsqlite> [7mDROP TABLE books;[27m
+[7mALTER TABLE books_fixed RENAME TO books;[27m[A[C[C[C[C[C[C[C[CDROP TABLE books;
+ALTER TABLE books_fixed RENAME TO books;
+[?2004l[?2004hsqlite> SELECT book_title, page_count
+[?2004l[?2004h   ...> FROM books
+[?2004l[?2004h   ...> ORDER BY page_count DESC;
+[?2004lbook_title                      page_count
+------------------------------  ----------
+Oathbringer                     1248      
+Wind and Truth                  1248      
+Rhythm of War                   1232      
+Words of Radiance               1087      
+The Way of Kings                1007      
+Elantris                        638       
+Warbreaker                      592       
+The Well of Ascension           590       
+The Hero of Ages                572       
+Mistborn: The Final Empire      541       
+The Lost Metal                  512       
+Tress of the Emerald Sea        480       
+Yumi and the Nightmare Painter  480       
+The Bands of Mourning           448       
+The Sunlit Man                  400       
+Shadows of Self                 384       
+The Alloy of Law                332       
+Edgedancer                      272       
+Dawnshard                       260       
+The Emperor's Soul              175       
+Mistborn: Secret History        150       
+[?2004hsqlite> sle[K[K[KSELECT book_title, page [K_count
+[?2004l[?2004h   ...> FROM books
+[?2004l[?2004h   ...> ORDER BY page_count ASC
+[?2004l[?2004h   ...> LIMIT 5;
+[?2004lbook_title                page_count
+------------------------  ----------
+Mistborn: Secret History  150       
+The Emperor's Soul        175       
+Dawnshard                 260       
+Edgedancer                272       
+The Alloy of Law          332       
+[?2004hsqlite> sl[K[KSLE[K[KELECT book_[K[K[K[K[K*
+[?2004l[?2004h   ...> FROM books
+[?2004l[?2004h   ...> ;
+[?2004lbook_title                      author             release_year  page_count  series
+------------------------------  -----------------  ------------  ----------  ------
+Elantris                        Brandon Sanderson  2005          638         0     
+Mistborn: The Final Empire      Brandon Sanderson  2006          541         0     
+The Well of Ascension           Brandon Sanderson  2007          590         0     
+The Hero of Ages                Brandon Sanderson  2008          572         0     
+Warbreaker                      Brandon Sanderson  2009          592         0     
+The Way of Kings                Brandon Sanderson  2010          1007        0     
+The Alloy of Law                Brandon Sanderson  2011          332         0     
+The Emperor's Soul              Brandon Sanderson  2012          175         0     
+Words of Radiance               Brandon Sanderson  2014          1087        0     
+Shadows of Self                 Brandon Sanderson  2015          384         0     
+The Bands of Mourning           Brandon Sanderson  2016          448         0     
+Mistborn: Secret History        Brandon Sanderson  2016          150         0     
+Edgedancer                      Brandon Sanderson  2016          272         0     
+Oathbringer                     Brandon Sanderson  2017          1248        0     
+Dawnshard                       Brandon Sanderson  2020          260         0     
+Rhythm of War                   Brandon Sanderson  2020          1232        0     
+The Lost Metal                  Brandon Sanderson  2022          512         0     
+Tress of the Emerald Sea        Brandon Sanderson  2023          480         0     
+Yumi and the Nightmare Painter  Brandon Sanderson  2023          480         0     
+The Sunlit Man                  Brandon Sanderson  2023          400         0     
+Wind and Truth                  Brandon Sanderson  2024          1248        0     
+[?2004hsqlite> SELECT book_title, release_year
+[?2004l[?2004h   ...> from books
+[?2004l[?2004h   ...> WHERE release_year ?[K.[K> 2912[K[K[K012
+[?2004l[?2004h   ...> ;
+[?2004lbook_title                      release_year
+------------------------------  ------------
+Words of Radiance               2014        
+Shadows of Self                 2015        
+The Bands of Mourning           2016        
+Mistborn: Secret History        2016        
+Edgedancer                      2016        
+Oathbringer                     2017        
+Dawnshard                       2020        
+Rhythm of War                   2020        
+The Lost Metal                  2022        
+Tress of the Emerald Sea        2023        
+Yumi and the Nightmare Painter  2023        
+The Sunlit Man                  2023        
+Wind and Truth                  2024        
+[?2004hsqlite> SELECT book_title, release_year, [C[C[C[C[C[C[C[C;[KSELECT book_title, release_year, page_coi[Kunt
+[?2004l[?2004h   ...> FROM books
+[?2004l[?2004h   ...> WHERE release_year > [K 2015 AND page_count ?[K.[K> 1000;
+[?2004lbook_title      release_year  page_count
+--------------  ------------  ----------
+Oathbringer     2017          1248      
+Rhythm of War   2020          1232      
+Wind and Truth  2024          1248      
+[?2004hsqlite> SELECT book_title, release_year, page)[K_count[Ksqlite> SELECT book_title, release_year, page_count[Ksqlite> SELECT book_title, release_year, page_count[Ksqlite> SELECT book_title, release_year, page_count[Ksqlite> SELECT book_title, release_year, page_count[Ksqlite> SELECT book_title, release_year, page_count[Ksqlite> SELECT book_title, release_year, page_count[Ksqlite> SELECT book_title, release_year, page_count[Ksqlite> SELECT book_title, release_year, page_count
+[?2004l[?2004h   ...> FROM books
+[?2004l[?2004h   ...> WHERE release_year = 2020 or page_count <1000
+[?2004l[?2004h   ...> '[K;
+[?2004lbook_title                      release_year  page_count
+------------------------------  ------------  ----------
+Elantris                        2005          638       
+Mistborn: The Final Empire      2006          541       
+The Well of Ascension           2007          590       
+The Hero of Ages                2008          572       
+Warbreaker                      2009          592       
+The Alloy of Law                2011          332       
+The Emperor's Soul              2012          175       
+Shadows of Self                 2015          384       
+The Bands of Mourning           2016          448       
+Mistborn: Secret History        2016          150       
+Edgedancer                      2016          272       
+Dawnshard                       2020          260       
+Rhythm of War                   2020          1232      
+The Lost Metal                  2022          512       
+Tress of the Emerald Sea        2023          480       
+Yumi and the Nightmare Painter  2023          480       
+The Sunlit Man                  2023          400       
+[?2004hsqlite> SELECT *
+[?2004l[?2004h   ...> FROM books;
+[?2004lbook_title                      author             release_year  page_count  series
+------------------------------  -----------------  ------------  ----------  ------
+Elantris                        Brandon Sanderson  2005          638         0     
+Mistborn: The Final Empire      Brandon Sanderson  2006          541         0     
+The Well of Ascension           Brandon Sanderson  2007          590         0     
+The Hero of Ages                Brandon Sanderson  2008          572         0     
+Warbreaker                      Brandon Sanderson  2009          592         0     
+The Way of Kings                Brandon Sanderson  2010          1007        0     
+The Alloy of Law                Brandon Sanderson  2011          332         0     
+The Emperor's Soul              Brandon Sanderson  2012          175         0     
+Words of Radiance               Brandon Sanderson  2014          1087        0     
+Shadows of Self                 Brandon Sanderson  2015          384         0     
+The Bands of Mourning           Brandon Sanderson  2016          448         0     
+Mistborn: Secret History        Brandon Sanderson  2016          150         0     
+Edgedancer                      Brandon Sanderson  2016          272         0     
+Oathbringer                     Brandon Sanderson  2017          1248        0     
+Dawnshard                       Brandon Sanderson  2020          260         0     
+Rhythm of War                   Brandon Sanderson  2020          1232        0     
+The Lost Metal                  Brandon Sanderson  2022          512         0     
+Tress of the Emerald Sea        Brandon Sanderson  2023          480         0     
+Yumi and the Nightmare Painter  Brandon Sanderson  2023          480         0     
+The Sunlit Man                  Brandon Sanderson  2023          400         0     
+Wind and Truth                  Brandon Sanderson  2024          1248        0     
+[?2004hsqlite> SLEC[K[K[KELECT book_title, release y[K[K_year
+[?2004l[?2004h   ...> FROM books
+[?2004l[?2004h   ...> WHERE NOT release_date > 2015
+[?2004l[?2004h   ...> ;
+[?2004lParse error: no such column: release_date
+  ECT book_title, release_year FROM books WHERE NOT release_date > 2015 ;
+                                      error here ---^
+[?2004hsqlite> SLEC[K[K[KECT[K[KLECT book_title, release_year
+[?2004l[?2004h   ...> WHERE [K[K[K[K[K[KFROM books
+[?2004l[?2004h   ...> WHERE NOT rea[Klease_year > 2915[K[K[K015
+[?2004l[?2004h   ...> :
+[?2004l[?2004h   ...> ;
+[?2004lParse error: unrecognized token: ":"
+  ase_year FROM books WHERE NOT release_year > 2015 : ;
+                                      error here ---^
+[?2004hsqlite> SLE[K[K[K;[K;:WHERE NOT release_year > 2015[C[C[C[C[C[C[C[C[19PFROM books[C[C[C[C[C[C[C[CSELECT book_title, release_year
+[?2004l[?2004h   ...> SELECT book_title, release_year[C[C[C[C[C[C[C[C;[K:WHERE NOT release_year > 2015[C[C[C[C[C[C[C[C[19PFROM books
+[?2004l[?2004h   ...> FROM books[C[C[C[C[C[C[C[CSELECT book_title, release_year[C[C[C[C[C[C[C[C;[K:WHERE NOT release_year > 2015;
+[?2004lbook_title                  release_year
+--------------------------  ------------
+Elantris                    2005        
+Mistborn: The Final Empire  2006        
+The Well of Ascension       2007        
+The Hero of Ages            2008        
+Warbreaker                  2009        
+The Way of Kings            2010        
+The Alloy of Law            2011        
+The Emperor's Soul          2012        
+Words of Radiance           2014        
+Shadows of Self             2015        
+[?2004hsqlite> sl[K[KSLE[K[KELECT book_title, release_year
+[?2004l[?2004h   ...> FROM BOOK[K[K[K[Kbooks
+[?2004l[?2004h   ...> WHERE book_title LIKE '%secret%';
+[?2004lbook_title                release_year
+------------------------  ------------
+Mistborn: Secret History  2016        
+[?2004hsqlite> SELECT book_title
+[?2004l[?2004h   ...> FROM book
+[?2004l[?2004h   ...> where[K[K[K[K[KHWERE[K[K[K[K[KWHERE book [K_title 'the%;[K';
+[?2004lParse error: near "'the%'": syntax error
+  SELECT book_title FROM book WHERE book_title 'the%';
+                                 error here ---^
+[?2004hsqlite> WHERE book_title 'the%';[C[C[C[C[C[C[C[C[15PFROM bookSELECT book_title
+[?2004l[?2004h   ...> SELECT book_title[C[C[C[C[C[C[C[CWHERE book_title 'the%';[C[C[C[C[C[C[C[C[15PFROM books
+[?2004l[?2004h   ...> FROM books[C[C[C[C[C[C[C[CSELECT book_title[C[C[C[C[C[C[C[CWHERE book_title 'the%';[C[1@ [1@L[1@I[1@K[1@E[C[1@ [1P
+[?2004lbook_title           
+---------------------
+The Well of Ascension
+The Hero of Ages     
+The Way of Kings     
+The Alloy of Law     
+The Emperor's Soul   
+The Bands of Mourning
+The Lost Metal       
+The Sunlit Man       
+[?2004hsqlite> s[KSLE[K[KELECT book_title, release_year
+[?2004l[?2004h   ...> FROM books
+[?2004l[?2004h   ...> WHERE release_year BETWEEN 2010 AND [K 2020
+[?2004l[?2004h   ...> ORDER BY release_year;
+[?2004lbook_title                release_year
+------------------------  ------------
+The Way of Kings          2010        
+The Alloy of Law          2011        
+The Emperor's Soul        2012        
+Words of Radiance         2014        
+Shadows of Self           2015        
+The Bands of Mourning     2016        
+Mistborn: Secret History  2016        
+Edgedancer                2016        
+Oathbringer               2017        
+Dawnshard                 2020        
+Rhythm of War             2020        
+[?2004hsqlite> SLEC[K[K[KELECT book_title
+[?2004l[?2004h   ...> FROM books
+[?2004l[?2004h   ...> COUNT * S[KAS total_books;
+[?2004lParse error: near "*": syntax error
+  SELECT book_title FROM books COUNT * AS total_books;
+                       error here ---^
+[?2004hsqlite> ALE[K[K[KSLE[K[KELECT COUNT(*) AS total_books
+[?2004l[?2004h   ...> FROM books;
+[?2004ltotal_books
+-----------
+21         
+[?2004hsqlite> SLE[K[KELECT av[K[KAVG [K(page_count) AS average_pages
+[?2004l[?2004h   ...> FROM books:[K;
+[?2004laverage_pages   
+----------------
+602.285714285714
+[?2004hsqlite> s[KSLECT[K[K[K[KELECT *
+[?2004l[?2004h   ...> FROM books;
+[?2004lbook_title                      author             release_year  page_count  series
+------------------------------  -----------------  ------------  ----------  ------
+Elantris                        Brandon Sanderson  2005          638         0     
+Mistborn: The Final Empire      Brandon Sanderson  2006          541         0     
+The Well of Ascension           Brandon Sanderson  2007          590         0     
+The Hero of Ages                Brandon Sanderson  2008          572         0     
+Warbreaker                      Brandon Sanderson  2009          592         0     
+The Way of Kings                Brandon Sanderson  2010          1007        0     
+The Alloy of Law                Brandon Sanderson  2011          332         0     
+The Emperor's Soul              Brandon Sanderson  2012          175         0     
+Words of Radiance               Brandon Sanderson  2014          1087        0     
+Shadows of Self                 Brandon Sanderson  2015          384         0     
+The Bands of Mourning           Brandon Sanderson  2016          448         0     
+Mistborn: Secret History        Brandon Sanderson  2016          150         0     
+Edgedancer                      Brandon Sanderson  2016          272         0     
+Oathbringer                     Brandon Sanderson  2017          1248        0     
+Dawnshard                       Brandon Sanderson  2020          260         0     
+Rhythm of War                   Brandon Sanderson  2020          1232        0     
+The Lost Metal                  Brandon Sanderson  2022          512         0     
+Tress of the Emerald Sea        Brandon Sanderson  2023          480         0     
+Yumi and the Nightmare Painter  Brandon Sanderson  2023          480         0     
+The Sunlit Man                  Brandon Sanderson  2023          400         0     
+Wind and Truth                  Brandon Sanderson  2024          1248        0     
+[?2004hsqlite> [Ksqlite> [Ksqlite> [Ksqlite> [Ksqlite> SLEC[K[K[KEC[KLECT book_title, release_title;
+[?2004lParse error: no such column: book_title
+  SELECT book_title, release_title;
+         ^--- error here
+[?2004hsqlite> f[KSL[KELECT book_title, release_title
+[?2004l[?2004h   ...> from books
+[?2004l[?2004h   ...> WHERE release y[K[K_e[Kyear BETWEEN 2010 and 292[K[K015
+[?2004l[?2004h   ...> or[K[KORDER by book_title ASC
+[?2004l[?2004h   ...> ;
+[?2004lParse error: no such column: release_title
+  SELECT book_title, release_title from books WHERE release_year BETWEEN 2010 an
+                     ^--- error here
+[?2004hsqlite> ;[KORDER by book_title ASC[C[C[C[C[C[C[C[CWHERE release_year BETWEEN 2010 and 2015[C[C[C[C[C[C[C[Cfrom books[K[C[C[C[C[C[C[C[CSELECT book_title, release_title[K[K[K[K[KYEAR[K[K[K[Kyear
+[?2004l[?2004h   ...> SELECT book_title, release_year[C[C[C[C[C[C[C[C[KORDER by book_title ASC[C[C[C[C[C[C[C[CWHERE release_year BETWEEN 2010 and 2015
+[?2004l[?2004h   ...> WHERE release_year BETWEEN 2010 and 2015[C[C[C[C[C[C[C[C[9PSELECT book_title, release_year[C[C[C[C[C[C[C[C[KORDER by book_title ASC[C[C[C[C[C[C[C[CWHERE release_year BETWEEN 2010 and 2015
+[?2004l[?2004h   ...> ;
+[?2004lParse error: near "WHERE": syntax error
+  ase_year WHERE release_year BETWEEN 2010 and 2015 WHERE release_year BETWEEN 2
+                                      error here ---^
+[?2004hsqlite> ;WHERE release_year BETWEEN 2010 and 2015[C[C[C[C[C[C[C[C[9PSELECT book_title, release_year[C[C[C[C[C[C[C[C[KSELECT book_title, release_year
+[?2004l[?2004h   ...> SELECT book_title, release_year[C[C[C[C[C[C[C[C;[KWHERE release_year BETWEEN 2010 and 2015[C[C[C[C[C[C[C[C[9PSELECT book_title, release_year[C[C[C[C[C[C[C[C[KORDER by book_title ASC[C[C[C[C[C[C[C[CWHERE release_year BETWEEN 2010 and 2015[C[C[C[C[C[C[C[Cfrom books[K
+[?2004l[?2004h   ...> from books[C[C[C[C[C[C[C[CSELECT book_title, release_year[C[C[C[C[C[C[C[C;[KWHERE release_year BETWEEN 2010 and 2015
+[?2004l[?2004h   ...> WHERE release_year BETWEEN 2010 and 2015[C[C[C[C[C[C[C[Cfrom books[K[C[C[C[C[C[C[C[CSELECT book_title, release_year[C[C[C[C[C[C[C[C;[KWHERE release_year BETWEEN 2010 and 2015[C[C[C[C[C[C[C[C[9PSELECT book_title, release_year[C[C[C[C[C[C[C[C[KORDER by book_tite[Kle[K[K[K[K[K[K[K[K[K[Kre[Kelease[K[K[K[K[K[K[Kbook_title AC[KSC;
+[?2004lbook_title          release_year
+------------------  ------------
+Shadows of Self     2015        
+The Alloy of Law    2011        
+The Emperor's Soul  2012        
+The Way of Kings    2010        
+Words of Radiance   2014        
+[?2004hsqlite> se[K[KSELECT book_title, release_year
+[?2004l[?2004h   ...> FROM books
+[?2004l[?2004h   ...> ;
+[?2004lbook_title                      release_year
+------------------------------  ------------
+Elantris                        2005        
+Mistborn: The Final Empire      2006        
+The Well of Ascension           2007        
+The Hero of Ages                2008        
+Warbreaker                      2009        
+The Way of Kings                2010        
+The Alloy of Law                2011        
+The Emperor's Soul              2012        
+Words of Radiance               2014        
+Shadows of Self                 2015        
+The Bands of Mourning           2016        
+Mistborn: Secret History        2016        
+Edgedancer                      2016        
+Oathbringer                     2017        
+Dawnshard                       2020        
+Rhythm of War                   2020        
+The Lost Metal                  2022        
+Tress of the Emerald Sea        2023        
+Yumi and the Nightmare Painter  2023        
+The Sunlit Man                  2023        
+Wind and Truth                  2024        
+[?2004hsqlite> select MIN(PAG[K[K[KPAGE[K[K[K[KPag[K[K[Kpage_count) AS shortest
+[?2004l[?2004h   ...> '
+[?2004l[?2004h'  ...> '[K;
+[?2004l[?2004h'  ...> ;
+[?2004l[?2004h'  ...> ^C[?2004l[?2004h[C[C[C[C[C[C[C[C
+[?2004l[?2004h'  ...> ';
+[?2004lParse error: near "'
+;
+;
+
+'": syntax error
+  select MIN(page_count) AS shortest ' ; ;  ';
+                       error here ---^
+[?2004hsqlite> ';[1P;'select MIN(page_count) AS shortest;
+[?2004lParse error: no such column: page_count
+  select MIN(page_count) AS shortest;
+             ^--- error here
+[?2004hsqlite> .scheme[Ka books
+[?2004lCREATE TABLE IF NOT EXISTS "books"(
+  book_title TEXT,
+  author TEXT,
+  release_year INT,
+  page_count INT,
+  series INT
+);
+[?2004hsqlite> SLEC[K[KE[K[KELECT MIN(page)count[K[K[K[K[K[K[Ke_count) AS shorter[Kst
+[?2004l[?2004h   ...> ;
+[?2004lParse error: no such column: page_count
+  SELECT MIN(page_count) AS shortest ;
+             ^--- error here
+[?2004hsqlite> A[KSELECT book_itle[K[K[K[Ktitle, page)co[K[K[K)[K_count
+[?2004l[?2004h   ...> FROM books;
+[?2004lbook_title                      page_count
+------------------------------  ----------
+Elantris                        638       
+Mistborn: The Final Empire      541       
+The Well of Ascension           590       
+The Hero of Ages                572       
+Warbreaker                      592       
+The Way of Kings                1007      
+The Alloy of Law                332       
+The Emperor's Soul              175       
+Words of Radiance               1087      
+Shadows of Self                 384       
+The Bands of Mourning           448       
+Mistborn: Secret History        150       
+Edgedancer                      272       
+Oathbringer                     1248      
+Dawnshard                       260       
+Rhythm of War                   1232      
+The Lost Metal                  512       
+Tress of the Emerald Sea        480       
+Yumi and the Nightmare Painter  480       
+The Sunlit Man                  400       
+Wind and Truth                  1248      
+[?2004hsqlite> SELECT MIN(page)[K_count) as shor[K[K[K[K[K[K[KAS shortest
+[?2004l[?2004h   ...> from books;
+[?2004lshortest
+--------
+150     
+[?2004hsqlite> SS[KELECT +[K*
+[?2004l[?2004h   ...> f[KFROM books
+[?2004l[?2004h   ...> ;
+[?2004lbook_title                      author             release_year  page_count  series
+------------------------------  -----------------  ------------  ----------  ------
+Elantris                        Brandon Sanderson  2005          638         0     
+Mistborn: The Final Empire      Brandon Sanderson  2006          541         0     
+The Well of Ascension           Brandon Sanderson  2007          590         0     
+The Hero of Ages                Brandon Sanderson  2008          572         0     
+Warbreaker                      Brandon Sanderson  2009          592         0     
+The Way of Kings                Brandon Sanderson  2010          1007        0     
+The Alloy of Law                Brandon Sanderson  2011          332         0     
+The Emperor's Soul              Brandon Sanderson  2012          175         0     
+Words of Radiance               Brandon Sanderson  2014          1087        0     
+Shadows of Self                 Brandon Sanderson  2015          384         0     
+The Bands of Mourning           Brandon Sanderson  2016          448         0     
+Mistborn: Secret History        Brandon Sanderson  2016          150         0     
+Edgedancer                      Brandon Sanderson  2016          272         0     
+Oathbringer                     Brandon Sanderson  2017          1248        0     
+Dawnshard                       Brandon Sanderson  2020          260         0     
+Rhythm of War                   Brandon Sanderson  2020          1232        0     
+The Lost Metal                  Brandon Sanderson  2022          512         0     
+Tress of the Emerald Sea        Brandon Sanderson  2023          480         0     
+Yumi and the Nightmare Painter  Brandon Sanderson  2023          480         0     
+The Sunlit Man                  Brandon Sanderson  2023          400         0     
+Wind and Truth                  Brandon Sanderson  2024          1248        0     
+[?2004hsqlite> SL[KELECT *, min[K[K[KMIN(page_count) AS shortest_book
+[?2004l[?2004h   ...> FROM books;
+[?2004lbook_title                author             release_year  page_count  series  shortest_book
+------------------------  -----------------  ------------  ----------  ------  -------------
+Mistborn: Secret History  Brandon Sanderson  2016          150         0       150          
+[?2004hsqlite> DROP TABLE IF EXISTS books;
+[?2004l[?2004hsqlite> cre[K[K[Kca[K[KCREATE TABLE books (
+[?2004l[?2004h(x1...> book_title TEST[K[KXT,
+[?2004l[?2004h(x1...> u[KAUT[K[K[Kauthor TEST,[K[K[KXT,
+[?2004l[?2004h(x1...> REL[K[K[Klrea[K[K[K[Krelease [K_year in[K[KINTEGER,
+[?2004l[?2004h(x1...> P[Kpage_count IT[KNTEGER,
+[?2004l[?2004h(x1...> series Tex[K[KEXT,
+[?2004l[?2004h(x1...> );
+[?2004lParse error: near ")": syntax error
+  se_year INTEGER, page_count INTEGER, series TEXT, );
+                                      error here ---^
+[?2004hsqlite> );series TEXT,[C[C[C[C[C[C[C[C[7@page_count INTEGER[C[C[C[C[C[C[C[C[C[2@release_year[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[9Pauthor TEXT[C[C[C[C[C[C[C[C[C[4@book_title[C[C[C[C[C[C[C[C[C[C[C[C[C[CCREATE TABLE books ([C[C[C[C[C[C[C[CDROP TABLE IF EXISTS books;[C[C[C[C[C[C[C[C[7PCREATE TABLE books (
+[?2004l[?2004h(x1...> CREATE TABLE books ([C[C[C[C[C[C[C[C);[Kseries TEXT,[C[C[C[C[C[C[C[C[7@page_count INTEGER[C[C[C[C[C[C[C[C[C[2@release_year[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[9Pauthor TEXT[C[C[C[C[C[C[C[C[C[4@book_title[C[C[C[C[C[C
+[?2004l[?2004h(x1...> book_title TEXT,[C[C[C[C[C[C[C[CCREATE TABLE books ([C[C[C[C[C[C[C[C);[Kseries TEXT,[C[C[C[C[C[C[C[C[7@page_count INTEGER[C[C[C[C[C[C[C[C[C[2@release_year[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[9Pauthor TEXT[C
+[?2004l[?2004h(x1...> author TEXT,[C[C[C[C[C[C[C[C[4@book_title[C[C[C[C[C[C[C[C[C[C[C[C[C[CCREATE TABLE books ([C[C[C[C[C[C[C[C);[KCREATE TABLE books ([C[C[C[C[C[C[C[C[4Pbook_title TEXT,[C[C[C[C[C[C[C[C[4Pauthor[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Kauthor TEXT,[C[C[C[C[C[C[C[C[4@book_title[C[C[C[C[C[C[C[C[C[C[C[C[C[CCREATE TABLE books ([C[C[C[C[C[C[C[C);[Kseries TEXT,[C[C[C[C[C[C[C[C[7@page_count INTEGER[C[C[C[C[C[C[C[C[C[2@release_year[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[9Pauthor TEXT[C[C[C[C[C[C[C[C[C[9@release_year INTEGER[C
+[?2004l[?2004h(x1...> release_year INTEGER,[C[C[C[C[C[C[C[C[9Pauthor TEXT[C[C[C[C[C[C[C[C[C[4@book_title[C[C[C[C[C[C[C[C[C[C[C[C[C[CCREATE TABLE books ([C[C[C[C[C[C[C[C);[Kseries TEXT,[C[C[C[C[C[C[C[C[7@page_count INTEGER[C
+[?2004l[?2004h(x1...> page_count INTEGER,[C[C[C[C[C[C[C[C[2@release_year[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[9Pauthor TEXT[C[C[C[C[C[C[C[C[C[4@book_title[C[C[C[C[C[C[C[C[C[C[C[C[C[CCREATE TABLE books ([C[C[C[C[C[C[C[C);[Kseries TEXT,[K
+[?2004l[?2004h(x1...> series TEXT[C[C[C[C[C[C[C[Cpage_count INTEGER,[C[C[C[C[C[C[C[C[2@release_year[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[9Pauthor TEXT[C[C[C[C[C[C[C[C[C[4@book_title[C[C[C[C[C[C[C[C[C[C[C[C[C[CCREATE TABLE books ([C[C[C[C[C[C[C[C);[K
+[?2004l[?2004hsqlite> .IMPO[K[K[K[Kimport --k[Kskip I cosmer_books[K[K[K[K[K[Ke_books.s[Kcsv BOOK[K[K[K[Kbooks
+[?2004l[?2004hsqlite> SELECT *
+[?2004l[?2004h   ...> FROM books;
+[?2004lbook_title                      author             release_year  page_count  series                
+------------------------------  -----------------  ------------  ----------  ----------------------
+book_title                      author             release_year  page_count  series                
+Elantris                        Brandon Sanderson  2005          638         Elantris              
+Mistborn: The Final Empire      Brandon Sanderson  2006          541         Mistborn Era 1        
+The Well of Ascension           Brandon Sanderson  2007          590         Mistborn Era 1        
+The Hero of Ages                Brandon Sanderson  2008          572         Mistborn Era 1        
+Warbreaker                      Brandon Sanderson  2009          592         Warbreaker            
+The Way of Kings                Brandon Sanderson  2010          1007        The Stormlight Archive
+The Alloy of Law                Brandon Sanderson  2011          332         Mistborn Era 2        
+The Emperor's Soul              Brandon Sanderson  2012          175         Elantris              
+Words of Radiance               Brandon Sanderson  2014          1087        The Stormlight Archive
+Shadows of Self                 Brandon Sanderson  2015          384         Mistborn Era 2        
+The Bands of Mourning           Brandon Sanderson  2016          448         Mistborn Era 2        
+Mistborn: Secret History        Brandon Sanderson  2016          150         Mistborn Era 2        
+Edgedancer                      Brandon Sanderson  2016          272         The Stormlight Archive
+Oathbringer                     Brandon Sanderson  2017          1248        The Stormlight Archive
+Dawnshard                       Brandon Sanderson  2020          260         The Stormlight Archive
+Rhythm of War                   Brandon Sanderson  2020          1232        The Stormlight Archive
+The Lost Metal                  Brandon Sanderson  2022          512         Mistborn Era 2        
+Tress of the Emerald Sea        Brandon Sanderson  2023          480         Secret Projects       
+Yumi and the Nightmare Painter  Brandon Sanderson  2023          480         Secret Projects       
+The Sunlit Man                  Brandon Sanderson  2023          400         Secret Projects       
+Wind and Truth                  Brandon Sanderson  2024          1248        The Stormlight Archive
+[?2004hsqlite> SEEL[K[KE[KLECT
+[?2004l[?2004h   ...> BOOKS.[K[K[K[K[K[KB[Kbooks.book_title,
+[?2004l[?2004h   ...> series.series_name,
+[?2004l[?2004h   ...> series.world_name,
+[?2004l[?2004h   ...> books.page_count
+[?2004l[?2004h   ...> FROM books
+[?2004l[?2004h   ...> INNER JOIN series ON books.series_id +[K= series.series.[K_id
+[?2004l[?2004h   ...> ORDER BY series,ser[K[K[K[K.series_name ASC, BOO[K[K[Kbooks.release_year ASC;
+[?2004lParse error: no such column: books.series_id
+[?2004hsqlite> ORDER BY series.series_name ASC, books.release_year ASC;[C[C[C[C[C[C[C[C[1PINNER JOIN series ON books.series_id = series.series_id[C[C[C[C[C[C[C[CFROM books[K[C[C[C[C[C[C[C[Cbooks.page_count[C[C[C[C[C[C[C[Cseries.world_name,[1@series[C[C[C[C[C[C[C[C[C[C[C[C[C[C[2Pbooks.book_titl[C[C[C[C[C[C[C[C[C[C[11PSELECT
+[?2004l[?2004h   ...> SELECTORDER BY series.series_name ASC, books.release_year ASC;[C[C[C[C[C[C[C[C[1PINNER JOIN series ON books.series_id = series.series_id[C[C[C[C[C[C[C[CFROM books[K[C[C[C[C[C[C[C[Cbooks.page_count[C[C[C[C[C[C[C[Cseries.world_name,[C[C[C[C[C[C[C[C[2Pbooks.page_count[C[C[C[C[C[C[C[Cseries.world_name,[1@series[C[C[C[C[C[C[C[C[C[C[C[C[C[C[2Pbooks.book_titl[C[C
+[?2004l[?2004h   ...> books.book_title,[C[C[C[C[C[C[C[C[11PSELECTORDER BY series.series_name ASC, books.release_year ASC;[C[C[C[C[C[C[C[C[1PINNER JOIN series ON books.series_id = series.series_id[C[C[C[C[C[C[C[CFROM books[K[C[C[C[C[C[C[C[Cbooks.page_count[C[C[C[C[C[C[C[Cseries.world_name,[1@series[C[C[C[C[C[C
+[?2004l[?2004h   ...> series.series_name,[C[C[C[C[C[C[C[C[2Pbooks.book_titl[C[C[C[C[C[C[C[C[C[C[11PSELECTORDER BY series.series_name ASC, books.release_year ASC;[C[C[C[C[C[C[C[C[1PINNER JOIN series ON books.series_id = series.series_id[C[C[C[C[C[C[C[CFROM books[K[C[C[C[C[C[C[C[Cbooks.page_count
+[?2004l[?2004h   ...> books.page_count[C[C[C[C[C[C[C[Cseries.series_name,[C[C[C[C[C[C[C[C[2Pbooks.book_titl[C[C[C[C[C[C[C[C[C[C[11PSELECTORDER BY series.series_name ASC, books.release_year ASC;[C[C[C[C[C[C[C[C[1PINNER JOIN series ON books.series_id = series.series_id[C[C[C[C[C[C[C[CFROM books[K
+[?2004l[?2004h   ...> FROM books[C[C[C[C[C[C[C[Cbooks.page_count[C[C[C[C[C[C[C[Cseries.series_name,[C[C[C[C[C[C[C[C[2Pbooks.book_titl[C[C[C[C[C[C[C[C[C[C[11PSELECTORDER BY series.series_name ASC, books.release_year ASC;[C[C[C[C[C[C[C[C[1PINNER JOIN series ON books.series_id = series.series_id[1P[1P[1P[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[KN[KNAME[K[K[K[Kname
+[?2004l[?2004h   ...> ORDER BY series.series_name ASC, books.release_year ASC;
+[?2004lbook_title                      series_name             page_count
+------------------------------  ----------------------  ----------
+Elantris                        Elantris                638       
+The Emperor's Soul              Elantris                175       
+Mistborn: The Final Empire      Mistborn Era 1          541       
+The Well of Ascension           Mistborn Era 1          590       
+The Hero of Ages                Mistborn Era 1          572       
+The Alloy of Law                Mistborn Era 2          332       
+Shadows of Self                 Mistborn Era 2          384       
+The Bands of Mourning           Mistborn Era 2          448       
+Mistborn: Secret History        Mistborn Era 2          150       
+The Lost Metal                  Mistborn Era 2          512       
+Tress of the Emerald Sea        Secret Projects         480       
+Yumi and the Nightmare Painter  Secret Projects         480       
+The Sunlit Man                  Secret Projects         400       
+The Way of Kings                The Stormlight Archive  1007      
+Words of Radiance               The Stormlight Archive  1087      
+Edgedancer                      The Stormlight Archive  272       
+Oathbringer                     The Stormlight Archive  1248      
+Dawnshard                       The Stormlight Archive  260       
+Rhythm of War                   The Stormlight Archive  1232      
+Wind and Truth                  The Stormlight Archive  1248      
+Warbreaker                      Warbreaker              592       
+[?2004hsqlite> EX[K[Kexit
+[?2004l[?2004h   ...> ;
+[?2004lParse error: near "exit": syntax error
+  exit ;
+  ^--- error here
+[?2004hsqlite> .exit
+[?2004l]666;vte.shell.postexec=1\]7;file://paul-ubuntu-X550CC/home/paul-ubuntu/IT-Lab-Portfolio/01-scripting-and-automation/sql-lab\]0;paul-ubuntu@paul-ubuntu-X550CC:~/IT-Lab-Portfolio/01-scripting-and-automation/sql-lab\]666;vte.shell.precmd!\[?2004h]0;paul-ubuntu@paul-ubuntu-X550CC: ~/IT-Lab-Portfolio/01-scripting-and-automation/sql-lab[01;32mpaul-ubuntu@paul-ubuntu-X550CC[00m:[01;34m~/IT-Lab-Portfolio/01-scripting-and-automation/sql-lab[00m$ exit
+[?2004l]133;C\]666;vte.shell.preexec!\exit
+
+Script done on 2026-10-30 14:18:16+00:00 [COMMAND_EXIT_CODE="1"]
