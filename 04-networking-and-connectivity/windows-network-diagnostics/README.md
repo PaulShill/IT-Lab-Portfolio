@@ -87,11 +87,11 @@ The techniques demonstrated are relevant to:
 | README.md | Project overview, practical work and results |
 | lab-session6.txt | PowerShell session transcript |
 | commands-reference.md | Command explanations and parameter reference |
-| troubleshooting-scenarios.md | Five practical troubleshooting scenarios |
+| troubleshooting-scenarios.md | Practical troubleshooting scenarios |
 
 ## Troubleshooting Approach
 
-The lab follows a structured methodology:
+The lab follows the following methodology:
 
 1. Establish the reported symptom.
 2. Inspect the current network configuration.
@@ -101,13 +101,5 @@ The lab follows a structured methodology:
 6. Apply controlled corrective actions.
 7. Retest and document findings.
 
-## Further Development
 
-Future extensions could include:
-
-- Packet capture and protocol analysis using Wireshark.
-- Port and service discovery using Nmap.
-- PowerShell network diagnostic automation.
-- Windows Firewall investigation.
-- Active Directory and DNS administration.
 
