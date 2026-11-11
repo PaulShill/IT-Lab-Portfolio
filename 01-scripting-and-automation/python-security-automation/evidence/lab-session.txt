@@ -1,0 +1,509 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20261111090753
+Username: PAUL_SHILL_LAPT\pauls
+RunAs User: PAUL_SHILL_LAPT\pauls
+Configuration Name: 
+Machine: PAUL_SHILL_LAPT (Microsoft Windows NT 10.0.26200.0)
+Host Application: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+Process ID: 11640
+PSVersion: 5.1.26100.9444
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.26100.9444
+BuildVersion: 10.0.26100.9444
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is .\evidence\lab-session.txt
+PS C:\users\pauls\documents\github\IT-Lab-Portfolio\01-scripting-and-automation\python-security-automation> pwd
+
+Path
+----
+C:\users\pauls\documents\github\IT-Lab-Portfolio\01-scripting-and-automation\python-security-automation
+
+
+PS C:\users\pauls\documents\github\IT-Lab-Portfolio\01-scripting-and-automation\python-security-automation> ni .\scripts\01_python_basics.py
+
+
+    Directory: C:\users\pauls\documents\github\IT-Lab-Portfolio\01-scripting-and-automation\python-security-automation\scripts
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----        11/11/2026     09:12              0 01_python_basics.py
+
+
+PS C:\users\pauls\documents\github\IT-Lab-Portfolio\01-scripting-and-automation\python-security-automation> ls
+
+
+    Directory: C:\users\pauls\documents\github\IT-Lab-Portfolio\01-scripting-and-automation\python-security-automation
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        11/11/2026     09:06                data
+d-----        11/11/2026     09:07                evidence
+d-----        11/11/2026     09:06                notes
+d-----        11/11/2026     09:06                scripts
+-a----        11/11/2026     09:06              0 README.md
+
+
+PS C:\users\pauls\documents\github\IT-Lab-Portfolio\01-scripting-and-automation\python-security-automation> notepad .\scripts\01_python_basics.py
+PS C:\users\pauls\documents\github\IT-Lab-Portfolio\01-scripting-and-automation\python-security-automation> py .\scripts\01_python_basics.py
+analyst01
+5
+False
+192.168.1.45
+<class 'str'>
+<class 'int'>
+<class 'bool'>
+<class 'str'>
+PS C:\users\pauls\documents\github\IT-Lab-Portfolio\01-scripting-and-automation\python-security-automation> notepad .\scripts\01_python_basics.py
+PS C:\users\pauls\documents\github\IT-Lab-Portfolio\01-scripting-and-automation\python-security-automation> py .\scripts\01_python_basics.py
+analyst01
+12
+False
+192.168.1.45
+<class 'str'>
+<class 'int'>
+<class 'bool'>
+<class 'str'>
+PS C:\users\pauls\documents\github\IT-Lab-Portfolio\01-scripting-and-automation\python-security-automation> py .\scripts\01_python_basics.py
+  File "C:\users\pauls\documents\github\IT-Lab-Portfolio\01-scripting-and-automation\python-security-automation\scripts\01_python_basics.py", line 5
+    If failed_attempts >= 5:
+    ^^
+SyntaxError: invalid syntax. Did you mean 'if'?
+PS C:\users\pauls\documents\github\IT-Lab-Portfolio\01-scripting-and-automation\python-security-automation> py .\scripts\01_python_basics.py
+analyst01
+12
+True
+192.168.1.45
+<class 'str'>
+<class 'int'>
+<class 'bool'>
+<class 'str'>
+PS C:\users\pauls\documents\github\IT-Lab-Portfolio\01-scripting-and-automation\python-security-automation> py .\scripts\01_python_basics.py
+analyst01
+12
+True
+192.168.1.45
+<class 'str'>
+<class 'int'>
+<class 'bool'>
+<class 'str'>
+PS C:\users\pauls\documents\github\IT-Lab-Portfolio\01-scripting-and-automation\python-security-automation> py .\scripts\01_python_basics.py
+analyst01
+4
+False
+192.168.1.45
+<class 'str'>
+<class 'int'>
+<class 'bool'>
+<class 'str'>
+PS C:\users\pauls\documents\github\IT-Lab-Portfolio\01-scripting-and-automation\python-security-automation> ni .\scripts\02_for_loops.py
+
+
+    Directory: C:\users\pauls\documents\github\IT-Lab-Portfolio\01-scripting-and-automation\python-security-automation\scripts
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----        11/11/2026     09:44              0 02_for_loops.py
+
+
+PS C:\users\pauls\documents\github\IT-Lab-Portfolio\01-scripting-and-automation\python-security-automation> notepad .\scripts\02_for_loops.py
+PS C:\users\pauls\documents\github\IT-Lab-Portfolio\01-scripting-and-automation\python-security-automation> py .\scripts\02_for_loops.py
+1
+2
+3
+PS C:\users\pauls\documents\github\IT-Lab-Portfolio\01-scripting-and-automation\python-security-automation> py .\scripts\02_for_loops.py
+  File "C:\users\pauls\documents\github\IT-Lab-Portfolio\01-scripting-and-automation\python-security-automation\scripts\02_for_loops.py", line 4
+    print(username)
+    ^^^^^
+IndentationError: expected an indented block after 'for' statement on line 3
+PS C:\users\pauls\documents\github\IT-Lab-Portfolio\01-scripting-and-automation\python-security-automation> py .\scripts\02_for_loops.py
+paul
+sarah
+john
+admin
+PS C:\users\pauls\documents\github\IT-Lab-Portfolio\01-scripting-and-automation\python-security-automation> py .\scripts\02_for_loops.py
+paul is a standard account
+sarah is a standard account
+john is a standard account
+admin is a privileged account
+PS C:\users\pauls\documents\github\IT-Lab-Portfolio\01-scripting-and-automation\python-security-automation> py .\scripts\02_for_loops.py
+paul is a standard account
+sarah is a standard account
+john is a standard account
+admin is a privileged account
+administrator is a privileged account
+guest is a standard account
+PS C:\users\pauls\documents\github\IT-Lab-Portfolio\01-scripting-and-automation\python-security-automation> ni .\scripts\03_while_loops.py
+
+
+    Directory: C:\users\pauls\documents\github\IT-Lab-Portfolio\01-scripting-and-automation\python-security-automation\scripts
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----        11/11/2026     10:09              0 03_while_loops.py
+
+
+PS C:\users\pauls\documents\github\IT-Lab-Portfolio\01-scripting-and-automation\python-security-automation> notepad .\scripts\03_while_loops.py
+PS C:\users\pauls\documents\github\IT-Lab-Portfolio\01-scripting-and-automation\python-security-automation> py .\scripts\03_while_loops.py
+1
+2
+3
+4
+5
+Account threshold reached
+PS C:\users\pauls\documents\github\IT-Lab-Portfolio\01-scripting-and-automation\python-security-automation> ni .\scripts\04_functions.py
+
+
+    Directory: C:\users\pauls\documents\github\IT-Lab-Portfolio\01-scripting-and-automation\python-security-automation\scripts
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----        11/11/2026     10:14              0 04_functions.py
+
+
+PS C:\users\pauls\documents\github\IT-Lab-Portfolio\01-scripting-and-automation\python-security-automation> notepad .\scripts\04_functions.py
+PS C:\users\pauls\documents\github\IT-Lab-Portfolio\01-scripting-and-automation\python-security-automation> py .\scripts\04_functions.py
+Account should be locked
+PS C:\users\pauls\documents\github\IT-Lab-Portfolio\01-scripting-and-automation\python-security-automation> ls
+
+
+    Directory: C:\users\pauls\documents\github\IT-Lab-Portfolio\01-scripting-and-automation\python-security-automation
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        11/11/2026     09:06                data
+d-----        11/11/2026     09:07                evidence
+d-----        11/11/2026     09:07                notes
+d-----        11/11/2026     10:14                scripts
+-a----        11/11/2026     09:06              0 README.md
+
+
+PS C:\users\pauls\documents\github\IT-Lab-Portfolio\01-scripting-and-automation\python-security-automation> notepad data\authentication.log
+PS C:\users\pauls\documents\github\IT-Lab-Portfolio\01-scripting-and-automation\python-security-automation> notepad user_accounts.csv
+PS C:\users\pauls\documents\github\IT-Lab-Portfolio\01-scripting-and-automation\python-security-automation> notepad allow_list.txt
+PS C:\users\pauls\documents\github\IT-Lab-Portfolio\01-scripting-and-automation\python-security-automation> notepad remove_list.txt
+PS C:\users\pauls\documents\github\IT-Lab-Portfolio\01-scripting-and-automation\python-security-automation> py .\scripts\04_functions.py
+Traceback (most recent call last):
+  File "C:\users\pauls\documents\github\IT-Lab-Portfolio\01-scripting-and-automation\python-security-automation\scripts\04_functions.py", line 13, in <module>
+    read_accounts()
+    ~~~~~~~~~~~~~^^
+  File "C:\users\pauls\documents\github\IT-Lab-Portfolio\01-scripting-and-automation\python-security-automation\scripts\04_functions.py", line 5, in read_accounts
+    with open("data/user_accounts.csv", "r") as file:
+         ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'data/user_accounts.csv'
+PS C:\users\pauls\documents\github\IT-Lab-Portfolio\01-scripting-and-automation\python-security-automation> ls
+
+
+    Directory: C:\users\pauls\documents\github\IT-Lab-Portfolio\01-scripting-and-automation\python-security-automation
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        11/11/2026     10:22                data
+d-----        11/11/2026     09:07                evidence
+d-----        11/11/2026     09:07                notes
+d-----        11/11/2026     10:14                scripts
+-a----        11/11/2026     10:26            104 allow_list.txt
+-a----        11/11/2026     09:06              0 README.md
+-a----        11/11/2026     10:27             39 remove_list.txt
+-a----        11/11/2026     10:24            390 user_accounts.csv
+
+
+PS C:\users\pauls\documents\github\IT-Lab-Portfolio\01-scripting-and-automation\python-security-automation> mv allow_list.txt, remove_list.txt, user_accounts.csv data\
+PS C:\users\pauls\documents\github\IT-Lab-Portfolio\01-scripting-and-automation\python-security-automation> ls
+
+
+    Directory: C:\users\pauls\documents\github\IT-Lab-Portfolio\01-scripting-and-automation\python-security-automation
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        11/11/2026     10:34                data
+d-----        11/11/2026     09:07                evidence
+d-----        11/11/2026     09:07                notes
+d-----        11/11/2026     10:14                scripts
+-a----        11/11/2026     09:06              0 README.md
+
+
+PS C:\users\pauls\documents\github\IT-Lab-Portfolio\01-scripting-and-automation\python-security-automation> py .\scripts\04_functions.py
+Traceback (most recent call last):
+  File "C:\users\pauls\documents\github\IT-Lab-Portfolio\01-scripting-and-automation\python-security-automation\scripts\04_functions.py", line 13, in <module>
+    read_accounts()
+    ~~~~~~~~~~~~~^^
+  File "C:\users\pauls\documents\github\IT-Lab-Portfolio\01-scripting-and-automation\python-security-automation\scripts\04_functions.py", line 9, in read_accounts
+    for account in reader:
+                   ^^^^^^
+  File "C:\Users\pauls\AppData\Local\Programs\Python\Python314\Lib\csv.py", line 176, in __next__
+    self.fieldnames
+  File "C:\Users\pauls\AppData\Local\Programs\Python\Python314\Lib\csv.py", line 163, in fieldnames
+    self._fieldnames = next(self.reader)
+                       ~~~~^^^^^^^^^^^^^
+ValueError: I/O operation on closed file.
+PS C:\users\pauls\documents\github\IT-Lab-Portfolio\01-scripting-and-automation\python-security-automation> py .\scripts\04_functions.py
+jsmith
+mbrown
+ajones
+admin
+administrator
+guest
+tgreen
+rwhite
+lwilson
+dclark
+PS C:\users\pauls\documents\github\IT-Lab-Portfolio\01-scripting-and-automation\python-security-automation> py .\scripts\04_functions.py
+  File "C:\users\pauls\documents\github\IT-Lab-Portfolio\01-scripting-and-automation\python-security-automation\scripts\04_functions.py", line 13
+    read_accounts("data/user_accounts.csv)
+                  ^
+SyntaxError: unterminated string literal (detected at line 13)
+PS C:\users\pauls\documents\github\IT-Lab-Portfolio\01-scripting-and-automation\python-security-automation> py .\scripts\04_functions.py
+jsmith
+mbrown
+ajones
+admin
+administrator
+guest
+tgreen
+rwhite
+lwilson
+dclark
+PS C:\users\pauls\documents\github\IT-Lab-Portfolio\01-scripting-and-automation\python-security-automation> py .\scripts\04_functions.py
+  File "C:\users\pauls\documents\github\IT-Lab-Portfolio\01-scripting-and-automation\python-security-automation\scripts\04_functions.py", line 17
+    read_accounts("data\user_accounts.csv", "department")
+                  ^^^^^^^^^^^^^^^^^^^^^^^^
+SyntaxError: (unicode error) 'unicodeescape' codec can't decode bytes in position 4-5: truncated \uXXXX escape
+PS C:\users\pauls\documents\github\IT-Lab-Portfolio\01-scripting-and-automation\python-security-automation> py .\scripts\04_functions.py
+  File "C:\users\pauls\documents\github\IT-Lab-Portfolio\01-scripting-and-automation\python-security-automation\scripts\04_functions.py", line 13
+    read_accounts("data\user_accounts.csv", "username")
+                  ^^^^^^^^^^^^^^^^^^^^^^^^
+SyntaxError: (unicode error) 'unicodeescape' codec can't decode bytes in position 4-5: truncated \uXXXX escape
+PS C:\users\pauls\documents\github\IT-Lab-Portfolio\01-scripting-and-automation\python-security-automation> py .\scripts\04_functions.py
+jsmith
+mbrown
+ajones
+admin
+administrator
+guest
+tgreen
+rwhite
+lwilson
+dclark
+--- Departments ---
+Finance
+HR
+IT
+IT
+IT
+General
+Finance
+IT
+Marketing
+HR
+PS C:\users\pauls\documents\github\IT-Lab-Portfolio\01-scripting-and-automation\python-security-automation> py .\scripts\04_functions.py
+Administrator accounts: 3
+PS C:\users\pauls\documents\github\IT-Lab-Portfolio\01-scripting-and-automation\python-security-automation> py .\scripts\04_functions.py
+Total user accounts: 10
+PS C:\users\pauls\documents\github\IT-Lab-Portfolio\01-scripting-and-automation\python-security-automation> py .\scripts\04_functions.py
+Failed login detected
+PS C:\users\pauls\documents\github\IT-Lab-Portfolio\01-scripting-and-automation\python-security-automation> notepad .\scripts\05_string_operations.py
+PS C:\users\pauls\documents\github\IT-Lab-Portfolio\01-scripting-and-automation\python-security-automation> py .\scripts\05_string_operations.py
+  File "C:\users\pauls\documents\github\IT-Lab-Portfolio\01-scripting-and-automation\python-security-automation\scripts\05_string_operations.py", line 1
+    with open("data/authentiation.log", "r")
+                                            ^
+SyntaxError: expected ':'
+PS C:\users\pauls\documents\github\IT-Lab-Portfolio\01-scripting-and-automation\python-security-automation> py .\scripts\05_string_operations.py
+  File "C:\users\pauls\documents\github\IT-Lab-Portfolio\01-scripting-and-automation\python-security-automation\scripts\05_string_operations.py", line 1
+    with open("data/authentiation.log", "r")
+                                            ^
+SyntaxError: expected ':'
+PS C:\users\pauls\documents\github\IT-Lab-Portfolio\01-scripting-and-automation\python-security-automation> py .\scripts\05_string_operations.py
+  File "C:\users\pauls\documents\github\IT-Lab-Portfolio\01-scripting-and-automation\python-security-automation\scripts\05_string_operations.py", line 6
+                print(line)
+                ^^^^^
+IndentationError: expected an indented block after 'if' statement on line 5
+PS C:\users\pauls\documents\github\IT-Lab-Portfolio\01-scripting-and-automation\python-security-automation> py .\scripts\05_string_operations.py
+  File "C:\users\pauls\documents\github\IT-Lab-Portfolio\01-scripting-and-automation\python-security-automation\scripts\05_string_operations.py", line 6
+                print(line)
+                ^^^^^
+IndentationError: expected an indented block after 'if' statement on line 5
+PS C:\users\pauls\documents\github\IT-Lab-Portfolio\01-scripting-and-automation\python-security-automation> py .\scripts\05_string_operations.py
+Traceback (most recent call last):
+  File "C:\users\pauls\documents\github\IT-Lab-Portfolio\01-scripting-and-automation\python-security-automation\scripts\05_string_operations.py", line 1, in <module>
+    with open("data/authentiation.log", "r") as file:
+         ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'data/authentiation.log'
+PS C:\users\pauls\documents\github\IT-Lab-Portfolio\01-scripting-and-automation\python-security-automation> LS
+
+
+    Directory: C:\users\pauls\documents\github\IT-Lab-Portfolio\01-scripting-and-automation\python-security-automation
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        11/11/2026     10:34                data
+d-----        11/11/2026     09:07                evidence
+d-----        11/11/2026     09:07                notes
+d-----        11/11/2026     10:56                scripts
+-a----        11/11/2026     09:06              0 README.md
+
+
+PS C:\users\pauls\documents\github\IT-Lab-Portfolio\01-scripting-and-automation\python-security-automation> LS .\data
+
+
+    Directory: C:\users\pauls\documents\github\IT-Lab-Portfolio\01-scripting-and-automation\python-security-automation\data
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----        11/11/2026     10:26            104 allow_list.txt
+-a----        11/11/2026     10:22           1359 authentication.log
+-a----        11/11/2026     10:27             39 remove_list.txt
+-a----        11/11/2026     10:24            390 user_accounts.csv
+
+
+PS C:\users\pauls\documents\github\IT-Lab-Portfolio\01-scripting-and-automation\python-security-automation> py .\scripts\05_string_operations.py
+Traceback (most recent call last):
+  File "C:\users\pauls\documents\github\IT-Lab-Portfolio\01-scripting-and-automation\python-security-automation\scripts\05_string_operations.py", line 1, in <module>
+    with open("../python=security-automation/data/authentiation.log", "r") as file:
+         ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '../python=security-automation/data/authentiation.log'
+PS C:\users\pauls\documents\github\IT-Lab-Portfolio\01-scripting-and-automation\python-security-automation> py .\scripts\05_string_operations.py
+2026-11-10 08:04:21 FAILED user=jsmith ip=192.0.2.45
+
+2026-11-10 08:05:03 FAILED user=jsmith ip=192.0.2.45
+
+2026-11-10 08:06:17 FAILED user=jsmith ip=192.0.2.45
+
+2026-11-10 08:07:42 FAILED user=admin ip=198.51.100.22
+
+2026-11-10 08:08:11 FAILED user=admin ip=198.51.100.22
+
+2026-11-10 08:12:05 FAILED user=administrator ip=203.0.113.77
+
+2026-11-10 08:12:44 FAILED user=administrator ip=203.0.113.77
+
+2026-11-10 08:13:19 FAILED user=administrator ip=203.0.113.77
+
+2026-11-10 08:14:02 FAILED user=administrator ip=203.0.113.77
+
+2026-11-10 08:15:36 FAILED user=administrator ip=203.0.113.77
+
+2026-11-10 08:20:55 FAILED user=guest ip=198.51.100.90
+
+2026-11-10 08:25:12 FAILED user=mbrown ip=192.0.2.45
+
+2026-11-10 08:26:08 FAILED user=mbrown ip=192.0.2.45
+
+2026-11-10 08:35:17 FAILED user=guest ip=198.51.100.90
+
+2026-11-10 08:36:02 FAILED user=guest ip=198.51.100.90
+
+2026-11-10 08:44:51 FAILED user=jsmith ip=203.0.113.77
+
+2026-11-10 08:45:33 FAILED user=jsmith ip=203.0.113.77
+PS C:\users\pauls\documents\github\IT-Lab-Portfolio\01-scripting-and-automation\python-security-automation> notepad .\scripts\06_lists.py
+PS C:\users\pauls\documents\github\IT-Lab-Portfolio\01-scripting-and-automation\python-security-automation> py .\scripts\06_lists.py
+['2026-11-10', '08:04:21', 'FAILED', 'user=jsmith', 'ip=192.0.2.45']
+PS C:\users\pauls\documents\github\IT-Lab-Portfolio\01-scripting-and-automation\python-security-automation> py .\scripts\06_lists.py
+  File "C:\users\pauls\documents\github\IT-Lab-Portfolio\01-scripting-and-automation\python-security-automation\scripts\06_lists.py", line 9
+    print(parts{4])
+                 ^
+SyntaxError: closing parenthesis ']' does not match opening parenthesis '{'
+PS C:\users\pauls\documents\github\IT-Lab-Portfolio\01-scripting-and-automation\python-security-automation> py .\scripts\06_lists.py
+['2026-11-10', '08:04:21', 'FAILED', 'user=jsmith', 'ip=192.0.2.45']
+FAILED
+user=jsmith
+ip=192.0.2.45
+PS C:\users\pauls\documents\github\IT-Lab-Portfolio\01-scripting-and-automation\python-security-automation> notepad \scripts\07_read_file.py
+PS C:\users\pauls\documents\github\IT-Lab-Portfolio\01-scripting-and-automation\python-security-automation> notepad .\scripts\07_read_file.py
+PS C:\users\pauls\documents\github\IT-Lab-Portfolio\01-scripting-and-automation\python-security-automation> py .\scripts\07_read_file.py
+2026-11-10 08:02:14 SUCCESS user=jsmith ip=192.0.2.10
+
+2026-11-10 08:04:21 FAILED user=jsmith ip=192.0.2.45
+
+2026-11-10 08:05:03 FAILED user=jsmith ip=192.0.2.45
+
+2026-11-10 08:06:17 FAILED user=jsmith ip=192.0.2.45
+
+2026-11-10 08:07:42 FAILED user=admin ip=198.51.100.22
+
+2026-11-10 08:08:11 FAILED user=admin ip=198.51.100.22
+
+2026-11-10 08:09:30 SUCCESS user=mbrown ip=192.0.2.18
+
+2026-11-10 08:12:05 FAILED user=administrator ip=203.0.113.77
+
+2026-11-10 08:12:44 FAILED user=administrator ip=203.0.113.77
+
+2026-11-10 08:13:19 FAILED user=administrator ip=203.0.113.77
+
+2026-11-10 08:14:02 FAILED user=administrator ip=203.0.113.77
+
+2026-11-10 08:15:36 FAILED user=administrator ip=203.0.113.77
+
+2026-11-10 08:17:09 SUCCESS user=ajones ip=192.0.2.31
+
+2026-11-10 08:20:55 FAILED user=guest ip=198.51.100.90
+
+2026-11-10 08:21:43 SUCCESS user=jsmith ip=192.0.2.10
+
+2026-11-10 08:25:12 FAILED user=mbrown ip=192.0.2.45
+
+2026-11-10 08:26:08 FAILED user=mbrown ip=192.0.2.45
+
+2026-11-10 08:30:41 SUCCESS user=admin ip=192.0.2.10
+
+2026-11-10 08:35:17 FAILED user=guest ip=198.51.100.90
+
+2026-11-10 08:36:02 FAILED user=guest ip=198.51.100.90
+
+2026-11-10 08:40:29 SUCCESS user=ajones ip=192.0.2.31
+
+2026-11-10 08:44:51 FAILED user=jsmith ip=203.0.113.77
+
+2026-11-10 08:45:33 FAILED user=jsmith ip=203.0.113.77
+
+2026-11-10 08:50:06 SUCCESS user=mbrown ip=192.0.2.18
+PS C:\users\pauls\documents\github\IT-Lab-Portfolio\01-scripting-and-automation\python-security-automation> py .\scripts\07_read_file.py
+
+PS C:\users\pauls\documents\github\IT-Lab-Portfolio\01-scripting-and-automation\python-security-automation> get-content .\data\output.txt
+Security review completed
+PS C:\users\pauls\documents\github\IT-Lab-Portfolio\01-scripting-and-automation\python-security-automation> notepad .\scripts\08_update_allow_list.py
+PS C:\users\pauls\documents\github\IT-Lab-Portfolio\01-scripting-and-automation\python-security-automation> py .\08_update_allow_list.py
+C:\Users\pauls\AppData\Local\Programs\Python\Python314\python.exe: can't open file 'C:\\users\\pauls\\documents\\github\\IT-Lab-Portfolio\\01-scripting-and-automation\\python-security-automation\\08_update_allow
+_list.py': [Errno 2] No such file or directory
+PS C:\users\pauls\documents\github\IT-Lab-Portfolio\01-scripting-and-automation\python-security-automation> py .\08_update_allow_list.py
+C:\Users\pauls\AppData\Local\Programs\Python\Python314\python.exe: can't open file 'C:\\users\\pauls\\documents\\github\\IT-Lab-Portfolio\\01-scripting-and-automation\\python-security-automation\\08_update_allow
+_list.py': [Errno 2] No such file or directory
+PS C:\users\pauls\documents\github\IT-Lab-Portfolio\01-scripting-and-automation\python-security-automation> py .\scripts\08_update_allow_list.py
+
+PS C:\users\pauls\documents\github\IT-Lab-Portfolio\01-scripting-and-automation\python-security-automation> get-content .\data\allow_list.txt
+192.0.2.10
+192.0.2.18
+192.0.2.31
+198.51.100.50
+203.0.113.10
+PS C:\users\pauls\documents\github\IT-Lab-Portfolio\01-scripting-and-automation\python-security-automation> notepad .\README.md
+PS C:\users\pauls\documents\github\IT-Lab-Portfolio\01-scripting-and-automation\python-security-automation> git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        ./
+
+nothing added to commit but untracked files present (use "git add" to track)
+PS C:\users\pauls\documents\github\IT-Lab-Portfolio\01-scripting-and-automation\python-security-automation> stop-transcript
+**********************
+Windows PowerShell transcript end
+End time: 20261111114737
+**********************

@@ -1,0 +1,11 @@
+username,department,role,account_status,failed_attempts
+jsmith,Finance,Standard,Active,2
+mbrown,HR,Standard,Active,0
+ajones,IT,Standard,Active,1
+admin,IT,Administrator,Active,2
+administrator,IT,Administrator,Active,5
+guest,General,Standard,Disabled,3
+tgreen,Finance,Standard,Active,0
+rwhite,IT,Administrator,Active,1
+lwilson,Marketing,Standard,Active,4
+dclark,HR,Standard,Active,0
