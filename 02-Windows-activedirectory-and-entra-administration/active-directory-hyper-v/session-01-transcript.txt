@@ -1,0 +1,383 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20261123130040
+Username: PAUL_SHILL_LAPT\pauls
+RunAs User: PAUL_SHILL_LAPT\pauls
+Configuration Name: 
+Machine: PAUL_SHILL_LAPT (Microsoft Windows NT 10.0.26200.0)
+Host Application: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+Process ID: 5928
+PSVersion: 5.1.26100.9444
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.26100.9444
+BuildVersion: 10.0.26100.9444
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is .\session-01-transcript.txt
+PS C:\Users\pauls\it-lab-portfolio\02-Windows-activedirectory-and-entra-administration\active-directory-hyper-v> ls
+
+
+    Directory: C:\Users\pauls\it-lab-portfolio\02-Windows-activedirectory-and-entra-administration\active-directory-hyper-v
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----        23/11/2026     13:00            620 session-01-transcript.txt
+
+
+PS C:\Users\pauls\it-lab-portfolio\02-Windows-activedirectory-and-entra-administration\active-directory-hyper-v> get-windowsoptionalfeature -online -featurehome microsoft-hyper-v-all
+PS C:\Users\pauls\it-lab-portfolio\02-Windows-activedirectory-and-entra-administration\active-directory-hyper-v> TerminatingError(Get-WindowsOptionalFeature): "A parameter cannot be found that matches parameter name 'featurehome'."
+Get-WindowsOptionalFeature : A parameter cannot be found that matches parameter name 'featurehome'.
+At line:1 char:36
++ get-windowsoptionalfeature -online -featurehome microsoft-hyper-v-all
++                                    ~~~~~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (:) [Get-WindowsOptionalFeature], ParameterBindingException
+    + FullyQualifiedErrorId : NamedParameterNotFound,Microsoft.Dism.Commands.GetWindowsOptionalFeatureCommand
+Get-WindowsOptionalFeature : A parameter cannot be found that matches parameter name 'featurehome'.
+At line:1 char:36
++ get-windowsoptionalfeature -online -featurehome microsoft-hyper-v-all
++                                    ~~~~~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (:) [Get-WindowsOptionalFeature], ParameterBindingException
+    + FullyQualifiedErrorId : NamedParameterNotFound,Microsoft.Dism.Commands.GetWindowsOptionalFeatureCommand
+
+PS C:\Users\pauls\it-lab-portfolio\02-Windows-activedirectory-and-entra-administration\active-directory-hyper-v> get-windowsoptionalfeature -online -featurename microsoft-hyper-v-all
+
+
+FeatureName      : Microsoft-Hyper-V-All
+DisplayName      : Hyper-V
+Description      : Provides services and management tools for creating and running virtual machines and their resources.
+RestartRequired  : Possible
+State            : Enabled
+CustomProperties :
+
+
+
+
+PS C:\Users\pauls\it-lab-portfolio\02-Windows-activedirectory-and-entra-administration\active-directory-hyper-v> get-service vmms
+
+Status   Name               DisplayName
+------   ----               -----------
+Running  vmms               Hyper-V Virtual Machine Management
+
+
+PS C:\Users\pauls\it-lab-portfolio\02-Windows-activedirectory-and-entra-administration\active-directory-hyper-v> get-vmswitch | format-table name, switchtype
+
+Name            SwitchType
+----            ----------
+Default Switch    Internal
+AD-Lab-Internal   Internal
+
+
+PS C:\Users\pauls\it-lab-portfolio\02-Windows-activedirectory-and-entra-administration\active-directory-hyper-v> get-netipconfiguration
+
+
+InterfaceAlias       : vEthernet (Default Switch)
+InterfaceIndex       : 21
+InterfaceDescription : Hyper-V Virtual Ethernet Adapter
+IPv4Address          : 172.17.64.1
+IPv6DefaultGateway   :
+IPv4DefaultGateway   :
+DNSServer            : fec0:0:0:ffff::1
+                       fec0:0:0:ffff::2
+                       fec0:0:0:ffff::3
+
+InterfaceAlias       : vEthernet (AD-Lab-Internal)
+InterfaceIndex       : 45
+InterfaceDescription : Hyper-V Virtual Ethernet Adapter #2
+NetProfile.Name      : Unidentified network
+IPv4Address          : 169.254.81.185
+IPv6DefaultGateway   :
+IPv4DefaultGateway   :
+DNSServer            : fec0:0:0:ffff::1
+                       fec0:0:0:ffff::2
+                       fec0:0:0:ffff::3
+
+InterfaceAlias       : WiFi
+InterfaceIndex       : 17
+InterfaceDescription : Intel(R) Wi-Fi 6 AX201 160MHz
+NetProfile.Name      : BT-N5F6TW 2
+IPv6Address          : fd48:b3a1:c14f:d8ed:8120:82f3:88c2:f163
+                       2a00:23c6:c9a7:ff01:9486:520c:aa79:67f8
+IPv4Address          : 192.168.1.104
+IPv6DefaultGateway   : fe80::aeb6:87ff:fe60:e4f8
+IPv4DefaultGateway   : 192.168.1.254
+DNSServer            : fe80::aeb6:87ff:fe60:e4f8
+                       fe80::aeb6:87ff:fe60:e4f8
+                       192.168.1.254
+
+InterfaceAlias       : Bluetooth Network Connection
+InterfaceIndex       : 8
+InterfaceDescription : Bluetooth Device (Personal Area Network)
+NetAdapter.Status    : Disconnected
+
+
+
+PS C:\Users\pauls\it-lab-portfolio\02-Windows-activedirectory-and-entra-administration\active-directory-hyper-v> ipconfig
+
+Windows IP Configuration
+
+
+Ethernet adapter vEthernet (AD-Lab-Internal):
+
+   Connection-specific DNS Suffix  . :
+   Link-local IPv6 Address . . . . . : fe80::118f:9f75:6e73:d428%45
+   Autoconfiguration IPv4 Address. . : 169.254.81.185
+   Subnet Mask . . . . . . . . . . . : 255.255.0.0
+   Default Gateway . . . . . . . . . :
+
+Wireless LAN adapter Local Area Connection* 1:
+
+   Media State . . . . . . . . . . . : Media disconnected
+   Connection-specific DNS Suffix  . :
+
+Wireless LAN adapter Local Area Connection* 2:
+
+   Media State . . . . . . . . . . . : Media disconnected
+   Connection-specific DNS Suffix  . :
+
+Wireless LAN adapter WiFi:
+
+   Connection-specific DNS Suffix  . : home
+   IPv6 Address. . . . . . . . . . . : 2a00:23c6:c9a7:ff01:9486:520c:aa79:67f8
+   IPv6 Address. . . . . . . . . . . : fd48:b3a1:c14f:d8ed:8120:82f3:88c2:f163
+   Temporary IPv6 Address. . . . . . : 2a00:23c6:c9a7:ff01:edc7:ef72:a9e7:d3ec
+   Temporary IPv6 Address. . . . . . : fd48:b3a1:c14f:d8ed:8164:987:2e54:4dd1
+   Link-local IPv6 Address . . . . . : fe80::146c:87b1:bc04:1b3c%17
+   IPv4 Address. . . . . . . . . . . : 192.168.1.104
+   Subnet Mask . . . . . . . . . . . : 255.255.255.0
+   Default Gateway . . . . . . . . . : fe80::aeb6:87ff:fe60:e4f8%17
+                                       192.168.1.254
+
+Ethernet adapter Bluetooth Network Connection:
+
+   Media State . . . . . . . . . . . : Media disconnected
+   Connection-specific DNS Suffix  . :
+
+Ethernet adapter vEthernet (Default Switch):
+
+   Connection-specific DNS Suffix  . :
+   Link-local IPv6 Address . . . . . : fe80::8f26:a40c:d547:6681%21
+   IPv4 Address. . . . . . . . . . . : 172.17.64.1
+   Subnet Mask . . . . . . . . . . . : 255.255.240.0
+   Default Gateway . . . . . . . . . :
+PS C:\Users\pauls\it-lab-portfolio\02-Windows-activedirectory-and-entra-administration\active-directory-hyper-v> get-netipconfiguration
+
+
+InterfaceAlias       : vEthernet (Default Switch)
+InterfaceIndex       : 21
+InterfaceDescription : Hyper-V Virtual Ethernet Adapter
+IPv4Address          : 172.17.64.1
+IPv6DefaultGateway   :
+IPv4DefaultGateway   :
+DNSServer            : fec0:0:0:ffff::1
+                       fec0:0:0:ffff::2
+                       fec0:0:0:ffff::3
+
+InterfaceAlias       : vEthernet (AD-Lab-Internal)
+InterfaceIndex       : 45
+InterfaceDescription : Hyper-V Virtual Ethernet Adapter #2
+NetProfile.Name      : Unidentified network
+IPv4Address          : 169.254.81.185
+IPv6DefaultGateway   :
+IPv4DefaultGateway   :
+DNSServer            : fec0:0:0:ffff::1
+                       fec0:0:0:ffff::2
+                       fec0:0:0:ffff::3
+
+InterfaceAlias       : WiFi
+InterfaceIndex       : 17
+InterfaceDescription : Intel(R) Wi-Fi 6 AX201 160MHz
+NetProfile.Name      : BT-N5F6TW 2
+IPv6Address          : fd48:b3a1:c14f:d8ed:8120:82f3:88c2:f163
+                       2a00:23c6:c9a7:ff01:9486:520c:aa79:67f8
+IPv4Address          : 192.168.1.104
+IPv6DefaultGateway   : fe80::aeb6:87ff:fe60:e4f8
+IPv4DefaultGateway   : 192.168.1.254
+DNSServer            : fe80::aeb6:87ff:fe60:e4f8
+                       fe80::aeb6:87ff:fe60:e4f8
+                       192.168.1.254
+
+InterfaceAlias       : Bluetooth Network Connection
+InterfaceIndex       : 8
+InterfaceDescription : Bluetooth Device (Personal Area Network)
+NetAdapter.Status    : Disconnected
+
+
+
+PS C:\Users\pauls\it-lab-portfolio\02-Windows-activedirectory-and-entra-administration\active-directory-hyper-v> get-netipconfiguration -interfacealias "vethernet (ad-lab-internal)"
+
+
+InterfaceAlias       : vEthernet (AD-Lab-Internal)
+InterfaceIndex       : 45
+InterfaceDescription : Hyper-V Virtual Ethernet Adapter #2
+NetProfile.Name      : Unidentified network
+IPv4Address          : 169.254.81.185
+IPv6DefaultGateway   :
+IPv4DefaultGateway   :
+DNSServer            : fec0:0:0:ffff::1
+                       fec0:0:0:ffff::2
+                       fec0:0:0:ffff::3
+
+
+
+PS C:\Users\pauls\it-lab-portfolio\02-Windows-activedirectory-and-entra-administration\active-directory-hyper-v> net-netipaddress -interfacealias "vethernet (ad-lab-internal" -ipaddress 192.168.50.1 -prefixlength 24
+net-netipaddress : The term 'net-netipaddress' is not recognized as the name of a cmdlet, function, script file, or 
+operable program. Check the spelling of the name, or if a path was included, verify that the path is correct and try 
+again.
+At line:1 char:1
++ net-netipaddress -interfacealias "vethernet (ad-lab-internal" -ipaddr ...
++ ~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (net-netipaddress:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+net-netipaddress : The term 'net-netipaddress' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the spelling of the name, or if a path was included, verify that the
+path is correct and try again.
+At line:1 char:1
++ net-netipaddress -interfacealias "vethernet (ad-lab-internal" -ipaddr ...
++ ~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (net-netipaddress:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+PS C:\Users\pauls\it-lab-portfolio\02-Windows-activedirectory-and-entra-administration\active-directory-hyper-v> new-netipaddress -interfacealias "vethernet (ad-lab-internal" -ipaddress 192.168.50.1 -prefixlength 24
+new-netipaddress : Element not found.
+
+At line:1 char:1
++ new-netipaddress -interfacealias "vethernet (ad-lab-internal" -ipaddr ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (MSFT_NetIPAddress:ROOT/StandardCimv2/MSFT_NetIPAddress) 
+[New-NetIPAddress], CimException
+    + FullyQualifiedErrorId : Windows System Error 1168,New-NetIPAddress
+new-netipaddress : Element not found.
+
+At line:1 char:1
++ new-netipaddress -interfacealias "vethernet (ad-lab-internal" -ipaddr ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (MSFT_NetIPAddress:ROOT/StandardCimv2/MSFT_NetIPAddress) [New-NetIPAddress], CimException
+    + FullyQualifiedErrorId : Windows System Error 1168,New-NetIPAddress
+
+PS C:\Users\pauls\it-lab-portfolio\02-Windows-activedirectory-and-entra-administration\active-directory-hyper-v> get-netadapter | format-table name, interfacedescription, status, ifindex
+
+name                         interfacedescription                     Status       ifIndex
+----                         --------------------                     ------       -------
+WiFi                         Intel(R) Wi-Fi 6 AX201 160MHz            Up                17
+vEthernet (AD-Lab-Internal)  Hyper-V Virtual Ethernet Adapter #2      Up                45
+Bluetooth Network Connection Bluetooth Device (Personal Area Network) Disconnected       8
+vEthernet (Default Switch)   Hyper-V Virtual Ethernet Adapter         Up                21
+
+
+PS C:\Users\pauls\it-lab-portfolio\02-Windows-activedirectory-and-entra-administration\active-directory-hyper-v> new-netipaddress -interfacealias 45 -ipaddress 192.168.50.1 -prefixlength 24
+new-netipaddress : Invalid parameter InterfaceAlias 45
+
+At line:1 char:1
++ new-netipaddress -interfacealias 45 -ipaddress 192.168.50.1 -prefixle ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (MSFT_NetIPAddress:ROOT/StandardCimv2/MSFT_NetIPAddress) 
+[New-NetIPAddress], CimException
+    + FullyQualifiedErrorId : Windows System Error 87,New-NetIPAddress
+new-netipaddress : Invalid parameter InterfaceAlias 45
+
+At line:1 char:1
++ new-netipaddress -interfacealias 45 -ipaddress 192.168.50.1 -prefixle ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (MSFT_NetIPAddress:ROOT/StandardCimv2/MSFT_NetIPAddress) [New-NetIPAddress], CimException
+    + FullyQualifiedErrorId : Windows System Error 87,New-NetIPAddress
+
+PS C:\Users\pauls\it-lab-portfolio\02-Windows-activedirectory-and-entra-administration\active-directory-hyper-v> new-netipaddress -interfaceindex 45 -ipaddress 192.168.50.1 -prefixlength 24
+
+
+IPAddress         : 192.168.50.1
+InterfaceIndex    : 45
+InterfaceAlias    : vEthernet (AD-Lab-Internal)
+AddressFamily     : IPv4
+Type              : Unicast
+PrefixLength      : 24
+PrefixOrigin      : Manual
+SuffixOrigin      : Manual
+AddressState      : Tentative
+ValidLifetime     : Infinite ([TimeSpan]::MaxValue)
+PreferredLifetime : Infinite ([TimeSpan]::MaxValue)
+SkipAsSource      : False
+PolicyStore       : ActiveStore
+
+IPAddress         : 192.168.50.1
+InterfaceIndex    : 45
+InterfaceAlias    : vEthernet (AD-Lab-Internal)
+AddressFamily     : IPv4
+Type              : Unicast
+PrefixLength      : 24
+PrefixOrigin      : Manual
+SuffixOrigin      : Manual
+AddressState      : Invalid
+ValidLifetime     : Infinite ([TimeSpan]::MaxValue)
+PreferredLifetime : Infinite ([TimeSpan]::MaxValue)
+SkipAsSource      : False
+PolicyStore       : PersistentStore
+
+
+
+PS C:\Users\pauls\it-lab-portfolio\02-Windows-activedirectory-and-entra-administration\active-directory-hyper-v> get-netipaddress -interfaceindex 45 -addressfamily ipv4
+
+
+IPAddress         : 192.168.50.1
+InterfaceIndex    : 45
+InterfaceAlias    : vEthernet (AD-Lab-Internal)
+AddressFamily     : IPv4
+Type              : Unicast
+PrefixLength      : 24
+PrefixOrigin      : Manual
+SuffixOrigin      : Manual
+AddressState      : Preferred
+ValidLifetime     : Infinite ([TimeSpan]::MaxValue)
+PreferredLifetime : Infinite ([TimeSpan]::MaxValue)
+SkipAsSource      : False
+PolicyStore       : ActiveStore
+
+
+
+PS C:\Users\pauls\it-lab-portfolio\02-Windows-activedirectory-and-entra-administration\active-directory-hyper-v> ls
+
+
+    Directory: C:\Users\pauls\it-lab-portfolio\02-Windows-activedirectory-and-entra-administration\active-directory-hyper-v
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----        23/11/2026     13:43          82340 Screenshot 2026-11-23 134247.png
+-a----        23/11/2026     13:00            620 session-01-transcript.txt
+
+
+PS C:\Users\pauls\it-lab-portfolio\02-Windows-activedirectory-and-entra-administration\active-directory-hyper-v> ren '.\Screenshot 2026-11-23 134247.png' "host-static-ip.png"
+PS C:\Users\pauls\it-lab-portfolio\02-Windows-activedirectory-and-entra-administration\active-directory-hyper-v> ls
+
+
+    Directory: C:\Users\pauls\it-lab-portfolio\02-Windows-activedirectory-and-entra-administration\active-directory-hyper-v
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----        23/11/2026     13:43          82340 host-static-ip.png
+-a----        23/11/2026     13:49          15569 session-01-transcript.txt
+
+
+PS C:\Users\pauls\it-lab-portfolio\02-Windows-activedirectory-and-entra-administration\active-directory-hyper-v> start-process "https://www.microsoft.com/en-us/evalcentre/download-windows-server-2025"
+PS C:\Users\pauls\it-lab-portfolio\02-Windows-activedirectory-and-entra-administration\active-directory-hyper-v> get-process vmconnect
+get-process : Cannot find a process with the name "vmconnect". Verify the process name and call the cmdlet again.
+At line:1 char:1
++ get-process vmconnect
++ ~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (vmconnect:String) [Get-Process], ProcessCommandException
+    + FullyQualifiedErrorId : NoProcessFoundForGivenName,Microsoft.PowerShell.Commands.GetProcessCommand
+get-process : Cannot find a process with the name "vmconnect". Verify the process name and call the cmdlet again.
+At line:1 char:1
++ get-process vmconnect
++ ~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (vmconnect:String) [Get-Process], ProcessCommandException
+    + FullyQualifiedErrorId : NoProcessFoundForGivenName,Microsoft.PowerShell.Commands.GetProcessCommand
+
+PS C:\Users\pauls\it-lab-portfolio\02-Windows-activedirectory-and-entra-administration\active-directory-hyper-v> stop-transcript
+**********************
+Windows PowerShell transcript end
+End time: 20261124093846
+**********************
